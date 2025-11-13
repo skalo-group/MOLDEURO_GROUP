@@ -236,141 +236,55 @@ body {
   margin-top: -0.5rem;
 }
 /* === RESPONSIVE (telefon) === */
+/* --- MENIU MOBIL CORECT --- */
 @media (max-width: 768px) {
 
-  .navbar {
-    padding: 0.5rem 1rem;
-  }
-
-  .logo img {
-    height: 90px; /* era 165px */
-  }
-
-  .menu {
-    gap: 0.5rem;
-  }
-
-  .menu a {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.8rem;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-  }
-}
-  .hero p {
-    font-size: 1rem;
-  }
-/* === MENIU HAMBURGER PENTRU TELEFON === */
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  color: #111;
-}
-
-/* ascunde meniul pe telefon implicit */
-#mobileMenu {
-  display: flex;
-}
-
-@media (max-width: 768px) {
-
-  .menu {
-    display: none;  
-    flex-direction: column;
-    background: #f5f0e6;
-    position: absolute;
-    top: 80px;
-    right: 10px;
-    width: 200px;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
-  }
-
-  .menu.show {
-    display: flex;
-  }
-
-  .menu a {
+  .hamburger {
     display: block;
-    padding: 0.7rem 1rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid #ccc;
-    background: white;
+    font-size: 32px;
+    cursor: pointer;
+    padding: 0.3rem 0.6rem;
+    margin-left: auto;
+    user-select: none;
+  }
+
+  .menu {
+    display: none !important;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 15px;
+    width: 75%;
+    background: #f5f0e6;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    z-index: 9999;
+  }
+
+  .menu.menu-open {
+    display: flex !important;
+  }
+
+  .menu li {
+    margin-bottom: 0.7rem;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    color: #000000;
+    font-size: 1.1rem;
     text-align: left;
   }
 
-  .hamburger {
-    display: block;
-  }
-
-  nav ul.menu {
-    flex-direction: column;
+  .menu li a.active {
+    background: #00bcd4 !important;
+    color: #ffffff !important;
   }
 }
 
-/* === MOBILE MENU FIX === */
-
-/* Buton hamburger – apare doar pe mobil */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #111;
-  padding: 1rem;
-}
-
-/* Meniul NORMAL pe desktop */
-.menu {
-  display: flex;
-  gap: 1rem;
-}
-
-/* === REGULI PENTRU TELEFON === */
-@media (max-width: 768px) {
-
-  /* Ascunde meniul implicit pe telefon */
-  .menu {
-    display: none;
-    position: absolute;
-    top: 80px;
-    right: 20px;
-    width: 70%;
-    background: #f5f0e6;
-    padding: 1.5rem;
-    border-radius: 12px;
-    flex-direction: column;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  }
-
-  /* Cand se deschide meniul */
-  .menu.menu-open {
-    display: flex;
-  }
-
-  /* Stil butoane în meniu */
-  .menu a {
-    padding: 0.9rem 1rem;
-    font-size: 1.1rem;
-    background: white;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-
-  .nav-mobile {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  /* Afisam hamburger-ul pe mobil */
-  .hamburger {
-    display: block;
-  }
-}
 
