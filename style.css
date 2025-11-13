@@ -314,4 +314,63 @@ body {
   }
 }
 
+/* === MOBILE MENU FIX === */
+
+/* Buton hamburger – apare doar pe mobil */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #111;
+  padding: 1rem;
+}
+
+/* Meniul NORMAL pe desktop */
+.menu {
+  display: flex;
+  gap: 1rem;
+}
+
+/* === REGULI PENTRU TELEFON === */
+@media (max-width: 768px) {
+
+  /* Ascunde meniul implicit pe telefon */
+  .menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 70%;
+    background: #f5f0e6;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+
+  /* Cand se deschide meniul */
+  .menu.menu-open {
+    display: flex;
+  }
+
+  /* Stil butoane în meniu */
+  .menu a {
+    padding: 0.9rem 1rem;
+    font-size: 1.1rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+
+  .nav-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Afisam hamburger-ul pe mobil */
+  .hamburger {
+    display: block;
+  }
+}
 
