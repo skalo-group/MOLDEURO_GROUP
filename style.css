@@ -1,0 +1,238 @@
+/* =======================
+   STIL GENERAL SITE SKALO
+   ======================= */
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+/* =======================
+   NAVBAR
+   ======================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 2rem;
+  background-color: #f5f0e6; /* crem */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  height: 140px;
+  width: auto;
+}
+
+/* MENIU SUS */
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  color: #111;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.menu a:hover,
+.menu .active {
+  background: #00bcd4;
+  color: #fff;
+  border-color: #00bcd4;
+}
+
+/* =======================
+   HERO
+   ======================= */
+
+.hero {
+  height: 100vh;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero .overlay {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* =======================
+   SECTIUNI CONTINUT
+   ======================= */
+
+.content a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.content a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.box {
+  background-color: #222;
+  padding: 1.5rem;
+  flex: 1 1 30%;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.box:hover {
+  background: #00bcd4;
+  color: #111;
+}
+
+/* =======================
+   FOOTER NOU (3 COLOANE)
+   ======================= */
+
+.footer {
+  background-color: #f5f0e6; /* crem */
+  color: #111;
+  padding: 3rem 8%;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h3 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-col p {
+  margin-bottom: 0.7rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #00bcd4;
+}
+
+/* LINII VERTICALE INTRE COLOANE */
+
+.footer-separator {
+  width: 1px;
+  background-color: #bbb;
+  height: 100%;
+}
+
+/* LINIA DE JOS */
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.85rem;
+  color: #555;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+.service-link {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border: 1px solid #555;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.service-link:hover {
+  color: #00bcd4;
+  border-color: #00bcd4;
+}
+.content h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/* Text introductiv acasa */
+.intro-text {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;      /* gri elegant */
+  margin-top: -0.5rem;
+}
+
