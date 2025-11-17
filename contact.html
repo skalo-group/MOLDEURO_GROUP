@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact – SKALO design</title>
+  <title>Contact – MOLDEURO GROUP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo"><img src="images/logo.png" alt="SKALO"></div>
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
@@ -23,11 +23,35 @@
   </ul>
 </header>
 
-<section class="content" style="margin-top:100px;">
-  <h2>Contact</h2>
-  <p><strong>Email:</strong> contact@skalodesign.ro</p>
-  <p><strong>Telefon:</strong> 07xx xxx xxx</p>
-  <p><strong>Adresă:</strong> București</p>
+<section class="contact-section" style="margin-top:120px;">
+  <div class="contact-container">
+
+    <h2 class="contact-title">Contact</h2>
+
+    <p class="contact-intro">
+      Ne poți contacta pentru informații suplimentare, colaborări sau solicitări de servicii.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-box">
+        <h3>Email</h3>
+        <p>contact@moldeurogroup.ro</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Telefon</h3>
+        <p>07xx xxx xxx</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Adresă</h3>
+        <p>București, România</p>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
 <footer class="footer">
@@ -35,7 +59,7 @@
 
     <div class="footer-col">
       <h3>Despre noi</h3>
-      <p>Birou de proiectare specializat în arhitectură și inginerie.</p>
+      <p>MOLDEURO GROUP oferă servicii profesionale pentru domeniul public și mediul privat.</p>
     </div>
 
     <div class="footer-separator"></div>
@@ -56,12 +80,12 @@
 
     <div class="footer-col">
       <h3>Datele Companiei</h3>
-      <p>SKALO DESIGN SRL</p>
+      <p>MOLDEURO GROUP</p>
       <p>CUI: 00000000</p>
       <p>Reg. Com.: J00/0000/2025</p>
       <br>
       <h3>Contact</h3>
-      <p>Email: contact@skalodesign.ro</p>
+      <p>Email: contact@moldeurogroup.ro</p>
       <p>Telefon: 07xx xxx xxx</p>
       <p>Adresă: București</p>
     </div>
@@ -69,7 +93,7 @@
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 SKALO design.</p>
+    <p>&copy; 2025 MOLDEURO GROUP.</p>
   </div>
 </footer>
 
@@ -78,11 +102,6 @@ function toggleMenu() {
   document.querySelector('.menu').classList.toggle('menu-open');
 }
 </script>
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
+
 </body>
 </html>
-
