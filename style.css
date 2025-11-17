@@ -19,13 +19,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.4rem 2rem;
-  background-color: #f5f0e6; /* crem */
+  background-color: #003399;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #002266;
 }
 
 .logo img {
@@ -44,11 +44,11 @@ body {
 }
 
 .menu a {
-  color: #111;
+  color: #fff;
   text-decoration: none;
   padding: 0.4rem 1rem;
-  border: 1px solid #bbb;
-  background-color: #fff;
+  border: 1px solid #002266;
+  background-color: #003399;
   border-radius: 6px;
   transition: 0.3s;
 }
@@ -66,7 +66,7 @@ body {
 
 .hero {
   height: 100vh;
-  background: url("images/hero.jpg") center/cover no-repeat;
+  background: url("images/hero.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,14 +99,45 @@ body {
   margin: 0 auto;
 }
 
+/* =======================
+   DOMENII DE ACTIVITATE
+   ======================= */
+
+.domains {
+  padding: 4rem 8%;
+  background: #111;
+  color: #eee;
+  text-align: center;
+}
+
+.domains h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.domains-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.domain-box {
+  background: #003399;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
 
 /* =======================
-   FOOTER FINAL PERFECT
+   FOOTER
    ======================= */
 
 .footer {
-  background-color: #f5f0e6;
-  color: #111;
+  background-color: #003399;
+  color: #fff;
   padding: 3rem 8%;
   margin-top: 4rem;
   font-size: 0.95rem;
@@ -131,7 +162,7 @@ body {
 
 .footer-col p {
   margin-bottom: 0.7rem;
-  color: #333;
+  color: #eee;
   line-height: 1.4;
 }
 
@@ -146,7 +177,7 @@ body {
 }
 
 .footer-col ul li a {
-  color: #333;
+  color: #eee;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -155,19 +186,17 @@ body {
   color: #00bcd4;
 }
 
-/* —— Linii verticale între coloane —— */
 .footer-separator {
   width: 1px;
   background-color: #bbb;
   height: 100%;
 }
 
-/* —— Zona de jos —— */
 .footer-bottom {
   text-align: center;
   padding-top: 2rem;
   font-size: 0.85rem;
-  color: #555;
+  color: #eee;
   border-top: 1px solid #ccc;
   margin-top: 2rem;
 }
@@ -176,7 +205,6 @@ body {
    RESPONSIVE FOOTER
    ======================= */
 
-/* Telefon și tablete */
 @media (max-width: 768px) {
 
   .footer-row {
@@ -193,83 +221,9 @@ body {
   }
 }
 
-
 /* =======================
-   MENIU MOBIL (HAMBURGER)
+   MENIU MOBIL
    ======================= */
-
-/* ascundem hamburger pe desktop */
-.hamburger {
-  display: none;
-}
-
-/* --- mobil --- */
-@media (max-width: 768px) {
-
-  /* afișăm hamburger */
-  .hamburger {
-    display: block !important;
-    font-size: 32px;
-    cursor: pointer;
-    margin-left: auto;
-    padding: 0.4rem 0.6rem;
-    user-select: none;
-    z-index: 99999;
-  }
-
-  /* meniul mobil ascuns implicit */
-  .menu {
-    display: none !important;
-    flex-direction: column;
-    position: absolute;
-    right: 15px;
-    top: 80px;
-    width: 75%;
-    background: #f5f0e6;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    z-index: 9999;
-  }
-
-  /* meniul se deschide */
-  .menu.menu-open {
-    display: flex !important;
-  }
-
-  .menu li {
-    margin-bottom: 0.7rem;
-  }
-
-  .menu li a {
-    display: block;
-    padding: 1rem;
-    background: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #dddddd;
-    color: #000000;
-    font-size: 1.1rem;
-    text-align: left;
-  }
-
-  .menu li a.active {
-    background: #00bcd4 !important;
-    color: #ffffff !important;
-  }
-
-  /* ascundem meniul desktop */
-  .menu-desktop {
-    display: none;
-  }
-}
-/* HAMBURGER VIZIBIL PE MOBIL */
-.hamburger {
-  color: #000 !important;
-  font-weight: bold;
-}
-/* ==========================
-   HAMBURGER VIZIBIL + FIXAT
-   ========================== */
 
 .hamburger {
   display: block !important;
@@ -278,12 +232,11 @@ body {
   cursor: pointer;
   margin-left: auto;
   padding: 0.4rem 0.6rem;
-  color: #000 !important;     /* vizibil negru */
-  opacity: 1 !important;      
+  color: #000;
+  opacity: 1;
   z-index: 99999;
 }
 
-/* MENIU MOBIL */
 @media (max-width: 768px) {
 
   .menu {
@@ -293,7 +246,7 @@ body {
     right: 15px;
     top: 80px;
     width: 75%;
-    background: #f5f0e6;
+    background: #003399;
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
@@ -311,17 +264,15 @@ body {
   .menu li a {
     display: block;
     padding: 1rem;
-    background: #fff;
+    background: #002266;
     border-radius: 10px;
-    border: 1px solid #ddd;
-    color: #111;
+    border: 1px solid #001a4d;
+    color: #fff;
     font-size: 1.1rem;
   }
 
   .menu li a.active {
-    background: #00bcd4 !important;
-    color: #fff !important;
+    background: #00bcd4;
+    color: #fff;
   }
-
 }
-
