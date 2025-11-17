@@ -1,54 +1,55 @@
- /* =========================
-   BODY
-   ========================= */
+ /* =======================
+   SETĂRI GENERALE
+   ======================= */
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #111;
-  color: #eee;
+  background-color: #e6f2ff;
+  color: #111;
   line-height: 1.6;
 }
 
-/* =========================
+/* =======================
    NAVBAR
-   ========================= */
+   ======================= */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 1rem; /* FIX pentru marginile mari */
+  padding: 0.4rem 1.4rem;
   background-color: #003399;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid #002266;
+  border-bottom: 2px solid #002266;
 }
 
 .logo img {
-  height: 140px;
+  height: 120px;
   width: auto;
 }
 
-/* =========================
-   MENIU — DOAR HAMBURGER
-   ========================= */
+/* Meniu desktop */
+
 .menu {
+  list-style: none;
   display: none;
   flex-direction: column;
   position: absolute;
-  right: 15px;
-  top: 120px;
-  width: 260px;
+  right: 10px;
+  top: 90px;
+  width: 70%;
   background: #003399;
   padding: 1rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  z-index: 9999;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.35);
 }
 
-.menu li {
-  margin-bottom: 0.7rem;
+.menu.menu-open {
+  display: flex;
 }
 
 .menu li a {
@@ -59,46 +60,34 @@ body {
   border: 1px solid #001a4d;
   color: #fff;
   font-size: 1.1rem;
-  text-align: left;
   text-decoration: none;
+  margin-bottom: 0.7rem;
+  transition: 0.3s;
 }
 
 .menu li a:hover,
-.menu .active {
+.menu li a.active {
   background: #00bcd4;
-  border-color: #00bcd4;
+  color: #fff;
 }
 
-.menu.menu-open {
-  display: flex;
-}
+/* Hamburger */
 
-/* =========================
-   HAMBURGER
-   ========================= */
 .hamburger {
   display: block;
   font-size: 34px;
   font-weight: bold;
   cursor: pointer;
   color: #fff;
-  padding: 0.4rem 0.6rem;
-
-  /* FIX pentru poziția prea în dreapta */
-  margin-right: 15px;
+  margin-left: auto;
+  margin-right: 10px;
+  z-index: 9999;
 }
 
-@media (max-width: 768px) {
-  .menu {
-    width: 70%;
-    right: 15px;
-    top: 100px;
-  }
-}
+/* =======================
+   HERO PAGINA PRINCIPALĂ
+   ======================= */
 
-/* =========================
-   HERO INDEX
-   ========================= */
 .hero {
   height: 100vh;
   background: url("images/hero.jpeg") center/cover no-repeat;
@@ -113,7 +102,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero .overlay {
@@ -134,40 +123,10 @@ body {
   margin: 0 auto;
 }
 
-/* =========================
-   DOMENII
-   ========================= */
-.domains {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-  text-align: center;
-}
+/* =======================
+   HERO MIC PAGINI SECUNDARE
+   ======================= */
 
-.domains h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.domains-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.domain-box {
-  background: #003399;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-/* =========================
-   HERO MIC — DESPRE
-   ========================= */
 .about-hero-image {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 40vh;
@@ -192,6 +151,7 @@ body {
 .about-hero-overlay h1 {
   font-size: 2.6rem;
   color: #00bcd4;
+  margin-bottom: 0.4rem;
 }
 
 .about-hero-overlay p {
@@ -200,21 +160,36 @@ body {
   opacity: 0.9;
 }
 
-/* =========================
-   DESPRE — SECȚIUNE MODERNĂ
-   ========================= */
-.about-modern {
+/* =======================
+   SECȚIUNI MODERNE (DESPRE, SERVICII)
+   ======================= */
+
+.about-modern,
+.services-section,
+.projects-section,
+.partners-section,
+.contact-section,
+.timeline-section,
+.domains {
   padding: 4rem 8%;
-  background: #111;
-  color: #eee;
+  background: #e6f2ff;
+  color: #111;
 }
 
-.about-modern-container {
+.about-modern-container,
+.services-container,
+.projects-container,
+.partners-container,
+.contact-container {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.about-modern-intro {
+.about-modern-intro,
+.services-intro,
+.projects-intro,
+.partners-intro,
+.contact-intro {
   font-size: 1.15rem;
   max-width: 850px;
   margin: 0 auto 3rem auto;
@@ -222,34 +197,33 @@ body {
   line-height: 1.7;
 }
 
-.about-modern-grid {
+.about-modern-grid,
+.services-grid,
+.projects-grid,
+.partners-grid,
+.contact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
-.about-modern-box {
+.about-modern-box,
+.service-button-big,
+.project-card,
+.partner-card,
+.contact-box {
   background: #003399;
   padding: 2rem;
   border-radius: 12px;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  font-weight: 500;
 }
 
-.about-modern-box h3 {
-  color: #00bcd4;
-  margin-bottom: 1rem;
-}
-
-/* =========================
+/* =======================
    TIMELINE
-   ========================= */
-.timeline-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
+   ======================= */
 
 .timeline-title {
   font-size: 2.2rem;
@@ -282,226 +256,19 @@ body {
 }
 
 .timeline-content h3 {
+  color: #00bcd4;
   margin-bottom: 0.4rem;
-  color: #00bcd4;
+  font-size: 1.3rem;
 }
 
-.timeline-content p {
-  color: #eee;
-  line-height: 1.6;
-}
-
-@media (max-width: 600px) {
-  .timeline {
-    padding-left: 1.2rem;
-  }
-}
-
-/* =========================
-   FOOTER
-   ========================= */
-.footer {
-  background-color: #003399;
-  color: #fff;
-  padding: 3rem 8%;
-  margin-top: 4rem;
-  font-size: 0.95rem;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 3rem;
-}
-
-.footer-col {
-  flex: 1;
-}
-
-.footer-col h3 {
-  color: #00bcd4;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.footer-col p {
-  margin-bottom: 0.7rem;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 0.6rem;
-}
-
-.footer-col ul li a {
-  color: #eee;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-col ul li a:hover {
-  color: #00bcd4;
-}
-
-.footer-separator {
-  width: 1px;
-  background-color: #bbb;
-  height: 100%;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 0.85rem;
-  border-top: 1px solid #ccc;
-  margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .footer-row {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  .footer-separator {
-    display: none;
-  }
-}
-/* =========================
-   CARUSEL PROIECTE
-   ========================= */
-.projects-carousel-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-  text-align: center;
-}
-
-.carousel-title {
-  font-size: 2.2rem;
-  color: #00bcd4;
-  margin-bottom: 2rem;
-}
-
-.carousel-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.carousel-track {
-  display: flex;
-  transition: 0.4s;
-}
-
-.project-card.empty {
-  width: 240px;
-  height: 180px;
-  background: #003399;
-  color: #fff;
-  border-radius: 12px;
-  margin-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.carousel-btn {
-  background: #002266;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 999;
-  transition: 0.3s;
-}
-
-.carousel-btn:hover {
-  background: #00bcd4;
-}
-/* =========================
-   CARUSEL PROIECTE
-   ========================= */
-.projects-carousel-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-  text-align: center;
-}
-
-.carousel-title {
-  font-size: 2.2rem;
-  color: #00bcd4;
-  margin-bottom: 2rem;
-}
-
-.carousel-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.carousel-track {
-  display: flex;
-  transition: 0.4s;
-}
-
-.project-card.empty {
-  width: 240px;
-  height: 180px;
-  background: #003399;
-  color: #fff;
-  border-radius: 12px;
-  margin-right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.carousel-btn {
-  background: #002266;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  padding: 0.4rem 0.9rem;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 999;
-  transition: 0.3s;
-}
-
-.carousel-btn:hover {
-  background: #00bcd4;
-}
-/*==========================
-  CARUSEL PROIECTE — RAME ALBE
-===========================*/
+/* =======================
+   CARUSEL PROIECTE — RAME ALBE
+   ======================= */
 
 .projects-carousel-section {
   padding: 4rem 8%;
-  background: #111;
-  color: #eee;
+  background: #e6f2ff;
+  color: #111;
   text-align: center;
 }
 
@@ -527,7 +294,8 @@ body {
   transition: transform 0.4s ease;
 }
 
-/* RAME GOALE ALBE – mai mari */
+/* Rame goale albe mai mari */
+
 .project-frame {
   width: 300px;
   height: 220px;
@@ -557,4 +325,82 @@ body {
 
 .carousel-btn:hover {
   background: #00bcd4;
+}
+
+/* =======================
+   FOOTER
+   ======================= */
+
+.footer {
+  background-color: #003399;
+  color: #fff;
+  padding: 3rem 8%;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h3 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.footer-col p,
+.footer-col ul li a {
+  color: #eee;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-separator {
+  width: 1px;
+  background-color: #bbb;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.85rem;
+  color: #eee;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+
+/* =======================
+   RESPONSIVE
+   ======================= */
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .footer-separator {
+    display: none;
+  }
+  .carousel-wrapper {
+    width: 100%;
+  }
+  .project-frame {
+    width: 240px;
+    height: 180px;
+  }
 }
