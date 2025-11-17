@@ -383,5 +383,53 @@ body {
   background: #00bcd4;
   color: #fff;
 }
+/* CONTACT — DESIGN NOU */
+
+.contact-section {
+  padding: 4rem 8%;
+  background: #111;
+  color: #eee;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #00bcd4;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.contact-box {
+  background: #003399;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.contact-box h3 {
+  color: #00bcd4;
+  margin-bottom: 0.8rem;
+}
 
    
