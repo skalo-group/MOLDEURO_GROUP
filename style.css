@@ -1,6 +1,6 @@
-/* =======================
+ /* =========================
    BODY
-   ======================= */
+   ========================= */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -9,10 +9,9 @@ body {
   line-height: 1.6;
 }
 
-/* =======================
+/* =========================
    NAVBAR
-   ======================= */
-
+   ========================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -31,35 +30,70 @@ body {
   width: auto;
 }
 
+/* =========================
+   MENIU — DOAR HAMBURGER
+   ========================= */
 .menu {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
-  margin: 0;
-  padding: 0;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  width: 260px;
+  background: #003399;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  z-index: 9999;
 }
 
-.menu a {
+.menu li {
+  margin-bottom: 0.7rem;
+}
+
+.menu li a {
+  display: block;
+  padding: 1rem;
+  background: #002266;
+  border-radius: 10px;
+  border: 1px solid #001a4d;
   color: #fff;
+  font-size: 1.1rem;
+  text-align: left;
   text-decoration: none;
-  padding: 0.4rem 1rem;
-  border: 1px solid #002266;
-  background-color: #003399;
-  border-radius: 6px;
-  transition: 0.3s;
 }
 
-.menu a:hover,
+.menu li a:hover,
 .menu .active {
   background: #00bcd4;
-  color: #fff;
   border-color: #00bcd4;
 }
 
-/* =======================
-   HERO (INDEX)
-   ======================= */
+.menu.menu-open {
+  display: flex;
+}
 
+.hamburger {
+  display: block;
+  font-size: 34px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0.4rem 0.6rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    width: 70%;
+    right: 15px;
+    top: 100px;
+  }
+}
+
+/* =========================
+   HERO INDEX
+   ========================= */
 .hero {
   height: 100vh;
   background: url("images/hero.jpeg") center/cover no-repeat;
@@ -95,10 +129,9 @@ body {
   margin: 0 auto;
 }
 
-/* =======================
-   DOMENII DE ACTIVITATE
-   ======================= */
-
+/* =========================
+   DOMENII
+   ========================= */
 .domains {
   padding: 4rem 8%;
   background: #111;
@@ -127,141 +160,9 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* =======================
-   FOOTER
-   ======================= */
-
-.footer {
-  background-color: #003399;
-  color: #fff;
-  padding: 3rem 8%;
-  margin-top: 4rem;
-  font-size: 0.95rem;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 3rem;
-}
-
-.footer-col {
-  flex: 1;
-}
-
-.footer-col h3 {
-  color: #00bcd4;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
-
-.footer-col p {
-  margin-bottom: 0.7rem;
-  color: #eee;
-}
-
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-col ul li {
-  margin-bottom: 0.6rem;
-}
-
-.footer-col ul li a {
-  color: #eee;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-col ul li a:hover {
-  color: #00bcd4;
-}
-
-.footer-separator {
-  width: 1px;
-  background-color: #bbb;
-  height: 100%;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding-top: 2rem;
-  font-size: 0.85rem;
-  color: #eee;
-  border-top: 1px solid #ccc;
-  margin-top: 2rem;
-}
-
-/* =======================
-   RESPONSIVE FOOTER
-   ======================= */
-
-@media (max-width: 768px) {
-  .footer-row {
-    flex-direction: column;
-    gap: 2.5rem;
-  }
-  .footer-separator {
-    display: none;
-  }
-}
-
-/* =======================
-   MENIU MOBIL
-   ======================= */
-
-.hamburger {
-  display: block !important;
-  font-size: 32px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-left: auto;
-  padding: 0.4rem 0.6rem;
-  color: #000;
-  opacity: 1;
-  z-index: 99999;
-}
-
-@media (max-width: 768px) {
-
-  .menu {
-    display: none !important;
-    flex-direction: column;
-    position: absolute;
-    right: 15px;
-    top: 80px;
-    width: 75%;
-    background: #003399;
-    padding: 1rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    z-index: 9999;
-  }
-
-  .menu.menu-open {
-    display: flex !important;
-  }
-
-  .menu li a {
-    display: block;
-    padding: 1rem;
-    background: #002266;
-    border-radius: 10px;
-    border: 1px solid #001a4d;
-    color: #fff;
-    font-size: 1.1rem;
-    text-align: left;
-  }
-}
-
-/* =======================
+/* =========================
    HERO MIC — DESPRE
-   ======================= */
-
+   ========================= */
 .about-hero-image {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 40vh;
@@ -286,7 +187,6 @@ body {
 .about-hero-overlay h1 {
   font-size: 2.6rem;
   color: #00bcd4;
-  margin-bottom: 0.4rem;
 }
 
 .about-hero-overlay p {
@@ -295,10 +195,9 @@ body {
   opacity: 0.9;
 }
 
-/* =======================
+/* =========================
    DESPRE — SECȚIUNE MODERNĂ
-   ======================= */
-
+   ========================= */
 .about-modern {
   padding: 4rem 8%;
   background: #111;
@@ -338,10 +237,9 @@ body {
   margin-bottom: 1rem;
 }
 
-/* =======================
+/* =========================
    TIMELINE
-   ======================= */
-
+   ========================= */
 .timeline-section {
   padding: 4rem 8%;
   background: #111;
@@ -391,5 +289,81 @@ body {
 @media (max-width: 600px) {
   .timeline {
     padding-left: 1.2rem;
+  }
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+.footer {
+  background-color: #003399;
+  color: #fff;
+  padding: 3rem 8%;
+  margin-top: 4rem;
+  font-size: 0.95rem;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h3 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.footer-col p {
+  margin-bottom: 0.7rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col ul li a {
+  color: #eee;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #00bcd4;
+}
+
+.footer-separator {
+  width: 1px;
+  background-color: #bbb;
+  height: 100%;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .footer-separator {
+    display: none;
   }
 }
