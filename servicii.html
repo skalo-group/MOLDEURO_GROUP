@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -10,21 +10,121 @@
 <body>
 
 <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </div>
-
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
     <li><a href="index.html">Acasă</a></li>
     <li><a href="despre.html">Despre</a></li>
-    <li><a href="servicii.html">Servicii</a></li>
+    <li><a class="active" href="servicii.html">Servicii</a></li>
     <li><a href="proiecte.html">Proiecte</a></li>
     <li><a href="parteneri.html">Parteneri</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </header>
+
+<!-- HERO MIC CU IMAGINE (ca la Despre) -->
+<section class="about-hero-image" style="margin-top:120px;">
+  <div class="about-hero-overlay">
+    <h1>SERVICII</h1>
+    <p>Consultanță, proiectare și soluții integrate pentru sectorul public și privat.</p>
+  </div>
+</section>
+
+<!-- SECȚIUNE PRINCIPALĂ CA LA DESPRE -->
+<section class="about-modern">
+  <div class="about-modern-container">
+
+    <p class="about-modern-intro">
+      MOLDEURO GROUP oferă un pachet complet de servicii adaptate administrațiilor publice,
+      mediului de afaceri și organizațiilor interesate de dezvoltarea infrastructurii,
+      modernizarea proceselor interne sau accesarea finanțărilor nerambursabile.
+      Lucrăm structurat, folosind norme tehnice actualizate, analize precise și consultanță
+      profesionistă pentru a transforma obiectivele în documentații și proiecte fezabile.
+    </p>
+
+    <div class="about-modern-grid">
+
+      <div class="about-modern-box">
+        <h3>Consultanță finanțări nerambursabile</h3>
+        <p>
+          Identificăm programe de finanțare, elaborăm cereri complete, bugete,
+          justificări tehnico-economice și oferim suport instituțiilor în etapele de evaluare
+          și implementare a proiectelor.
+        </p>
+      </div>
+
+      <div class="about-modern-box">
+        <h3>Proiectare & Inginerie</h3>
+        <p>
+          Întocmim studii, expertize tehnice, proiecte de investiții și documentații necesare
+          pentru infrastructură, mediu, clădiri publice și dezvoltare urbană.
+        </p>
+      </div>
+
+      <div class="about-modern-box">
+        <h3>Consultanță mediu</h3>
+        <p>
+          Analizăm impactul proiectelor, elaborăm documentații de mediu și asigurăm
+          conformarea cu legislația națională pentru proiecte finanțate sau investiții locale.
+        </p>
+      </div>
+
+      <div class="about-modern-box">
+        <h3>Achiziții publice</h3>
+        <p>
+          Sprijinim autoritățile în pregătirea caietelor de sarcini, procedurilor,
+          evaluărilor și documentațiilor de atribuire, asigurând claritate și legalitate.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-row">
+
+    <div class="footer-col">
+      <h3>Despre noi</h3>
+      <p>MOLDEURO GROUP oferă servicii profesionale pentru domeniul public și mediul privat.</p>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-col">
+      <h3>Informații</h3>
+      <ul>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="proiecte.html">Portofoliu</a></li>
+        <li><a href="parteneri.html">Parteneri</a></li>
+        <li><a href="#">Colaborări</a></li>
+        <li><a href="#">Link-uri utile</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-separator"></div>
+
+    <div class="footer-col">
+      <h3>Datele Companiei</h3>
+      <p>MOLDEURO GROUP</p>
+      <p>CUI: 00000000</p>
+      <p>Reg. Com.: J00/0000/2025</p>
+      <br>
+      <h3>Contact</h3>
+      <p>Email: contact@moldeurogroup.ro</p>
+      <p>Telefon: 07xx xxx xxx</p>
+      <p>Adresă: București</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 MOLDEURO GROUP.</p>
+  </div>
+</footer>
 
 <script>
 function toggleMenu() {
@@ -32,17 +132,5 @@ function toggleMenu() {
 }
 </script>
 
-
-<section class="services-section" style="margin-top:120px;">
-  <div class="services-container">
-
-    <h2 class="services-title">Serviciile noastre</h2>
-
-    <p class="services-intro">
-      MOLDEURO GROUP oferă servicii tehnice și consultanță profesională pentru instituțiile publice și mediul privat.
-      Alege domeniul care te interesează:
-    </p>
-
-    <div class="services-grid">
-
-      <a href="#"
+</body>
+</html>
