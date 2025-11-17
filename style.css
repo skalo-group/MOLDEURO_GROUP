@@ -1,7 +1,3 @@
-/* =======================
-   STIL GENERAL SITE SKALO
-   ======================= */
-
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -10,9 +6,7 @@ body {
   line-height: 1.6;
 }
 
-/* =======================
-   NAVBAR
-   ======================= */
+/* NAVBAR */
 
 .navbar {
   display: flex;
@@ -24,7 +18,6 @@ body {
   top: 0;
   width: 100%;
   z-index: 1000;
-  box-sizing: border-box;
   border-bottom: 1px solid #002266;
 }
 
@@ -32,8 +25,6 @@ body {
   height: 140px;
   width: auto;
 }
-
-/* MENIU DESKTOP */
 
 .menu {
   list-style: none;
@@ -60,9 +51,7 @@ body {
   border-color: #00bcd4;
 }
 
-/* =======================
-   HERO
-   ======================= */
+/* HERO */
 
 .hero {
   height: 100vh;
@@ -99,9 +88,7 @@ body {
   margin: 0 auto;
 }
 
-/* =======================
-   DOMENII DE ACTIVITATE
-   ======================= */
+/* DOMENII DE ACTIVITATE */
 
 .domains {
   padding: 4rem 8%;
@@ -131,9 +118,7 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* =======================
-   FOOTER
-   ======================= */
+/* FOOTER */
 
 .footer {
   background-color: #003399;
@@ -163,7 +148,6 @@ body {
 .footer-col p {
   margin-bottom: 0.7rem;
   color: #eee;
-  line-height: 1.4;
 }
 
 .footer-col ul {
@@ -201,29 +185,19 @@ body {
   margin-top: 2rem;
 }
 
-/* =======================
-   RESPONSIVE FOOTER
-   ======================= */
+/* RESPONSIVE FOOTER */
 
 @media (max-width: 768px) {
-
   .footer-row {
     flex-direction: column;
     gap: 2.5rem;
   }
-
   .footer-separator {
     display: none;
   }
-
-  .footer-col {
-    text-align: left;
-  }
 }
 
-/* =======================
-   MENIU MOBIL
-   ======================= */
+/* MENIU MOBIL */
 
 .hamburger {
   display: block !important;
@@ -238,7 +212,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
   .menu {
     display: none !important;
     flex-direction: column;
@@ -252,27 +225,13 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     z-index: 9999;
   }
-
   .menu.menu-open {
     display: flex !important;
   }
-
-  .menu li {
-    margin-bottom: 0.7rem;
-  }
-
   .menu li a {
     display: block;
     padding: 1rem;
     background: #002266;
     border-radius: 10px;
-    border: 1px solid #001a4d;
-    color: #fff;
-    font-size: 1.1rem;
-  }
 
-  .menu li a.active {
-    background: #00bcd4;
-    color: #fff;
-  }
-}
+   
