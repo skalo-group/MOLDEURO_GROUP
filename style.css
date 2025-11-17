@@ -431,5 +431,65 @@ body {
   color: #00bcd4;
   margin-bottom: 0.8rem;
 }
+/* DESPRE — HERO MIC */
+.about-hero {
+  background: #003399;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.about-hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #00bcd4;
+}
+
+.about-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* DESPRE — SECȚIUNE MODERNĂ */
+.about-modern {
+  padding: 4rem 8%;
+  background: #111;
+  color: #eee;
+}
+
+.about-modern-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-modern-intro {
+  font-size: 1.15rem;
+  max-width: 850px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.about-modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.about-modern-box {
+  background: #003399;
+  padding: 2rem;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.about-modern-box h3 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
 
    
