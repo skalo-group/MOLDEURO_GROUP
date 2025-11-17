@@ -10,11 +10,14 @@
 <body>
 
 <header class="navbar">
-  <div class="logo"><img src="images/logo.png" alt="SKALO"></div>
+  <div class="logo">
+    <img src="images/logo.png" alt="MOLDEURO GROUP">
+  </div>
+
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
-    <li><a class="active" href="index.html">Acasă</a></li>
+    <li><a href="index.html">Acasă</a></li>
     <li><a href="despre.html">Despre</a></li>
     <li><a href="servicii.html">Servicii</a></li>
     <li><a href="proiecte.html">Proiecte</a></li>
@@ -22,6 +25,13 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </header>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('menu-open');
+}
+</script>
+
 
 <section class="hero">
   <div class="overlay">
