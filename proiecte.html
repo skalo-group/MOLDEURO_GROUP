@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -10,49 +10,43 @@
 <body>
 
 <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </div>
-
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
     <li><a href="index.html">Acasă</a></li>
     <li><a href="despre.html">Despre</a></li>
     <li><a href="servicii.html">Servicii</a></li>
-    <li><a href="proiecte.html">Proiecte</a></li>
+    <li><a class="active" href="proiecte.html">Proiecte</a></li>
     <li><a href="parteneri.html">Parteneri</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </header>
 
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
+<!-- HERO MIC -->
+<section class="about-hero-image" style="margin-top:120px;">
+  <div class="about-hero-overlay">
+    <h1>PROIECTE</h1>
+    <p>Selecție de lucrări, documentații și proiecte dezvoltate în timp.</p>
+  </div>
+</section>
 
+<!-- CARUSEL PROIECTE -->
+<section class="projects-carousel-section">
+  <h2 class="carousel-title">Portofoliu în dezvoltare</h2>
 
-<section class="projects-section" style="margin-top:120px;">
-  <div class="projects-container">
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="slideLeft()">&#10094;</button>
 
-    <h2 class="projects-title">Portofoliu de proiecte</h2>
-
-    <p class="projects-intro">
-      Aici vor fi afișate proiectele dezvoltate de MOLDEURO GROUP. Lista completă va fi încărcată treptat.
-    </p>
-
-    <div class="projects-grid">
-
-      <div class="project-card">Proiect 1</div>
-      <div class="project-card">Proiect 2</div>
-      <div class="project-card">Proiect 3</div>
-      <div class="project-card">Proiect 4</div>
-      <div class="project-card">Proiect 5</div>
-      <div class="project-card">Proiect 6</div>
-
+    <div class="carousel-track">
+      <div class="project-card empty">PROIECT 1</div>
+      <div class="project-card empty">PROIECT 2</div>
+      <div class="project-card empty">PROIECT 3</div>
+      <div class="project-card empty">PROIECT 4</div>
+      <div class="project-card empty">PROIECT 5</div>
     </div>
 
+    <button class="carousel-btn right" onclick="slideRight()">&#10095;</button>
   </div>
 </section>
 
@@ -102,6 +96,21 @@ function toggleMenu() {
 <script>
 function toggleMenu() {
   document.querySelector('.menu').classList.toggle('menu-open');
+}
+
+/* CAROUSEL SCRIPT */
+let position = 0;
+
+function slideLeft() {
+  const track = document.querySelector('.carousel-track');
+  position += 260;
+  track.style.transform = `translateX(${position}px)`;
+}
+
+function slideRight() {
+  const track = document.querySelector('.carousel-track');
+  position -= 260;
+  track.style.transform = `translateX(${position}px)`;
 }
 </script>
 
