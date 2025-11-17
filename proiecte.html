@@ -27,23 +27,27 @@
 <section class="about-hero-image" style="margin-top:120px;">
   <div class="about-hero-overlay">
     <h1>PROIECTE</h1>
-    <p>Selecție de lucrări, documentații și proiecte dezvoltate în timp.</p>
+    <p>Selecție de lucrări și documentații în curs de structurare.</p>
   </div>
 </section>
 
-<!-- CARUSEL PROIECTE -->
+<!-- CARUSEL MODERN CU CASETE GOALE -->
 <section class="projects-carousel-section">
-  <h2 class="carousel-title">Portofoliu în dezvoltare</h2>
+  <h2 class="carousel-title">Portofoliu în pregătire</h2>
 
   <div class="carousel-container">
     <button class="carousel-btn left" onclick="slideLeft()">&#10094;</button>
 
-    <div class="carousel-track">
-      <div class="project-card empty">PROIECT 1</div>
-      <div class="project-card empty">PROIECT 2</div>
-      <div class="project-card empty">PROIECT 3</div>
-      <div class="project-card empty">PROIECT 4</div>
-      <div class="project-card empty">PROIECT 5</div>
+    <div class="carousel-track" id="carouselTrack">
+      <div class="project-card empty">1</div>
+      <div class="project-card empty">2</div>
+      <div class="project-card empty">3</div>
+      <div class="project-card empty">4</div>
+      <div class="project-card empty">5</div>
+      <div class="project-card empty">6</div>
+      <div class="project-card empty">7</div>
+      <div class="project-card empty">8</div>
+      <div class="project-card empty">9</div>
     </div>
 
     <button class="carousel-btn right" onclick="slideRight()">&#10095;</button>
@@ -98,19 +102,25 @@ function toggleMenu() {
   document.querySelector('.menu').classList.toggle('menu-open');
 }
 
-/* CAROUSEL SCRIPT */
+/* CAROUSEL */
 let position = 0;
+const cardWidth = 260;
+const track = document.getElementById('carouselTrack');
 
+// Se limitează la capete
 function slideLeft() {
-  const track = document.querySelector('.carousel-track');
-  position += 260;
-  track.style.transform = `translateX(${position}px)`;
+  if (position < 0) {
+    position += cardWidth;
+    track.style.transform = `translateX(${position}px)`;
+  }
 }
 
 function slideRight() {
-  const track = document.querySelector('.carousel-track');
-  position -= 260;
-  track.style.transform = `translateX(${position}px)`;
+  const maxPosition = -(track.children.length * cardWidth - 780);
+  if (position > maxPosition) {
+    position -= cardWidth;
+    track.style.transform = `translateX(${position}px)`;
+  }
 }
 </script>
 
