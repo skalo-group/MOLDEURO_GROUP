@@ -1,3 +1,6 @@
+/* =======================
+   BODY
+   ======================= */
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -6,7 +9,9 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
+/* =======================
+   NAVBAR
+   ======================= */
 
 .navbar {
   display: flex;
@@ -51,7 +56,9 @@ body {
   border-color: #00bcd4;
 }
 
-/* HERO */
+/* =======================
+   HERO (INDEX)
+   ======================= */
 
 .hero {
   height: 100vh;
@@ -67,7 +74,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0,0,0,0.55);
 }
 
 .hero .overlay {
@@ -88,7 +95,9 @@ body {
   margin: 0 auto;
 }
 
-/* DOMENII DE ACTIVITATE */
+/* =======================
+   DOMENII DE ACTIVITATE
+   ======================= */
 
 .domains {
   padding: 4rem 8%;
@@ -118,7 +127,9 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-/* FOOTER */
+/* =======================
+   FOOTER
+   ======================= */
 
 .footer {
   background-color: #003399;
@@ -185,7 +196,9 @@ body {
   margin-top: 2rem;
 }
 
-/* RESPONSIVE FOOTER */
+/* =======================
+   RESPONSIVE FOOTER
+   ======================= */
 
 @media (max-width: 768px) {
   .footer-row {
@@ -197,7 +210,9 @@ body {
   }
 }
 
-/* MENIU MOBIL */
+/* =======================
+   MENIU MOBIL
+   ======================= */
 
 .hamburger {
   display: block !important;
@@ -212,6 +227,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .menu {
     display: none !important;
     flex-direction: column;
@@ -225,273 +241,27 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
     z-index: 9999;
   }
+
   .menu.menu-open {
     display: flex !important;
   }
+
   .menu li a {
     display: block;
     padding: 1rem;
     background: #002266;
     border-radius: 10px;
-.services-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
+    border: 1px solid #001a4d;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: left;
+  }
 }
 
-.services-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
+/* =======================
+   HERO MIC — DESPRE
+   ======================= */
 
-.services-title {
-  font-size: 2.4rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #00bcd4;
-}
-
-.services-intro {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.service-button-big {
-  display: block;
-  background: #003399;
-  color: #fff;
-  text-align: center;
-  padding: 1.8rem 1rem;
-  font-size: 1.2rem;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  transition: 0.3s;
-}
-
-.service-button-big:hover {
-  background: #00bcd4;
-  color: #fff;
-}
-/* PROIECTE — DESIGN NOU */
-
-.projects-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.projects-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.projects-title {
-  font-size: 2.4rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #00bcd4;
-}
-
-.projects-intro {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.project-card {
-  background: #003399;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-}
-
-.project-card:hover {
-  background: #00bcd4;
-  color: #fff;
-}
-/* PARTENERI — DESIGN NOU */
-
-.partners-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.partners-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.partners-title {
-  font-size: 2.4rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #00bcd4;
-}
-
-.partners-intro {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.partner-card {
-  background: #003399;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
-}
-
-.partner-card:hover {
-  background: #00bcd4;
-  color: #fff;
-}
-/* CONTACT — DESIGN NOU */
-
-.contact-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.contact-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.contact-title {
-  font-size: 2.4rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #00bcd4;
-}
-
-.contact-intro {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  line-height: 1.6;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.contact-box {
-  background: #003399;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  text-align: center;
-  font-size: 1.1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.contact-box h3 {
-  color: #00bcd4;
-  margin-bottom: 0.8rem;
-}
-/* DESPRE — HERO MIC */
-.about-hero {
-  background: #003399;
-  padding: 4rem 2rem;
-  text-align: center;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-}
-
-.about-hero-content h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
-  color: #00bcd4;
-}
-
-.about-hero-content p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-
-/* DESPRE — SECȚIUNE MODERNĂ */
-.about-modern {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.about-modern-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.about-modern-intro {
-  font-size: 1.15rem;
-  max-width: 850px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  line-height: 1.7;
-}
-
-.about-modern-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.about-modern-box {
-  background: #003399;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  text-align: center;
-}
-
-.about-modern-box h3 {
-  color: #00bcd4;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-/* HERO MIC CU IMAGINE */
 .about-hero-image {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 40vh;
@@ -525,7 +295,9 @@ body {
   opacity: 0.9;
 }
 
-/* DESPRE – SECȚIUNE MODERNĂ */
+/* =======================
+   DESPRE — SECȚIUNE MODERNĂ
+   ======================= */
 
 .about-modern {
   padding: 4rem 8%;
@@ -564,10 +336,11 @@ body {
 .about-modern-box h3 {
   color: #00bcd4;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
 }
 
-/* TIMELINE EXPERIENȚĂ */
+/* =======================
+   TIMELINE
+   ======================= */
 
 .timeline-section {
   padding: 4rem 8%;
@@ -605,14 +378,9 @@ body {
   top: 0;
 }
 
-.timeline-content {
-  padding-left: 1rem;
-}
-
 .timeline-content h3 {
   margin-bottom: 0.4rem;
   color: #00bcd4;
-  font-size: 1.3rem;
 }
 
 .timeline-content p {
@@ -625,264 +393,3 @@ body {
     padding-left: 1.2rem;
   }
 }
-/* HERO MIC CU IMAGINE */
-.about-hero-image {
-  background: url("images/about-banner.jpg") center/cover no-repeat;
-  height: 40vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.about-hero-overlay h1 {
-  font-size: 2.6rem;
-  color: #00bcd4;
-  margin-bottom: 0.4rem;
-}
-
-.about-hero-overlay p {
-  font-size: 1.2rem;
-  color: #fff;
-  opacity: 0.9;
-}
-
-/* DESPRE – SECȚIUNE MODERNĂ */
-.about-modern {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.about-modern-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.about-modern-intro {
-  font-size: 1.15rem;
-  max-width: 850px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  line-height: 1.7;
-}
-
-.about-modern-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.about-modern-box {
-  background: #003399;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  text-align: center;
-}
-
-.about-modern-box h3 {
-  color: #00bcd4;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-/* TIMELINE EXPERIENȚĂ */
-.timeline-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.timeline-title {
-  font-size: 2.2rem;
-  text-align: center;
-  color: #00bcd4;
-  margin-bottom: 2.5rem;
-}
-
-.timeline {
-  position: relative;
-  margin: 0 auto;
-  max-width: 800px;
-  border-left: 3px solid #003399;
-  padding-left: 2rem;
-}
-
-.timeline-item {
-  margin-bottom: 2.5rem;
-  position: relative;
-}
-
-.timeline-dot {
-  width: 18px;
-  height: 18px;
-  background: #00bcd4;
-  border-radius: 50%;
-  position: absolute;
-  left: -10px;
-  top: 0;
-}
-
-.timeline-content {
-  padding-left: 1rem;
-}
-
-.timeline-content h3 {
-  margin-bottom: 0.4rem;
-  color: #00bcd4;
-  font-size: 1.3rem;
-}
-
-.timeline-content p {
-  color: #eee;
-  line-height: 1.6;
-}
-
-@media (max-width: 600px) {
-  .timeline {
-    padding-left: 1.2rem;
-  }
-}
-/* HERO MIC CU IMAGINE */
-.about-hero-image {
-  background: url("images/about-banner.jpg") center/cover no-repeat;
-  height: 40vh;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-.about-hero-overlay h1 {
-  font-size: 2.6rem;
-  color: #00bcd4;
-  margin-bottom: 0.4rem;
-}
-
-.about-hero-overlay p {
-  font-size: 1.2rem;
-  color: #fff;
-  opacity: 0.9;
-}
-
-/* DESPRE – SECȚIUNE MODERNĂ */
-.about-modern {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.about-modern-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.about-modern-intro {
-  font-size: 1.15rem;
-  max-width: 850px;
-  margin: 0 auto 3rem auto;
-  text-align: center;
-  line-height: 1.7;
-}
-
-.about-modern-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.about-modern-box {
-  background: #003399;
-  padding: 2rem;
-  border-radius: 12px;
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  text-align: center;
-}
-
-.about-modern-box h3 {
-  color: #00bcd4;
-  margin-bottom: 1rem;
-}
-
-/* TIMELINE */
-.timeline-section {
-  padding: 4rem 8%;
-  background: #111;
-  color: #eee;
-}
-
-.timeline-title {
-  font-size: 2.2rem;
-  text-align: center;
-  color: #00bcd4;
-  margin-bottom: 2.5rem;
-}
-
-.timeline {
-  position: relative;
-  margin: 0 auto;
-  max-width: 800px;
-  border-left: 3px solid #003399;
-  padding-left: 2rem;
-}
-
-.timeline-item {
-  margin-bottom: 2.5rem;
-  position: relative;
-}
-
-.timeline-dot {
-  width: 18px;
-  height: 18px;
-  background: #00bcd4;
-  border-radius: 50%;
-  position: absolute;
-  left: -10px;
-  top: 0;
-}
-
-.timeline-content h3 {
-  margin-bottom: 0.4rem;
-  color: #00bcd4;
-}
-
-.timeline-content p {
-  color: #eee;
-  line-height: 1.6;
-}
-
-/* RESPONSIVE */
-@media (max-width: 600px) {
-  .timeline {
-    padding-left: 1,2rem;
-  }
-}
-
-   
