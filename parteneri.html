@@ -1,19 +1,21 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Parteneri – MOLDEURO GROUP</title>
+
+  <!-- Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </div>
-
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
@@ -21,82 +23,62 @@
     <li><a href="despre.html">Despre</a></li>
     <li><a href="servicii.html">Servicii</a></li>
     <li><a href="proiecte.html">Proiecte</a></li>
-    <li><a href="parteneri.html">Parteneri</a></li>
+    <li><a href="parteneri.html" class="active">Parteneri</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </header>
 
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
-
-
-<section class="partners-section" style="margin-top:120px;">
-  <div class="partners-container">
-
-    <h2 class="partners-title">Parteneri</h2>
-
-    <p class="partners-intro">
-      Colaborăm cu instituții publice, organizații și profesioniști care contribuie la dezvoltarea proiectelor și la îmbunătățirea proceselor administrative.
-    </p>
-
-    <div class="partners-grid">
-
-      <div class="partner-card">Partener 1</div>
-      <div class="partner-card">Partener 2</div>
-      <div class="partner-card">Partener 3</div>
-      <div class="partner-card">Partener 4</div>
-      <div class="partner-card">Partener 5</div>
-      <div class="partner-card">Partener 6</div>
-
-    </div>
-
+<!-- ================= HERO ================= -->
+<section class="hero-parteneri">
+  <div class="hero-parteneri-content">
+    <h1>Partenerii Noștri</h1>
+    <p>Colaborăm cu instituții și organizații care contribuie la dezvoltarea proiectelor publice.</p>
   </div>
 </section>
 
+<!-- ================= GRID PARTENERI ================= -->
+<section class="partners-grid-section">
+  <h2>Instituții și organizații partenere</h2>
+
+  <div class="partners-grid">
+    <div class="partner-box"></div>
+    <div class="partner-box"></div>
+    <div class="partner-box"></div>
+    <div class="partner-box"></div>
+    <div class="partner-box"></div>
+    <div class="partner-box"></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-aj">
+  <h2>Dorești o colaborare instituțională?</h2>
+  <a href="contact.html" class="btn-primary">Contactează-ne</a>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-row">
-
     <div class="footer-col">
-      <h3>Despre noi</h3>
-      <p>MOLDEURO GROUP oferă servicii profesionale pentru domeniul public și mediul privat.</p>
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Informații</h3>
-      <ul>
-        <li><a href="despre.html">Despre noi</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="proiecte.html">Portofoliu</a></li>
-        <li><a href="parteneri.html">Parteneri</a></li>
-        <li><a href="#">Colaborări</a></li>
-        <li><a href="#">Link-uri utile</a></li>
-      </ul>
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Datele Companiei</h3>
-      <p>MOLDEURO GROUP</p>
-      <p>CUI: 00000000</p>
-      <p>Reg. Com.: J00/0000/2025</p>
-      <br>
       <h3>Contact</h3>
       <p>Email: contact@moldeurogroup.ro</p>
       <p>Telefon: 07xx xxx xxx</p>
-      <p>Adresă: București</p>
     </div>
-
   </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 MOLDEURO GROUP.</p>
-  </div>
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
 </footer>
 
 <script>
