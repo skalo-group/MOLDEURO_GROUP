@@ -364,3 +364,99 @@ html, body {
   border: 2px solid #003399;
   font-weight: 600;
 }
+/* ===================== HERO SERVICII ===================== */
+.hero-servicii {
+  background: url("images/about-banner.jpg") center/cover no-repeat;
+  height: 55vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-servicii::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-servicii-content {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  color: white;
+  padding: 1rem;
+}
+
+.hero-servicii-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+.hero-servicii-content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+/* ===================== GRID SERVICII ===================== */
+.servicii-grid-section {
+  padding: 4rem 8%;
+  background: white;
+  text-align: center;
+}
+
+.servicii-grid-section h2 {
+  font-size: 2.4rem;
+}
+
+.servicii-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 2rem;
+}
+
+.servicii-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.15);
+  border: 2px solid #003399;
+}
+
+.servicii-card h3 {
+  color: #003399;
+  margin-bottom: 0.8rem;
+}
+
+/* ===================== DETALIAT ===================== */
+.servicii-detal {
+  padding: 4rem 8%;
+  text-align: center;
+  background: #f3f6ff;
+}
+
+.servicii-detal h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.detal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 2rem;
+}
+
+.detal-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid #003399;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
