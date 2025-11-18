@@ -16,7 +16,7 @@ html, body {
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  height: 90px;
+  height: 110px; /* MARIT */
   background: #003399;
   display: flex;
   align-items: center;
@@ -24,14 +24,16 @@ html, body {
   z-index: 1000;
 }
 
-.logo img { height: 70px; }
+.logo img {
+  height: 90px; /* MARIT */
+}
 
 .hamburger {
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 32px;
+  font-size: 36px; /* putin mai mare, ca sa fie proportional */
   color: white;
   cursor: pointer;
 }
