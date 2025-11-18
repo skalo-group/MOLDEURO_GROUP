@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Proiecte – MOLDEURO GROUP</title>
+
+  <!-- Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,117 +22,82 @@
     <li><a href="index.html">Acasă</a></li>
     <li><a href="despre.html">Despre</a></li>
     <li><a href="servicii.html">Servicii</a></li>
-    <li><a class="active" href="proiecte.html">Proiecte</a></li>
+    <li><a href="proiecte.html" class="active">Proiecte</a></li>
     <li><a href="parteneri.html">Parteneri</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </header>
 
-<!-- HERO -->
-<section class="about-hero-image" style="margin-top:120px;">
-  <div class="about-hero-overlay">
-    <h1>PROIECTE</h1>
-    <p>Portofoliu în structurare.</p>
+<!-- ================= HERO PROIECTE ================= -->
+<section class="hero-proiecte">
+  <div class="hero-proiecte-content">
+    <h1>Proiecte & Implementări</h1>
+    <p>Prezentăm proiectele la care am contribuit sau care sunt în curs de dezvoltare pentru instituții publice.</p>
   </div>
 </section>
 
-<!-- CARUSEL -->
-<section class="projects-carousel-section">
-  <h2 class="carousel-title">Portofoliu în pregătire</h2>
+<!-- ================= CARUSEL PROIECTE ================= -->
+<section class="carousel-section">
+  <h2>Proiecte recente</h2>
 
-  <div class="carousel-wrapper">
-
-    <button class="carousel-btn left" onclick="moveLeft()">&#10094;</button>
-
-    <div class="carousel-container" id="carousel">
-      <div class="project-frame">1</div>
-      <div class="project-frame">2</div>
-      <div class="project-frame">3</div>
-      <div class="project-frame">4</div>
-      <div class="project-frame">5</div>
-      <div class="project-frame">6</div>
-      <div class="project-frame">7</div>
-      <div class="project-frame">8</div>
-      <div class="project-frame">9</div>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
     </div>
-
-    <button class="carousel-btn right" onclick="moveRight()">&#10095;</button>
-
   </div>
 </section>
 
+<!-- ================= GRID PROIECTE ================= -->
+<section class="projects-list">
+  <h2>Toate proiectele</h2>
+
+  <div class="projects-list-grid">
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-aj">
+  <h2>Dorești să colaborăm într-un proiect?</h2>
+  <a href="contact.html" class="btn-primary">Contactează-ne</a>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-row">
-
     <div class="footer-col">
-      <h3>Despre noi</h3>
-      <p>MOLDEURO GROUP oferă servicii profesionale pentru domeniul public și mediul privat.</p>
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Informații</h3>
-      <ul>
-        <li><a href="despre.html">Despre noi</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="proiecte.html">Portofoliu</a></li>
-        <li><a href="parteneri.html">Parteneri</a></li>
-        <li><a href="#">Colaborări</a></li>
-        <li><a href="#">Link-uri utile</a></li>
-      </ul>
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Datele Companiei</h3>
-      <p>MOLDEURO GROUP</p>
-      <p>CUI: 00000000</p>
-      <p>Reg. Com.: J00/0000/2025</p>
-      <br>
       <h3>Contact</h3>
       <p>Email: contact@moldeurogroup.ro</p>
       <p>Telefon: 07xx xxx xxx</p>
-      <p>Adresă: București</p>
     </div>
-
   </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 MOLDEURO GROUP.</p>
-  </div>
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
 </footer>
 
 <script>
 function toggleMenu() {
   document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
-
-<!-- CAROUSEL SCRIPT -->
-<script>
-let offset = 0;
-const slideWidth = 320;  /* lățime cadru + spațiere */
-const track = document.getElementById("carousel");
-const totalWidth = track.children.length * slideWidth;
-const visibleWidth = 900;
-
-/* dreapta */
-function moveRight() {
-  const maxOffset = -(totalWidth - visibleWidth);
-  if (offset > maxOffset) {
-    offset -= slideWidth;
-    track.style.transform = `translateX(${offset}px)`;
-  }
-}
-
-/* stânga */
-function moveLeft() {
-  if (offset < 0) {
-    offset += slideWidth;
-    track.style.transform = `translateX(${offset}px)`;
-  }
 }
 </script>
 
