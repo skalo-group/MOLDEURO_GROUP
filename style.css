@@ -1,212 +1,253 @@
- /* REGLĂRI GENERALE */
-body, html {
+ /* --------------------------------------------------
+   FONT GLOBAL: OPEN SANS
+-------------------------------------------------- */
+html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* ================= NAVBAR ================= */
+/* --------------------------------------------------
+   NAVBAR
+-------------------------------------------------- */
 .navbar {
   position: fixed;
-  top:0; left:0;
-  width:100%;
-  height:90px;
-  background:#003399;
-  display:flex;
-  align-items:center;
-  padding:0 16px;
-  z-index:1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #003399;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
-.logo img { height:70px; }
+.logo img {
+  height: 70px;
+}
 
 /* Hamburger */
 .hamburger {
-  position:absolute;
-  right:16px;
-  top:50%;
-  transform:translateY(-50%);
-  font-size:32px;
-  color:#fff;
-  cursor:pointer;
-  z-index:2000;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 32px;
+  color: #fff;
+  cursor: pointer;
 }
 
 /* Meniu mobil */
 .menu {
-  display:none;
-  flex-direction:column;
-  position:absolute;
-  top:90px;
-  right:16px;
-  width:70%;
-  max-width:300px;
-  background:#003399;
-  padding:1rem;
-  border-radius:12px;
-  list-style:none;
+  position: absolute;
+  right: 16px;
+  top: 90px;
+  width: 70%;
+  max-width: 300px;
+  background: #003399;
+  padding: 1rem;
+  border-radius: 12px;
+  list-style: none;
+  display: none;
+  flex-direction: column;
 }
 
-.menu li { margin-bottom:0.7rem; }
-.menu li a {
-  background:#002266;
-  padding:1rem;
-  text-decoration:none;
-  color:white;
-  border-radius:8px;
-  display:block;
+.menu.menu-open {
+  display: flex;
 }
+
+.menu li {
+  margin-bottom: 0.7rem;
+}
+
+.menu li a {
+  display: block;
+  background: #002266;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+}
+
 .menu li a:hover,
 .menu li a.active {
-  background:#00bcd4;
+  background: #00bcd4;
 }
-.menu.menu-open { display:flex; }
 
-/* ================= HERO AJRONI ================= */
+/* --------------------------------------------------
+   HERO AJRONI
+-------------------------------------------------- */
 .hero-aj {
-  background:url("images/hero.jpeg") center/cover no-repeat;
-  height:90vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  position:relative;
+  background: url("images/hero.jpeg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
 .hero-aj::after {
-  content:"";
-  position:absolute; inset:0;
-  background:rgba(0,0,0,0.55);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .hero-content {
-  position:relative;
-  color:white;
-  max-width:800px;
-  padding:1rem;
+  position: relative;
+  color: white;
+  max-width: 800px;
+  padding: 1rem;
 }
 
 .hero-content h1 {
-  font-size:2.6rem;
-  margin-bottom:1rem;
+  font-size: 2.6rem;
+  font-weight: 600;
 }
 
 .btn-primary {
-  background:#00bcd4;
-  padding:1rem 2rem;
-  border-radius:10px;
-  text-decoration:none;
-  color:white;
-  font-size:1.1rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #00bcd4;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
 
-/* ================= LOGO WALL ================= */
+/* --------------------------------------------------
+   LOGO WALL
+-------------------------------------------------- */
 .logo-wall {
-  display:flex;
-  justify-content:center;
-  gap:2rem;
-  padding:3rem 0;
-  background:white;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+  background: white;
 }
+
 .logo-wall img {
-  height:50px;
-  opacity:0.8;
+  height: 50px;
+  opacity: 0.8;
 }
 
-/* ================= ABOUT SECTION ================= */
+/* --------------------------------------------------
+   ABOUT
+-------------------------------------------------- */
 .about-aj {
-  display:flex;
-  gap:3rem;
-  padding:4rem 8%;
-  align-items:center;
-  flex-wrap:wrap;
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 8%;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.about-left { flex:1; }
-.about-right { flex:1; }
+.about-left {
+  flex: 1;
+}
+
+.about-right {
+  flex: 1;
+}
+
 .about-right img {
-  width:100%;
-  border-radius:12px;
+  width: 100%;
+  border-radius: 12px;
 }
 
 .btn-secondary {
-  display:inline-block;
-  margin-top:1rem;
-  padding:0.8rem 1.6rem;
-  background:#003399;
-  color:white;
-  border-radius:6px;
-  text-decoration:none;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background: #003399;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
 }
 
-/* ================= SERVICES ================= */
+/* --------------------------------------------------
+   SERVICES
+-------------------------------------------------- */
 .services-aj {
-  padding:4rem 8%;
-  text-align:center;
+  padding: 4rem 8%;
+  text-align: center;
 }
 
 .services-grid-aj {
-  margin-top:2rem;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:2rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
 }
 
 .service-card {
-  background:white;
-  padding:2rem;
-  border-radius:12px;
-  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ================= PROJECTS GRID ================= */
+/* --------------------------------------------------
+   PROJECTS GRID
+-------------------------------------------------- */
 .projects-grid-aj {
-  padding:4rem 8%;
-  text-align:center;
+  padding: 4rem 8%;
+  text-align: center;
 }
 
 .projects-grid-container {
-  margin-top:2rem;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:2rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
 }
 
 .project-placeholder {
-  height:200px;
-  background:white;
-  border:3px solid #003399;
-  border-radius:12px;
+  height: 200px;
+  background: white;
+  border: 3px solid #003399;
+  border-radius: 12px;
 }
 
-/* ================= CTA ================= */
+/* --------------------------------------------------
+   CTA
+-------------------------------------------------- */
 .cta-aj {
-  padding:4rem 8%;
-  text-align:center;
-  background:#003399;
-  color:white;
+  padding: 4rem 8%;
+  text-align: center;
+  background: #003399;
+  color: white;
 }
 
-/* ================= FOOTER ================= */
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
 .footer {
-  background:#002266;
-  color:white;
-  padding:3rem 8%;
-  margin-top:3rem;
+  background: #002266;
+  color: white;
+  padding: 3rem 8%;
 }
 
 .footer-row {
-  display:flex;
-  flex-wrap:wrap;
-  gap:3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }
 
-.footer-col a { color:white; text-decoration:none; }
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
 
 .footer-bottom {
-  margin-top:2rem;
-  text-align:center;
-  border-top:1px solid #fff;
-  padding-top:1rem;
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid white;
+  padding-top: 1rem;
 }
