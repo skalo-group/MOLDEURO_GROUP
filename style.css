@@ -1,253 +1,143 @@
- /* --------------------------------------------------
-   FONT GLOBAL: OPEN SANS
--------------------------------------------------- */
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
-}
+ <!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* --------------------------------------------------
-   NAVBAR
--------------------------------------------------- */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 90px;
-  background: #003399;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  z-index: 1000;
-  box-sizing: border-box;
-}
+  <title>MOLDEURO GROUP – Consultanță & Proiectare</title>
 
-.logo img {
-  height: 70px;
-}
+  <!-- FONT OPEN SANS -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-/* Hamburger */
-.hamburger {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 32px;
-  color: #fff;
-  cursor: pointer;
-}
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 
-/* Meniu mobil */
-.menu {
-  position: absolute;
-  right: 16px;
-  top: 90px;
-  width: 70%;
-  max-width: 300px;
-  background: #003399;
-  padding: 1rem;
-  border-radius: 12px;
-  list-style: none;
-  display: none;
-  flex-direction: column;
-}
+<body>
 
-.menu.menu-open {
-  display: flex;
-}
+<header class="navbar">
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
 
-.menu li {
-  margin-bottom: 0.7rem;
-}
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-.menu li a {
-  display: block;
-  background: #002266;
-  padding: 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-}
+  <ul class="menu">
+    <li><a href="index.html" class="active">Acasă</a></li>
+    <li><a href="despre.html">Despre</a></li>
+    <li><a href="servicii.html">Servicii</a></li>
+    <li><a href="proiecte.html">Proiecte</a></li>
+    <li><a href="parteneri.html">Parteneri</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
 
-.menu li a:hover,
-.menu li a.active {
-  background: #00bcd4;
-}
+<!-- ================= HERO ================= -->
+<section class="hero-aj">
+  <div class="hero-content">
+    <h1>Consultanță, Proiectare și Soluții pentru Domeniul Public</h1>
+    <p>MOLDEURO GROUP oferă servicii integrate pentru instituții publice și mediul privat în Republica Moldova și România.</p>
+    <a href="contact.html" class="btn-primary hero-btn-strong">Contactează-ne</a>
+  </div>
+</section>
 
-/* --------------------------------------------------
-   HERO AJRONI
--------------------------------------------------- */
-.hero-aj {
-  background: url("images/hero.jpeg") center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-}
+<!-- ================= LOGO WALL ================= -->
+<section class="logo-wall">
+  <img src="images/logo1.png" alt="">
+  <img src="images/logo2.png" alt="">
+  <img src="images/logo3.png" alt="">
+  <img src="images/logo4.png" alt="">
+  <img src="images/logo5.png" alt="">
+</section>
 
-.hero-aj::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-}
+<!-- ================= ABOUT ================= -->
+<section class="about-aj">
+  <div class="about-left">
+    <h2>Cine suntem</h2>
+    <p>MOLDEURO GROUP oferă consultanță specializată pentru finanțări nerambursabile, proiectare, servicii de mediu și achiziții publice. Activăm în domeniul public și privat, sprijinind autorități și companii în dezvoltarea proiectelor.</p>
+    <a href="despre.html" class="btn-secondary">Află mai multe</a>
+  </div>
 
-.hero-content {
-  position: relative;
-  color: white;
-  max-width: 800px;
-  padding: 1rem;
-}
+  <div class="about-right">
+    <img src="images/about-banner.jpg" alt="">
+  </div>
+</section>
 
-.hero-content h1 {
-  font-size: 2.6rem;
-  font-weight: 600;
-}
+<!-- ================= SERVICES ================= -->
+<section class="services-aj">
+  <h2>Serviciile noastre</h2>
 
-.btn-primary {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background: #00bcd4;
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  text-decoration: none;
-  color: white;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
+  <div class="services-grid-aj">
+    <div class="service-card">
+      <h3>Finanțări nerambursabile</h3>
+      <p>Scriere, management și implementare proiecte finanțate din fonduri naționale și internaționale.</p>
+    </div>
 
-/* --------------------------------------------------
-   LOGO WALL
--------------------------------------------------- */
-.logo-wall {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 0;
-  background: white;
-}
+    <div class="service-card">
+      <h3>Proiectare</h3>
+      <p>Documentații tehnice, studii, planificare și soluții de dezvoltare pentru instituții și companii.</p>
+    </div>
 
-.logo-wall img {
-  height: 50px;
-  opacity: 0.8;
-}
+    <div class="service-card">
+      <h3>Consultanță de mediu</h3>
+      <p>Studii de impact, documentații, avize și conformitate de mediu.</p>
+    </div>
 
-/* --------------------------------------------------
-   ABOUT
--------------------------------------------------- */
-.about-aj {
-  display: flex;
-  gap: 3rem;
-  padding: 4rem 8%;
-  align-items: center;
-  flex-wrap: wrap;
-}
+    <div class="service-card">
+      <h3>Achiziții publice</h3>
+      <p>Proceduri, caiete de sarcini, evaluare și asistență tehnică pentru autorități contractante.</p>
+    </div>
+  </div>
+</section>
 
-.about-left {
-  flex: 1;
-}
+<!-- ================= PROJECTS GRID ================= -->
+<section class="projects-grid-aj">
+  <h2>Proiecte</h2>
 
-.about-right {
-  flex: 1;
-}
+  <div class="projects-grid-container">
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+  </div>
+</section>
 
-.about-right img {
-  width: 100%;
-  border-radius: 12px;
-}
+<!-- ================= CTA ================= -->
+<section class="cta-aj">
+  <h2>Ai nevoie de suport pentru un proiect?</h2>
+  <a href="contact.html" class="btn-primary">Contactează-ne</a>
+</section>
 
-.btn-secondary {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.6rem;
-  background: #003399;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-}
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
+    </div>
 
-/* --------------------------------------------------
-   SERVICES
--------------------------------------------------- */
-.services-aj {
-  padding: 4rem 8%;
-  text-align: center;
-}
+    <div class="footer-col">
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
 
-.services-grid-aj {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-}
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: contact@moldeurogroup.ro</p>
+      <p>Telefon: 07xx xxx xxx</p>
+    </div>
+  </div>
 
-.service-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
+</footer>
 
-/* --------------------------------------------------
-   PROJECTS GRID
--------------------------------------------------- */
-.projects-grid-aj {
-  padding: 4rem 8%;
-  text-align: center;
+<script>
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('menu-open');
 }
+</script>
 
-.projects-grid-container {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-}
-
-.project-placeholder {
-  height: 200px;
-  background: white;
-  border: 3px solid #003399;
-  border-radius: 12px;
-}
-
-/* --------------------------------------------------
-   CTA
--------------------------------------------------- */
-.cta-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: #003399;
-  color: white;
-}
-
-/* --------------------------------------------------
-   FOOTER
--------------------------------------------------- */
-.footer {
-  background: #002266;
-  color: white;
-  padding: 3rem 8%;
-}
-
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.footer-col a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-bottom {
-  margin-top: 2rem;
-  text-align: center;
-  border-top: 1px solid white;
-  padding-top: 1rem;
-}
+</body>
+</html>
