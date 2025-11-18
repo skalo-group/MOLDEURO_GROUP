@@ -81,7 +81,7 @@ html, body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.35); /* redus (era 0.55) pentru text mai luminos */
 }
 
 .hero-content {
@@ -89,7 +89,7 @@ html, body {
   color: white;
   max-width: 800px;
   padding: 1rem;
-  text-shadow: 0 0 10px rgba(0,0,0,0.85);
+  text-shadow: 0 0 4px rgba(0,0,0,0.55); /* redus (era 0.85) pentru alb real */
 }
 
 .hero-content h1 {
