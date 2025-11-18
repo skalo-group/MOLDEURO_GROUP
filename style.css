@@ -196,13 +196,34 @@ html, body {
   border-radius: 12px;
 }
 
-/* CTA */
+/* ================= CTA ================= */
 .cta-aj {
   padding: 4rem 8%;
   text-align: center;
   background: #003399;
   color: white;
 }
+
+.cta-aj .btn-primary {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: white;
+  color: #003399;
+  padding: 1.1rem 2.4rem;
+  border-radius: 14px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 3px solid #003399;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.cta-aj .btn-primary:hover {
+  background: #00bcd4;
+  color: white;
+  border-color: white;
+}
+
 
 /* FOOTER */
 .footer {
