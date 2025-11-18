@@ -69,7 +69,7 @@ html, body {
   background: #00bcd4;
 }
 
-/* ===================== INDEX – HERO AJ (VARIANTA PE ALB) ===================== */
+/* ================= HERO AJ ================= */
 .hero-aj {
   background: url("images/hero.jpeg") center/cover no-repeat;
   height: 90vh;
@@ -89,10 +89,9 @@ html, body {
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  color: white;
   max-width: 800px;
   padding: 1rem;
-  color: #ffffff;
   text-shadow: 0 0 14px rgba(0,0,0,1);
 }
 
@@ -104,19 +103,20 @@ html, body {
 
 .hero-content p {
   font-size: 1.3rem;
+  font-weight: 400;
   color: #ffffff;
 }
 
 .hero-btn {
-  margin-top: 1.8rem;
   background: #00bcd4;
   padding: 1.1rem 2.4rem;
-  border-radius: 12px;
+  border-radius: 14px;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
   font-weight: 700;
   border: 3px solid white;
+  box-shadow: 0 0 14px rgba(255,255,255,0.8);
   transition: 0.2s;
 }
 
@@ -125,30 +125,21 @@ html, body {
   color: #003399;
 }
 
-/* ================= CARDURI SUB HERO ================= */
-.hero-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+/* LOGO WALL */
+.logo-wall {
+  display: flex;
+  justify-content: center;
   gap: 2rem;
-  padding: 3rem 8%;
-  margin-top: -60px;
-}
-
-.hero-card {
+  padding: 3rem 0;
   background: white;
-  padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  border: 2px solid #003399;
-  text-align: center;
 }
 
-.hero-card h3 {
-  color: #003399;
-  margin-bottom: 0.5rem;
+.logo-wall img {
+  height: 50px;
+  opacity: 0.8;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT */
 .about-aj {
   display: flex;
   gap: 3rem;
@@ -158,25 +149,12 @@ html, body {
   background: white;
 }
 
-.about-left { flex: 1; }
-.about-right { flex: 1; }
-
 .about-right img {
   width: 100%;
   border-radius: 12px;
 }
 
-.btn-secondary {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.6rem;
-  background: #003399;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-/* ================= SERVICES ================= */
+/* SERVICES */
 .services-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -197,7 +175,7 @@ html, body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* ================= PROJECTS GRID ================= */
+/* PROJECTS */
 .projects-grid-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -218,7 +196,7 @@ html, body {
   border-radius: 12px;
 }
 
-/* ================= CTA ================= */
+/* CTA */
 .cta-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -239,16 +217,9 @@ html, body {
   gap: 3rem;
 }
 
-.footer-col a { color: white; text-decoration: none; }
-
 .footer-bottom {
   margin-top: 2rem;
   text-align: center;
   border-top: 1px solid white;
   padding-top: 1rem;
 }
-
-/* ===================== DESPRE, SERVICII, PROIECTE, PARTENERI, CONTACT ===================== */
-/* (TOATE PAGINILE SUNT INTACTE – NIMIC MODIFICAT) */
-/* EXACT VERSIUNEA PE CARE AI TRIMIS-O TU ESTE LĂSATĂ AICI */
-/* … codul complet există deja în fișierul tău – păstrat identic */
