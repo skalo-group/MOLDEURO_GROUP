@@ -492,3 +492,88 @@ html, body {
   font-weight: 600;
   font-size: 1.1rem;
 }
+/* ===================== HERO PROIECTE ===================== */
+.hero-proiecte {
+  background: url("images/about-banner.jpg") center/cover no-repeat;
+  height: 55vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-proiecte::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-proiecte-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 850px;
+}
+
+.hero-proiecte-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+/* ===================== CARUSEL ===================== */
+.carousel-section {
+  padding: 4rem 8%;
+  text-align: center;
+  background: white;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: slide-carousel 18s linear infinite;
+}
+
+.carousel-item {
+  min-width: 300px;
+  height: 200px;
+  background: white;
+  border: 3px solid #003399;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+@keyframes slide-carousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ===================== GRID PROIECTE ===================== */
+.projects-list {
+  padding: 4rem 8%;
+  background: white;
+  text-align: center;
+}
+
+.projects-list-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 2rem;
+}
+
+.project-card-empty {
+  height: 200px;
+  background: white;
+  border: 3px solid #003399;
+  border-radius: 12px;
+}
