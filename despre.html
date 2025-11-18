@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Despre – MOLDEURO GROUP</title>
+
+  <!-- OPEN SANS -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </div>
-
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
     <li><a href="index.html">Acasă</a></li>
-    <li><a href="despre.html">Despre</a></li>
+    <li><a href="despre.html" class="active">Despre</a></li>
     <li><a href="servicii.html">Servicii</a></li>
     <li><a href="proiecte.html">Proiecte</a></li>
     <li><a href="parteneri.html">Parteneri</a></li>
@@ -26,88 +27,69 @@
   </ul>
 </header>
 
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
-
-
-<!-- HERO CU IMAGINE -->
-<section class="about-hero-image" style="margin-top:120px;">
-  <div class="about-hero-overlay">
-    <h1>MOLDEURO GROUP</h1>
-    <p>Consultanță. Proiectare. Soluții pentru domeniul public.</p>
+<!-- ================= HERO DESPRE ================= -->
+<section class="hero-despre">
+  <div class="hero-despre-content">
+    <h1>Construim soluții pentru instituțiile publice</h1>
+    <p>Consultanță, proiectare și suport tehnic adaptate administrației publice din Republica Moldova și România.</p>
   </div>
 </section>
 
-<!-- DESPRE – SECȚIUNE MODERNĂ -->
-<section class="about-modern">
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about-modern-despre">
   <div class="about-modern-container">
+    <h2>Cine suntem</h2>
 
     <p class="about-modern-intro">
-      MOLDEURO GROUP oferă servicii integrate pentru instituții publice și mediul privat.
-      Combinăm consultanța tehnică, documentația de proiect și analiza de specialitate
-      pentru a sprijini procesele administrative și investițiile în Republica Moldova și România.
+      MOLDEURO GROUP oferă servicii integrate pentru instituții publice și mediul privat. Activăm în consultanță pentru finanțări nerambursabile, proiectare tehnică, servicii de mediu și achiziții publice. 
+      Ne concentrăm pe procese clare, documentație corectă și soluții adaptate cadrului legislativ actual.
     </p>
 
-    <div class="about-modern-grid">
-
-      <div class="about-modern-box">
-        <h3>Abordare profesionistă</h3>
-        <p>
-          Fiecare proiect este analizat pe baza datelor și a cadrului legal,
-          astfel încât documentațiile să fie clare, aplicabile și conforme.
-        </p>
+    <div class="about-three-cards">
+      <div class="about-box">
+        <h3>Expertiză solidă</h3>
+        <p>Lucrăm cu proiecte complexe și documentații administrative esențiale pentru dezvoltarea instituțiilor publice.</p>
       </div>
 
-      <div class="about-modern-box">
-        <h3>Experți în domeniul public</h3>
-        <p>
-          Oferim suport instituțiilor centrale și locale în finanțări nerambursabile,
-          achiziții publice, proiectare și servicii de mediu.
-        </p>
+      <div class="about-box">
+        <h3>Transparență totală</h3>
+        <p>Toate etapele proiectelor sunt explicate și comunicate clar, asigurând încredere și predictibilitate.</p>
       </div>
 
-      <div class="about-modern-box">
-        <h3>Colaborare pe termen lung</h3>
-        <p>
-          Menținem comunicarea și oferim predictibilitate în derularea proiectelor.
-        </p>
+      <div class="about-box">
+        <h3>Abordare multidisciplinară</h3>
+        <p>Consultanță, proiectare, mediu și achiziții într-un singur loc pentru procese accelerate și complete.</p>
       </div>
-
     </div>
-
   </div>
 </section>
 
-<!-- TIMELINE EXPERIENȚĂ -->
+<!-- ================= TIMELINE ================= -->
 <section class="timeline-section">
-  <h2 class="timeline-title">Experiență și evoluție</h2>
+  <h2 class="timeline-title">Evoluția noastră</h2>
 
   <div class="timeline">
-
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>2018 – Startul activității</h3>
-        <p>Primele proiecte în consultanță tehnică și documentații administrative.</p>
+        <h3>2018 – începuturile</h3>
+        <p>Primele proiecte în consultanță tehnică și elaborare de documentații.</p>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>2020 – Extindere în domeniul public</h3>
-        <p>Colaborări cu instituții locale și centrale din Republica Moldova.</p>
+        <h3>2020 – extindere</h3>
+        <p>Colaborări cu administrații locale și centrale din Republica Moldova.</p>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-content">
-        <h3>2022 – Proiecte tehnice complexe</h3>
-        <p>Integrarea serviciilor de proiectare, achiziții și mediu.</p>
+        <h3>2022 – proiecte avansate</h3>
+        <p>Integrarea serviciilor de proiectare, achiziții publice și consultanță de mediu.</p>
       </div>
     </div>
 
@@ -115,54 +97,47 @@ function toggleMenu() {
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>2024 – MOLDEURO GROUP</h3>
-        <p>Reorganizarea activității sub brandul MOLDEURO GROUP.</p>
+        <p>Reorganizarea sub un brand unic, orientat spre soluții complexe pentru domeniul public.</p>
       </div>
     </div>
-
   </div>
 </section>
 
+<!-- ================= WHY US ================= -->
+<section class="why-us">
+  <h2>De ce să lucrezi cu noi</h2>
+
+  <div class="why-grid">
+    <div class="why-card">Procese clare și transparente</div>
+    <div class="why-card">Adaptare la legislația actuală</div>
+    <div class="why-card">Documentații corecte și complete</div>
+    <div class="why-card">Suport pe termen lung</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-row">
-
     <div class="footer-col">
-      <h3>Despre noi</h3>
-      <p>MOLDEURO GROUP oferă servicii profesionale pentru domeniul public și mediul privat.</p>
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Informații</h3>
-      <ul>
-        <li><a href="despre.html">Despre noi</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="proiecte.html">Portofoliu</a></li>
-        <li><a href="parteneri.html">Parteneri</a></li>
-        <li><a href="#">Colaborări</a></li>
-        <li><a href="#">Link-uri utile</a></li>
-      </ul>
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Datele Companiei</h3>
-      <p>MOLDEURO GROUP</p>
-      <p>CUI: 00000000</p>
-      <p>Reg. Com.: J00/0000/2025</p>
-      <br>
       <h3>Contact</h3>
       <p>Email: contact@moldeurogroup.ro</p>
       <p>Telefon: 07xx xxx xxx</p>
-      <p>Adresă: București</p>
     </div>
-
   </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 MOLDEURO GROUP.</p>
-  </div>
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
 </footer>
 
 <script>
