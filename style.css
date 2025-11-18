@@ -16,7 +16,7 @@ html, body {
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  height: 110px; /* MARIT */
+  height: 90px;
   background: #003399;
   display: flex;
   align-items: center;
@@ -24,16 +24,14 @@ html, body {
   z-index: 1000;
 }
 
-.logo img {
-  height: 90px; /* MARIT */
-}
+.logo img { height: 70px; }
 
 .hamburger {
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 36px; /* putin mai mare, ca sa fie proportional */
+  font-size: 32px;
   color: white;
   cursor: pointer;
 }
@@ -71,18 +69,18 @@ html, body {
   background: #00bcd4;
 }
 
-/* ================= HERO VARIANTA 3 ================= */
+/* ================= HERO (CENTRAT + OPAC) ================= */
 .hero-v3 {
   height: 95vh;
   display: flex;
   align-items: center;
-  justify-content: center;  /* CENTRARE PE MIJLOC */
-  text-align: center;       /* TEXT PE MIJLOC */
+  justify-content: center;
+  text-align: center;
   background:
     linear-gradient(
       to bottom right,
-      rgba(0, 0, 0, 0.55),   /* OPACITATE MAI PUTERNICĂ PENTRU VIZIBILITATE */
-      rgba(0, 0, 0, 0.55)
+      rgba(0,0,0,0.55),
+      rgba(0,0,0,0.55)
     ),
     url("images/hero.jpeg") center/cover no-repeat;
 }
@@ -104,6 +102,7 @@ html, body {
   color: white;
 }
 
+/* Buton HERO */
 .hero-btn {
   display: inline-block;
   margin-top: 2rem;
@@ -118,52 +117,32 @@ html, body {
   transition: 0.2s;
 }
 
-
-/* ================= BUTOANE ================= */
-.btn-primary {
-  display: inline-block;
-  background: #003399;
-  color: white;
-  padding: 1.1rem 2.4rem;
-  border-radius: 14px;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  border: 3px solid #003399;
-  transition: 0.2s;
-}
-
-.btn-primary:hover {
-  background: #00bcd4;
-  border-color: #00bcd4;
-  color: white;
-}
-
-/* CTA – EXCEPȚIE */
-.cta-aj .btn-primary {
+.hero-btn:hover {
   background: white;
   color: #003399;
-  border-color: white;
 }
 
-.cta-aj .btn-primary:hover {
-  background: #00bcd4;
-  color: white;
-  border-color: white;
-}
-
-/* ================= LOGO WALL ================= */
-.logo-wall {
-  display: flex;
-  justify-content: center;
+/* ================= CARDURI SUB HERO ================= */
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 2rem;
-  padding: 3rem 0;
-  background: white;
+  padding: 3rem 8%;
+  margin-top: -60px;
 }
 
-.logo-wall img {
-  height: 50px;
-  opacity: 0.8;
+.hero-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border: 2px solid #003399;
+  text-align: center;
+}
+
+.hero-card h3 {
+  color: #003399;
+  margin-bottom: 0.5rem;
 }
 
 /* ================= ABOUT ================= */
@@ -215,11 +194,14 @@ html, body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* ================= PROJECTS ================= */
+/* ================= PROJECTS SHORT GRID ================= */
 .projects-grid-aj {
   padding: 4rem 8%;
-  text-align: center;
   background: white;
+}
+
+.projects-grid-aj h2 {
+  text-align: center;
 }
 
 .projects-grid-container {
@@ -231,7 +213,7 @@ html, body {
 
 .project-placeholder {
   height: 200px;
-  background: #ffffff;
+  background: white;
   border: 3px solid #003399;
   border-radius: 12px;
 }
@@ -244,7 +226,22 @@ html, body {
   color: white;
 }
 
-/* ================= FOOTER ================= */
+.cta-aj .btn-primary {
+  background: #00bcd4;
+  padding: 1rem 2.3rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid white;
+}
+
+.cta-aj .btn-primary:hover {
+  background: white;
+  color: #003399;
+}
+
+/* FOOTER */
 .footer {
   background: #002266;
   color: white;
@@ -266,7 +263,7 @@ html, body {
   padding-top: 1rem;
 }
 
-/* ================= DESPRE – HERO ================= */
+/* ===================== DESPRE – HERO ===================== */
 .hero-despre {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 55vh;
@@ -306,7 +303,7 @@ html, body {
   text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
-/* ================= DESPRE – MODERN ABOUT ================= */
+/* ===================== DESPRE – MODERN ABOUT ===================== */
 .about-modern-despre {
   padding: 4rem 8%;
   background: white;
@@ -344,7 +341,7 @@ html, body {
   color: #00bcd4;
 }
 
-/* ================= TIMELINE ================= */
+/* ===================== TIMELINE ===================== */
 .timeline-section {
   padding: 4rem 8%;
   background: white;
@@ -385,7 +382,7 @@ html, body {
   margin-bottom: 0.4rem;
 }
 
-/* ================= WHY US ================= */
+/* ===================== WHY US ===================== */
 .why-us {
   padding: 4rem 8%;
   background: #f3f6ff;
@@ -411,7 +408,7 @@ html, body {
   font-weight: 600;
 }
 
-/* ================= HERO SERVICII ================= */
+/* ===================== HERO SERVICII ===================== */
 .hero-servicii {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 55vh;
@@ -450,7 +447,7 @@ html, body {
   text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
-/* ================= GRID SERVICII ================= */
+/* ===================== GRID SERVICII ===================== */
 .servicii-grid-section {
   padding: 4rem 8%;
   background: white;
@@ -481,7 +478,7 @@ html, body {
   margin-bottom: 0.8rem;
 }
 
-/* ================= DETALIAT ================= */
+/* ===================== DETALIAT ===================== */
 .servicii-detal {
   padding: 4rem 8%;
   text-align: center;
@@ -508,7 +505,7 @@ html, body {
   font-size: 1.1rem;
 }
 
-/* ================= HERO PROIECTE ================= */
+/* ===================== HERO PROIECTE ===================== */
 .hero-proiecte {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 55vh;
@@ -540,7 +537,7 @@ html, body {
   text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
-/* ================= CARUSEL ================= */
+/* ===================== CARUSEL ===================== */
 .carousel-section {
   padding: 4rem 8%;
   text-align: center;
@@ -573,7 +570,7 @@ html, body {
   100% { transform: translateX(-100%); }
 }
 
-/* ================= GRID PROIECTE ================= */
+/* ===================== GRID PROIECTE ===================== */
 .projects-list {
   padding: 4rem 8%;
   background: white;
@@ -594,7 +591,7 @@ html, body {
   border-radius: 12px;
 }
 
-/* ================= HERO PARTENERI ================= */
+/* ===================== HERO PARTENERI ===================== */
 .hero-parteneri {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 55vh;
@@ -624,7 +621,7 @@ html, body {
   text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
-/* ================= GRID PARTENERI ================= */
+/* ===================== GRID PARTENERI ===================== */
 .partners-grid-section {
   padding: 4rem 8%;
   text-align: center;
@@ -649,7 +646,7 @@ html, body {
   border-radius: 12px;
 }
 
-/* ================= HERO CONTACT ================= */
+/* ===================== HERO CONTACT ===================== */
 .hero-contact {
   background: url("images/about-banner.jpg") center/cover no-repeat;
   height: 55vh;
@@ -680,7 +677,7 @@ html, body {
   text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
-/* ================= CONTACT INFO ===================== */
+/* ===================== CONTACT INFO ===================== */
 .contact-info-section {
   padding: 4rem 8%;
   text-align: center;
