@@ -1,20 +1,16 @@
- /* --------------------------------------------------
-   FONT GLOBAL: OPEN SANS
--------------------------------------------------- */
+ /* FONT GLOBAL */
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
+  background: #ffffff;
 }
 
-/* --------------------------------------------------
-   NAVBAR
--------------------------------------------------- */
+/* NAVBAR */
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 90px;
   background: #003399;
@@ -33,7 +29,7 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 32px;
-  color: #fff;
+  color: white;
   cursor: pointer;
 }
 
@@ -55,6 +51,7 @@ html, body {
 .menu.menu-open { display: flex; }
 
 .menu li { margin-bottom: 0.7rem; }
+
 .menu li a {
   display: block;
   background: #002266;
@@ -63,14 +60,13 @@ html, body {
   text-decoration: none;
   color: white;
 }
+
 .menu li a:hover,
 .menu li a.active {
   background: #00bcd4;
 }
 
-/* --------------------------------------------------
-   HERO AJRONI — ÎMBUNĂTĂȚIT
--------------------------------------------------- */
+/* HERO */
 .hero-aj {
   background: url("images/hero.jpeg") center/cover no-repeat;
   height: 90vh;
@@ -93,44 +89,41 @@ html, body {
   color: white;
   max-width: 800px;
   padding: 1rem;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+  text-shadow: 0 0 10px rgba(0,0,0,0.85);
 }
 
 .hero-content h1 {
   font-size: 2.8rem;
   font-weight: 700;
-  line-height: 1.3;
-  color: #ffffff;
+  color: #ffffff; /* ALB PUR */
 }
 
 .hero-content p {
   font-size: 1.3rem;
   font-weight: 400;
-  color: #e0e0e0;
+  color: #ffffff; /* ALB PUR */
 }
 
-/* Buton HERO puternic */
-.hero-btn-strong {
-  background: #00c7ff;
-  color: #003366;
-  border: 3px solid white;
+/* Buton HERO — rămâne albastru */
+.hero-btn {
+  background: #00bcd4;
   padding: 1.1rem 2.4rem;
   border-radius: 14px;
+  text-decoration: none;
+  color: white;
   font-size: 1.2rem;
   font-weight: 700;
-  box-shadow: 0 0 14px rgba(255,255,255,0.7);
+  border: 3px solid white;
+  box-shadow: 0 0 14px rgba(255,255,255,0.8);
   transition: 0.2s ease-in-out;
 }
 
-.hero-btn-strong:hover {
+.hero-btn:hover {
   background: white;
   color: #003399;
-  box-shadow: 0 0 18px rgba(255,255,255,1);
 }
 
-/* --------------------------------------------------
-   LOGO WALL
--------------------------------------------------- */
+/* LOGO WALL */
 .logo-wall {
   display: flex;
   justify-content: center;
@@ -138,20 +131,20 @@ html, body {
   padding: 3rem 0;
   background: white;
 }
+
 .logo-wall img {
   height: 50px;
   opacity: 0.8;
 }
 
-/* --------------------------------------------------
-   ABOUT
--------------------------------------------------- */
+/* ABOUT */
 .about-aj {
   display: flex;
   gap: 3rem;
   padding: 4rem 8%;
   align-items: center;
   flex-wrap: wrap;
+  background: white;
 }
 
 .about-left { flex: 1; }
@@ -171,12 +164,11 @@ html, body {
   text-decoration: none;
 }
 
-/* --------------------------------------------------
-   SERVICES
--------------------------------------------------- */
+/* SERVICES */
 .services-aj {
   padding: 4rem 8%;
   text-align: center;
+  background: white;
 }
 
 .services-grid-aj {
@@ -193,31 +185,28 @@ html, body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* --------------------------------------------------
-   PROJECTS GRID
--------------------------------------------------- */
+/* PROJECTS */
 .projects-grid-aj {
   padding: 4rem 8%;
   text-align: center;
+  background: white;
 }
 
 .projects-grid-container {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap: 2rem;
 }
 
 .project-placeholder {
   height: 200px;
-  background: white;
+  background: #ffffff;
   border: 3px solid #003399;
   border-radius: 12px;
 }
 
-/* --------------------------------------------------
-   CTA
--------------------------------------------------- */
+/* CTA */
 .cta-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -225,9 +214,7 @@ html, body {
   color: white;
 }
 
-/* --------------------------------------------------
-   FOOTER
--------------------------------------------------- */
+/* FOOTER */
 .footer {
   background: #002266;
   color: white;
@@ -240,10 +227,7 @@ html, body {
   gap: 3rem;
 }
 
-.footer-col a {
-  color: white;
-  text-decoration: none;
-}
+.footer-col a { color: white; text-decoration: none; }
 
 .footer-bottom {
   margin-top: 2rem;
