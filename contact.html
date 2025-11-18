@@ -1,19 +1,21 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Contact – MOLDEURO GROUP</title>
+
+  <!-- Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </div>
-
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
@@ -22,89 +24,84 @@
     <li><a href="servicii.html">Servicii</a></li>
     <li><a href="proiecte.html">Proiecte</a></li>
     <li><a href="parteneri.html">Parteneri</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
 </header>
 
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
+<!-- ================= HERO CONTACT ================= -->
+<section class="hero-contact">
+  <div class="hero-contact-content">
+    <h1>Contactează-ne</h1>
+    <p>Suntem disponibili pentru colaborări, proiecte și consultanță dedicată instituțiilor publice.</p>
+  </div>
+</section>
 
+<!-- ================= INFO CONTACT ================= -->
+<section class="contact-info-section">
+  <h2>Informații de contact</h2>
 
-<section class="contact-section" style="margin-top:120px;">
-  <div class="contact-container">
+  <div class="contact-info-grid">
 
-    <h2 class="contact-title">Contact</h2>
+    <div class="contact-info-box">
+      <h3>Email</h3>
+      <p>contact@moldeurogroup.ro</p>
+    </div>
 
-    <p class="contact-intro">
-      Ne poți contacta pentru informații suplimentare, colaborări sau solicitări de servicii.
-    </p>
+    <div class="contact-info-box">
+      <h3>Telefon</h3>
+      <p>07xx xxx xxx</p>
+    </div>
 
-    <div class="contact-grid">
-
-      <div class="contact-box">
-        <h3>Email</h3>
-        <p>contact@moldeurogroup.ro</p>
-      </div>
-
-      <div class="contact-box">
-        <h3>Telefon</h3>
-        <p>07xx xxx xxx</p>
-      </div>
-
-      <div class="contact-box">
-        <h3>Adresă</h3>
-        <p>București, România</p>
-      </div>
-
+    <div class="contact-info-box">
+      <h3>Adresă</h3>
+      <p>București, România</p>
     </div>
 
   </div>
 </section>
 
+<!-- ================= FORMULAR ================= -->
+<section class="contact-form-section">
+  <h2>Trimite un mesaj</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Nume complet">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Subiect">
+    <textarea placeholder="Mesajul tău"></textarea>
+    <button type="submit" class="btn-primary form-btn">Trimite mesaj</button>
+  </form>
+</section>
+
+<!-- CTA -->
+<section class="cta-aj">
+  <h2>Avem soluții pentru proiectele tale</h2>
+  <a href="servicii.html" class="btn-primary">Vezi serviciile</a>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-row">
-
     <div class="footer-col">
-      <h3>Despre noi</h3>
-      <p>MOLDEURO GROUP oferă servicii profesionale pentru domeniul public și mediul privat.</p>
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Informații</h3>
-      <ul>
-        <li><a href="despre.html">Despre noi</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="proiecte.html">Portofoliu</a></li>
-        <li><a href="parteneri.html">Parteneri</a></li>
-        <li><a href="#">Colaborări</a></li>
-        <li><a href="#">Link-uri utile</a></li>
-      </ul>
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Datele Companiei</h3>
-      <p>MOLDEURO GROUP</p>
-      <p>CUI: 00000000</p>
-      <p>Reg. Com.: J00/0000/2025</p>
-      <br>
       <h3>Contact</h3>
       <p>Email: contact@moldeurogroup.ro</p>
       <p>Telefon: 07xx xxx xxx</p>
-      <p>Adresă: București</p>
     </div>
-
   </div>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 MOLDEURO GROUP.</p>
-  </div>
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
 </footer>
 
 <script>
