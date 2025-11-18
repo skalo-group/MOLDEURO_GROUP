@@ -1,23 +1,20 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SKALO design – Acasă</title>
+  <title>MOLDEURO GROUP – Consultanță & Proiectare</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </div>
-
+  <div class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></div>
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
   <ul class="menu">
-    <li><a href="index.html">Acasă</a></li>
+    <li><a href="index.html" class="active">Acasă</a></li>
     <li><a href="despre.html">Despre</a></li>
     <li><a href="servicii.html">Servicii</a></li>
     <li><a href="proiecte.html">Proiecte</a></li>
@@ -26,72 +23,111 @@
   </ul>
 </header>
 
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
-
-
-<section class="hero">
-  <div class="overlay">
-    <h1>CONSULTANȚĂ PENTRU INSTITUȚIILE PUBLICE DIN REPUBLICA MOLDOVA</h1>
-    <p>Oferim servicii de finanțare nerambursabilă, achiziții publice, proiectare și consultanță de mediu pentru autorități centrale și locale.</p>
+<!-- ================= HERO ================= -->
+<section class="hero-aj">
+  <div class="hero-content">
+    <h1>Consultanță, Proiectare și Soluții pentru Domeniul Public</h1>
+    <p>MOLDEURO GROUP oferă servicii integrate pentru instituții publice și mediul privat în Republica Moldova și România.</p>
+    <a href="contact.html" class="btn-primary">Contactează-ne</a>
   </div>
 </section>
 
+<!-- ================= LOGO WALL ================= -->
+<section class="logo-wall">
+  <img src="images/logo1.png" alt="">
+  <img src="images/logo2.png" alt="">
+  <img src="images/logo3.png" alt="">
+  <img src="images/logo4.png" alt="">
+  <img src="images/logo5.png" alt="">
+</section>
 
+<!-- ================= ABOUT ================= -->
+<section class="about-aj">
+  <div class="about-left">
+    <h2>Cine suntem</h2>
+    <p>MOLDEURO GROUP oferă consultanță specializată pentru finanțări nerambursabile, proiectare, servicii de mediu și achiziții publice. Activăm în domeniul public și privat, sprijinind autorități și companii în dezvoltarea proiectelor.</p>
+    <a href="despre.html" class="btn-secondary">Află mai multe</a>
+  </div>
 
-<section class="domains">
-  <h2>Domenii de activitate</h2>
-  <div class="domains-grid">
-    <div class="domain-box">Consultanță finanțări nerambursabile</div>
-    <div class="domain-box">Proiectare</div>
-    <div class="domain-box">Consultanță de mediu</div>
-    <div class="domain-box">Achiziții publice</div>
+  <div class="about-right">
+    <img src="images/about-banner.jpg" alt="">
   </div>
 </section>
 
+<!-- ================= SERVICES ================= -->
+<section class="services-aj">
+  <h2>Serviciile noastre</h2>
+
+  <div class="services-grid-aj">
+    <div class="service-card">
+      <h3>Finanțări nerambursabile</h3>
+      <p>Scriere, management și implementare proiecte finanțate din fonduri naționale și internaționale.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Proiectare</h3>
+      <p>Documentații tehnice, studii, planificare și soluții de dezvoltare pentru instituții și companii.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Consultanță de mediu</h3>
+      <p>Studii de impact, documentații, avize și conformitate de mediu.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Achiziții publice</h3>
+      <p>Proceduri, caiete de sarcini, evaluare și asistență tehnică pentru autorități contractante.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS GRID ================= -->
+<section class="projects-grid-aj">
+  <h2>Proiecte</h2>
+
+  <div class="projects-grid-container">
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-aj">
+  <h2>Ai nevoie de suport pentru un proiect?</h2>
+  <a href="contact.html" class="btn-primary">Contactează-ne</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="footer-row">
     <div class="footer-col">
-      <h3>Despre noi</h3>
-      <p>Birou de proiectare specializat în arhitectură, inginerie și consultanță tehnică.</p>
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Informații</h3>
-      <ul>
-        <li><a href="despre.html">Despre noi</a></li>
-        <li><a href="servicii.html">Servicii</a></li>
-        <li><a href="proiecte.html">Portofoliu</a></li>
-        <li><a href="parteneri.html">Parteneri</a></li>
-        <li><a href="#">Colaborări</a></li>
-        <li><a href="#">Link-uri utile</a></li>
-      </ul>
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
     </div>
 
-    <div class="footer-separator"></div>
-
     <div class="footer-col">
-      <h3>Datele Companiei</h3>
-      <p>SKALO DESIGN SRL</p>
-      <p>CUI: 00000000</p>
-      <p>Reg. Com.: J00/0000/2025</p>
-      <br>
       <h3>Contact</h3>
-      <p>Email: contact@skalodesign.ro</p>
+      <p>Email: contact@moldeurogroup.ro</p>
       <p>Telefon: 07xx xxx xxx</p>
-      <p>Adresă: București, România</p>
     </div>
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; 2025 SKALO design. Toate drepturile rezervate.</p>
+    © 2025 MOLDEURO GROUP
   </div>
 </footer>
+
 
 <script>
 function toggleMenu() {
