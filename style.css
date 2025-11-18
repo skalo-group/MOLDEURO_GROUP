@@ -755,3 +755,35 @@ html, body {
   background: #00bcd4;
   color: white;
 }
+/* === REACTIVARE HERO-AJ PENTRU INDEX === */
+.hero-aj {
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/hero.jpeg") center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  padding: 1rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
+}
