@@ -71,36 +71,51 @@ html, body {
   background: #00bcd4;
 }
 
-/* ================= HERO (INDEX) ================= */
-.hero-aj {
+/* ================= HERO VARIANTA 3 ================= */
+.hero-v3 {
   height: 95vh;
   display: flex;
   align-items: center;
-  padding-left: 8%;
-  background: linear-gradient(
+  justify-content: center;  /* CENTRARE PE MIJLOC */
+  text-align: center;       /* TEXT PE MIJLOC */
+  background:
+    linear-gradient(
       to bottom right,
-      rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)
+      rgba(0, 0, 0, 0.55),   /* OPACITATE MAI PUTERNICĂ PENTRU VIZIBILITATE */
+      rgba(0, 0, 0, 0.55)
     ),
     url("images/hero.jpeg") center/cover no-repeat;
 }
 
-.hero-content {
-  max-width: 600px;
+.hero-v3-content {
+  max-width: 750px;
   color: white;
 }
 
-.hero-content h1 {
+.hero-v3-content h1 {
   font-size: 3rem;
   font-weight: 700;
   color: white;
 }
 
-.hero-content p {
+.hero-v3-content p {
   font-size: 1.3rem;
   margin-top: 1rem;
-  max-width: 600px;
   color: white;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #00bcd4;
+  padding: 1.1rem 2.4rem;
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 3px solid white;
+  transition: 0.2s;
 }
 
 
