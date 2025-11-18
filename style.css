@@ -1,4 +1,6 @@
- /* FONT GLOBAL */
+ /* ==================================================
+   FONT GLOBAL
+================================================== */
 html, body {
   margin: 0;
   padding: 0;
@@ -7,10 +9,13 @@ html, body {
   background: #ffffff;
 }
 
-/* NAVBAR */
+/* ==================================================
+   NAVBAR
+================================================== */
 .navbar {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 90px;
   background: #003399;
@@ -21,15 +26,18 @@ html, body {
   z-index: 1000;
 }
 
-.logo img { height: 70px; }
+.logo img {
+  height: 70px;
+}
 
+/* HAMBURGER */
 .hamburger {
   position: absolute;
   right: 16px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 32px;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -48,9 +56,13 @@ html, body {
   flex-direction: column;
 }
 
-.menu.menu-open { display: flex; }
+.menu.menu-open {
+  display: flex;
+}
 
-.menu li { margin-bottom: 0.7rem; }
+.menu li {
+  margin-bottom: 0.7rem;
+}
 
 .menu li a {
   display: block;
@@ -66,7 +78,9 @@ html, body {
   background: #00bcd4;
 }
 
-/* HERO */
+/* ==================================================
+   HERO — TEXT ALB PUTERNIC
+================================================== */
 .hero-aj {
   background: url("images/hero.jpeg") center/cover no-repeat;
   height: 90vh;
@@ -81,140 +95,53 @@ html, body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0,0,0,0.45);
 }
 
 .hero-content {
   position: relative;
-  color: white;
   max-width: 800px;
   padding: 1rem;
-  text-shadow: 0 0 10px rgba(0,0,0,0.85);
 }
 
 .hero-content h1 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #ffffff; /* ALB PUR */
+  color: #ffffff; /* ALB 100% */
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
 
 .hero-content p {
   font-size: 1.3rem;
   font-weight: 400;
-  color: #ffffff; /* ALB PUR */
+  margin-top: 1rem;
+  color: #ffffff; /* ALB 100% */
+  text-shadow: 0 0 4px rgba(0,0,0,0.6);
 }
 
-/* Buton HERO — rămâne albastru */
+/* BUTON HERO */
 .hero-btn {
+  margin-top: 1.8rem;
   background: #00bcd4;
   padding: 1.1rem 2.4rem;
   border-radius: 14px;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-size: 1.2rem;
   font-weight: 700;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
   box-shadow: 0 0 14px rgba(255,255,255,0.8);
   transition: 0.2s ease-in-out;
 }
 
 .hero-btn:hover {
-  background: white;
+  background: #ffffff;
   color: #003399;
 }
 
-/* LOGO WALL */
-.logo-wall {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 0;
-  background: white;
-}
-
-.logo-wall img {
-  height: 50px;
-  opacity: 0.8;
-}
-
-/* ABOUT */
-.about-aj {
-  display: flex;
-  gap: 3rem;
-  padding: 4rem 8%;
-  align-items: center;
-  flex-wrap: wrap;
-  background: white;
-}
-
-.about-left { flex: 1; }
-.about-right { flex: 1; }
-.about-right img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.btn-secondary {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.6rem;
-  background: #003399;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-/* SERVICES */
-.services-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: white;
-}
-
-.services-grid-aj {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-  gap: 2rem;
-}
-
-.service-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* PROJECTS */
-.projects-grid-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: white;
-}
-
-.projects-grid-container {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 2rem;
-}
-
-.project-placeholder {
-  height: 200px;
-  background: #ffffff;
-  border: 3px solid #003399;
-  border-radius: 12px;
-}
-
-/* CTA */
-.cta-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: #003399;
-  color: white;
-}
-
-/* FOOTER */
+/* ==================================================
+   FOOTER
+================================================== */
 .footer {
   background: #002266;
   color: white;
@@ -227,7 +154,10 @@ html, body {
   gap: 3rem;
 }
 
-.footer-col a { color: white; text-decoration: none; }
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
 
 .footer-bottom {
   margin-top: 2rem;
