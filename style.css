@@ -409,3 +409,31 @@ html, body {
 .form-btn:hover {
   background: #00bcd4;
 }
+@media (min-width: 992px) {
+  .menu {
+    position: static;
+    display: flex !important;
+    flex-direction: row;
+    background: transparent;
+    padding: 0;
+    width: auto;
+    max-width: none;
+  }
+
+  .menu li {
+    margin: 0 1rem;
+  }
+
+  .menu li a {
+    background: transparent;
+    padding: 0;
+    color: white;
+    font-size: 1.05rem;
+  }
+
+  .menu li a:hover,
+  .menu li a.active {
+    background: transparent;
+    border-bottom: 2px solid #00bcd4;
+  }
+}
