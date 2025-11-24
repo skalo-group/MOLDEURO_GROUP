@@ -69,9 +69,11 @@ html, body {
   background: #00bcd4;
 }
 
-/* ===== HERO ===== */
+/* ============================================================
+   ===================== ACASA — HERO ==========================
+   ============================================================ */
+
 .hero-aj {
-  margin-top: 115px; /* FIX: prevenim suprapunerea pe mobil + desktop */
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("images/hero.jpeg") center/cover no-repeat;
@@ -98,7 +100,6 @@ html, body {
   font-size: 1.3rem;
 }
 
-/* ===== BUTTON HERO ===== */
 .hero-btn {
   margin-top: 2rem;
   background: #00bcd4;
@@ -108,27 +109,11 @@ html, body {
   font-weight: 700;
   text-decoration: none;
   border: 3px solid white;
-  display: inline-block;
 }
 
 .hero-btn:hover {
   background: white;
   color: #003399;
-}
-
-/* ===== LOGO WALL ===== */
-.logo-wall {
-  background: white;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.logo-wall img {
-  height: 50px;
-  opacity: 0.75;
 }
 
 /* ===== ABOUT ===== */
@@ -238,4 +223,107 @@ html, body {
   text-align: center;
   border-top: 1px solid white;
   padding-top: 1rem;
+}
+
+/* ============================================================
+   ========== PAGINI SECUNDARE — HERO ORIGINAL ================
+   ============================================================ */
+
+.hero-despre,
+.hero-servicii,
+.hero-proiecte,
+.hero-parteneri,
+.hero-contact {
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/about-banner.jpg") center/cover no-repeat;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-despre-content,
+.hero-servicii-content,
+.hero-proiecte-content,
+.hero-parteneri-content,
+.hero-contact-content {
+  max-width: 850px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+.hero-despre-content h1,
+.hero-servicii-content h1,
+.hero-proiecte-content h1,
+.hero-parteneri-content h1,
+.hero-contact-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+/* ===== CUSTOM SECTIONS (DESPRE / SERVICII / ETC.) ===== */
+
+.about-modern-despre,
+.timeline-section,
+.why-us,
+.servicii-grid-section,
+.servicii-detal,
+.carousel-section,
+.projects-list,
+.partners-grid-section,
+.contact-info-section,
+.contact-form-section {
+  padding: 4rem 8%;
+  background: white;
+  text-align: center;
+}
+
+.about-three-cards,
+.why-grid,
+.servicii-grid,
+.detal-grid,
+.carousel-track,
+.projects-list-grid,
+.partners-grid,
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 2rem;
+}
+
+.about-box,
+.why-card,
+.servicii-card,
+.detal-box,
+.partner-box,
+.project-card-empty {
+  background: white;
+  border: 2px solid #003399;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.partner-box,
+.project-card-empty {
+  height: 150px;
+}
+
+.carousel-item {
+  min-width: 300px;
+  height: 200px;
+  background: white;
+  border: 3px solid #003399;
+  border-radius: 12px;
+}
+
+.carousel-track {
+  animation: slide-carousel 18s linear infinite;
+}
+
+@keyframes slide-carousel {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
