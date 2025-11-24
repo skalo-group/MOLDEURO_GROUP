@@ -1,3 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MOLDEURO GROUP – Consultanță & Proiectare</title>
+
+  <!-- OPEN SANS -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="MOLDEURO GROUP">
+  </a>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu">
+    <li><a href="index.html" class="active">Acasă</a></li>
+    <li><a href="despre.html">Despre</a></li>
+    <li><a href="servicii.html">Servicii</a></li>
+    <li><a href="proiecte.html">Proiecte</a></li>
+    <li><a href="parteneri.html">Parteneri</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero-aj">
+  <div class="hero-content">
+    <h1>Consultanță, Proiectare și Soluții pentru Domeniul Public</h1>
+    <p>MOLDEURO GROUP oferă servicii integrate pentru instituții publice și mediul privat în Republica Moldova și România.</p>
+    <a href="contact.html" class="btn-primary hero-btn">Contactează-ne</a>
+  </div>
+</section>
+
 <!-- ================= SERVICES ================= -->
 <section class="services-aj">
   <h2>Serviciile noastre</h2>
@@ -34,3 +76,70 @@
 
   </div>
 </section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about-aj">
+  <div class="about-left">
+    <h2>Cine suntem</h2>
+    <p>MOLDEURO GROUP oferă consultanță specializată pentru finanțări nerambursabile, proiectare, servicii de mediu și achiziții publice. Activăm în domeniul public și privat, sprijinind autorități și companii în dezvoltarea proiectelor.</p>
+    <a href="despre.html" class="btn-secondary">Află mai multe</a>
+  </div>
+
+  <div class="about-right">
+    <img src="images/about-banner.jpg" alt="">
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects-grid-aj">
+  <h2>Proiecte</h2>
+
+  <div class="projects-grid-container">
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+    <div class="project-placeholder"></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-aj">
+  <h2>Ai nevoie de suport pentru un proiect?</h2>
+  <a href="contact.html" class="btn-primary">Contactează-ne</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: contact@moldeurogroup.ro</p>
+      <p>Telefon: 07xx xxx xxx</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('menu-open');
+}
+</script>
+
+</body>
+</html>
