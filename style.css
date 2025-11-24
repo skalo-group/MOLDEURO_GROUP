@@ -1,13 +1,21 @@
-/* ===== GLOBAL ===== */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-html, body {
-  font-family: 'Open Sans', sans-serif;
-  background: #ffffff;
-  overflow-x: hidden;
+/* =======================================================
+   GLOBAL
+======================================================= */
+* {
+  box-sizing: border-box;
 }
 
-/* ===== NAVBAR ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  background: #ffffff;
+}
+
+/* =======================================================
+   NAVBAR
+======================================================= */
 .navbar {
   position: fixed;
   top: 0; left: 0;
@@ -15,29 +23,28 @@ html, body {
   height: 115px;
   background: #003399;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 32px;
+  align-items: center;
+  padding: 0 2rem;
   z-index: 1000;
 }
 
-/* LOGO */
 .logo img {
-  height: 95px;
+  height: 90px;
 }
 
-/* MENU DESKTOP */
+/* Desktop menu */
 .menu {
   display: flex;
-  gap: 28px;
+  gap: 2rem;
   list-style: none;
 }
 
 .menu li a {
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .menu li a:hover,
@@ -45,22 +52,57 @@ html, body {
   color: #00bcd4;
 }
 
-/* HAMBURGER MOBILE */
+/* Hamburger (mobile only) */
 .hamburger {
   display: none;
-  font-size: 34px;
+  font-size: 32px;
   color: white;
   cursor: pointer;
 }
 
-/* MOBILE MENU DROPDOWN */
-.mobile-menu {
-  display: none;
+/* Mobile menu */
+@media (max-width: 992px) {
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 1rem;
+    top: 115px;
+    background: #003399;
+    width: 70%;
+    max-width: 300px;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .menu.menu-open {
+    display: flex;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 1rem;
+    background: #002266;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .menu li a:hover {
+    background: #00bcd4;
+    color: white;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
-/* ===== HERO INDEX ===== */
+/* =======================================================
+   HERO (INDEX)
+======================================================= */
 .hero-aj {
-  background: 
+  background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("images/hero.jpeg") center/cover no-repeat;
   height: 90vh;
@@ -86,15 +128,17 @@ html, body {
   font-size: 1.3rem;
 }
 
+/* HERO button */
 .hero-btn {
   margin-top: 2rem;
   background: #00bcd4;
   padding: 1rem 2.4rem;
   border-radius: 14px;
   color: white;
-  text-decoration: none;
   font-weight: 700;
+  text-decoration: none;
   border: 3px solid white;
+  display: inline-block;
 }
 
 .hero-btn:hover {
@@ -102,65 +146,93 @@ html, body {
   color: #003399;
 }
 
-/* ===== CARDS — MODEL GRADIENT ALBASTRU ===== */
-.services-aj {
+/* =======================================================
+   CARDURI MODERNE (INDEX)
+======================================================= */
+.services-modern {
   padding: 4rem 8%;
   text-align: center;
-  background: white;
 }
 
-.services-aj h2 {
+.services-modern h2 {
   font-size: 2.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  color: #003399;
 }
 
-.services-grid-aj {
-  margin-top: 2rem;
+.services-modern-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
   gap: 2rem;
 }
 
-.service-card {
-  background: linear-gradient(135deg, #0f5bd7 0%, #6f9fee 100%);
-  color: white;
-  padding: 2.4rem;
-  border-radius: 28px;
+.service-modern-card {
+  background: white;
+  border: 3px solid #003399;
+  border-radius: 32px;
+  padding: 2rem;
   text-align: left;
   position: relative;
-  transition: transform .25s ease, box-shadow .25s ease;
-  min-height: 260px;
+  transition: 0.25s ease;
+  cursor: pointer;
 }
 
-.service-card:hover {
+.service-modern-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.service-card h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 1.2rem;
-}
-
-.service-card p {
-  font-size: 1.1rem;
-  opacity: 0.95;
-  max-width: 90%;
-  line-height: 1.5;
-}
-
-/* SĂGEATA DIN COLȚ */
-.service-card::after {
+/* Arrow icon in corner */
+.service-modern-card::after {
   content: "↗";
   position: absolute;
-  top: 20px;
-  right: 24px;
-  font-size: 32px;
-  opacity: 0.9;
+  top: 18px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #003399;
+  font-weight: 700;
 }
 
-/* ===== CTA ===== */
+.service-modern-card h3 {
+  font-size: 1.6rem;
+  color: #003399;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service-modern-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* =======================================================
+   ABOUT (INDEX, DESPRE)
+======================================================= */
+.about-aj {
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 8%;
+  align-items: center;
+  flex-wrap: wrap;
+  background: white;
+}
+
+.about-right img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.btn-secondary {
+  background: #003399;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* =======================================================
+   CTA
+======================================================= */
 .cta-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -169,13 +241,13 @@ html, body {
 }
 
 .cta-aj .btn-primary {
-  background: #00bcd4;
   padding: 1rem 2.3rem;
+  background: #00bcd4;
   border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  font-weight: 700;
   border: 3px solid white;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
 }
 
 .cta-aj .btn-primary:hover {
@@ -183,7 +255,9 @@ html, body {
   color: #003399;
 }
 
-/* ===== FOOTER ===== */
+/* =======================================================
+   FOOTER
+======================================================= */
 .footer {
   background: #002266;
   color: white;
@@ -196,9 +270,9 @@ html, body {
   gap: 3rem;
 }
 
-.footer-col a { 
-  color: white; 
-  text-decoration: none; 
+.footer-col a {
+  color: white;
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -208,61 +282,54 @@ html, body {
   padding-top: 1rem;
 }
 
-/* ===== HERO SECUNDAR (DESPRE / SERVICII / PROIECTE / PARTENERI / CONTACT) ===== */
-.hero-small {
+/* =======================================================
+   PAGINI: HERO GENERIC (DESPRE, SERVICII, PROIECTE, PARTENERI, CONTACT)
+======================================================= */
+
+.page-hero {
+  background: 
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("images/about-banner.jpg")
+    center/cover no-repeat;
   height: 45vh;
-  background-size: cover;
-  background-position: center;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.hero-small::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.55);
-}
-
-.hero-small-content {
-  position: relative;
-  z-index: 2;
+.page-hero h1 {
+  font-size: 2.8rem;
   color: white;
-  max-width: 900px;
-  padding: 1rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
 }
 
-.hero-small-content h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
+/* =======================================================
+   CONTACT PAGE
+======================================================= */
+.contact-info-section {
+  padding: 4rem 8%;
+  text-align: center;
 }
 
-.hero-small-content p {
-  margin-top: 1rem;
+.contact-info-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 2rem;
+}
+
+.contact-info-box h3 {
+  color: #003399;
+  margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 
-/* ===== CONTACT PAGE CARDS ===== */
-.contact-info-grid {
-  padding: 4rem 8%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
+.contact-info-box p {
+  font-size: 1rem;
 }
 
-.contact-info-box {
-  background: white;
-  padding: 2rem;
-  border-radius: 16px;
-  width: 260px;
-  border: 2px solid #003399;
-}
-
+/* Contact Form */
 .contact-form-section {
   padding: 4rem 8%;
   background: #f3f6ff;
@@ -273,7 +340,7 @@ html, body {
   max-width: 700px;
   margin: 0 auto;
   display: grid;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .contact-form input,
@@ -288,48 +355,12 @@ html, body {
 .form-btn {
   padding: 1rem 2.4rem;
   background: #003399;
-  border: none;
   border-radius: 12px;
   color: white;
-  font-size: 1.2rem;
+  border: none;
   cursor: pointer;
 }
 
 .form-btn:hover {
   background: #00bcd4;
-}
-
-/* ===== RESPONSIVE ===== */
-@media(max-width: 992px){
-  .menu {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
-  .mobile-menu {
-    display: none;
-    position: absolute;
-    top: 115px;
-    right: 0;
-    width: 70%;
-    background: #003399;
-    padding: 1rem;
-    border-radius: 0 0 0 12px;
-  }
-  .mobile-menu.menu-open {
-    display: block;
-  }
-  .mobile-menu li {
-    list-style: none;
-    margin-bottom: 1rem;
-  }
-  .mobile-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 1rem;
-    display: block;
-    background: #002266;
-    border-radius: 8px;
-  }
 }
