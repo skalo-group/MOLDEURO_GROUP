@@ -489,3 +489,57 @@ html, body {
   display: flex;
   align-items: center;
 }
+/* ===== CARDURI MODERNE – MODEL CU GRADIENT ALBASTRU ===== */
+
+.services-cards-home {
+  padding: 4rem 8%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+}
+
+.service-card-v2 {
+  display: block;
+  position: relative;
+  background: linear-gradient(135deg, #1e63d3, #4d8df6);
+  padding: 2.5rem;
+  border-radius: 26px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card-v2:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.service-card-v2 h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: white;
+}
+
+.service-card-v2 p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+  line-height: 1.5;
+  color: white;
+}
+
+/* Săgeata stil modern */
+.card-arrow {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  font-size: 2rem;
+  font-weight: 300;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.service-card-v2:hover .card-arrow {
+  opacity: 1;
+}
