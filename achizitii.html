@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achiziții publice – MOLDEURO GROUP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="MOLDEURO GROUP">
+  </a>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu">
+    <li><a href="index.html">Acasă</a></li>
+    <li><a href="despre.html">Despre</a></li>
+    <li><a href="servicii.html" class="active">Servicii</a></li>
+    <li><a href="proiecte.html">Proiecte</a></li>
+    <li><a href="parteneri.html">Parteneri</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<section class="hero-servicii">
+  <div class="hero-servicii-content">
+    <h1>Achiziții publice</h1>
+    <p>Documentații, proceduri și asistență completă pentru autorități contractante.</p>
+  </div>
+</section>
+
+<section class="servicii-grid-section">
+  <h2>Expertiză în achiziții</h2>
+
+  <div class="servicii-grid">
+    <div class="servicii-card">Elaborare caiete de sarcini</div>
+    <div class="servicii-card">Pregătirea documentațiilor SEAP</div>
+    <div class="servicii-card">Asistență în derularea procedurilor</div>
+    <div class="servicii-card">Consultanță pentru evaluarea ofertelor</div>
+  </div>
+</section>
+
+<section class="cta-aj">
+  <h2>Ai nevoie de suport în achiziții?</h2>
+  <a class="btn-primary" href="contact.html">Contactează-ne</a>
+</section>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('menu-open');
+}
+</script>
+
+</body>
+</html>
