@@ -1,241 +1,116 @@
-/* ===== GLOBAL ===== */
-* { box-sizing: border-box; }
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
-  background: #ffffff;
+  <title>Contact – MOLDEURO GROUP</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="MOLDEURO GROUP">
+  </a>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu">
+    <li><a href="index.html">Acasă</a></li>
+    <li><a href="despre.html">Despre</a></li>
+    <li><a href="servicii.html">Servicii</a></li>
+    <li><a href="proiecte.html">Proiecte</a></li>
+    <li><a href="parteneri.html">Parteneri</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</header>
+
+<!-- ================= HERO CONTACT ================= -->
+<section class="hero-contact">
+  <div class="hero-contact-content">
+    <h1>Contactează-ne</h1>
+    <p>Suntem disponibili pentru colaborări, proiecte și consultanță dedicată instituțiilor publice.</p>
+  </div>
+</section>
+
+<!-- ================= INFO CONTACT ================= -->
+<section class="contact-info-section">
+  <h2>Informații de contact</h2>
+
+  <div class="contact-info-grid">
+
+    <div class="contact-info-box">
+      <h3>Email</h3>
+      <p>contact@moldeurogroup.ro</p>
+    </div>
+
+    <div class="contact-info-box">
+      <h3>Telefon</h3>
+      <p>07xx xxx xxx</p>
+    </div>
+
+    <div class="contact-info-box">
+      <h3>Adresă</h3>
+      <p>București, România</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FORMULAR ================= -->
+<section class="contact-form-section">
+  <h2>Trimite un mesaj</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Nume complet">
+    <input type="email" placeholder="Email">
+    <input type="text" placeholder="Subiect">
+    <textarea placeholder="Mesajul tău"></textarea>
+    <button type="submit" class="form-btn">Trimite mesaj</button>
+  </form>
+</section>
+
+<!-- CTA -->
+<section class="cta-aj">
+  <h2>Avem soluții pentru proiectele tale</h2>
+  <a href="servicii.html" class="btn-primary">Vezi serviciile</a>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: contact@moldeurogroup.ro</p>
+      <p>Telefon: 07xx xxx xxx</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('menu-open');
 }
+</script>
 
-/* ===== NAVBAR ===== */
-.navbar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 115px;
-  background: #003399;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-  z-index: 1000;
-}
-
-.logo img {
-  height: 95px;
-}
-
-.hamburger {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 32px;
-  color: white;
-  cursor: pointer;
-}
-
-/* ===== MENU MOBILE ===== */
-.menu {
-  position: absolute;
-  right: 16px;
-  top: 115px;
-  width: 70%;
-  max-width: 300px;
-  background: #003399;
-  padding: 1rem;
-  border-radius: 12px;
-  list-style: none;
-  display: none;
-  flex-direction: column;
-}
-
-.menu.menu-open { display: flex; }
-
-.menu li { margin-bottom: 0.7rem; }
-
-.menu li a {
-  display: block;
-  background: #002266;
-  padding: 1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-}
-
-.menu li a:hover,
-.menu li a.active {
-  background: #00bcd4;
-}
-
-/* ===== HERO ===== */
-.hero-aj {
-  margin-top: 115px; /* FIX: prevenim suprapunerea pe mobil + desktop */
-  background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("images/hero.jpeg") center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-}
-
-.hero-content {
-  max-width: 800px;
-  color: white;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9);
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
-.hero-content p {
-  font-size: 1.3rem;
-}
-
-/* ===== BUTTON HERO ===== */
-.hero-btn {
-  margin-top: 2rem;
-  background: #00bcd4;
-  padding: 1rem 2.4rem;
-  border-radius: 14px;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  border: 3px solid white;
-  display: inline-block;
-}
-
-.hero-btn:hover {
-  background: white;
-  color: #003399;
-}
-
-/* ===== LOGO WALL ===== */
-.logo-wall {
-  background: white;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.logo-wall img {
-  height: 50px;
-  opacity: 0.75;
-}
-
-/* ===== ABOUT ===== */
-.about-aj {
-  display: flex;
-  gap: 3rem;
-  padding: 4rem 8%;
-  align-items: center;
-  flex-wrap: wrap;
-  background: white;
-}
-
-.about-right img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.btn-secondary {
-  background: #003399;
-  color: white;
-  padding: 0.8rem 1.6rem;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-/* ===== SERVICES ===== */
-.services-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: white;
-}
-
-.services-grid-aj {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-  gap: 2rem;
-}
-
-.service-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* ===== PROJECTS SHORT GRID ===== */
-.projects-grid-aj {
-  padding: 4rem 8%;
-  background: white;
-}
-
-.projects-grid-container {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 2rem;
-}
-
-.project-placeholder {
-  height: 200px;
-  background: white;
-  border: 3px solid #003399;
-  border-radius: 12px;
-}
-
-/* ===== CTA ===== */
-.cta-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: #003399;
-  color: white;
-}
-
-.cta-aj .btn-primary {
-  background: #00bcd4;
-  padding: 1rem 2.3rem;
-  border-radius: 10px;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  border: 3px solid white;
-}
-
-.cta-aj .btn-primary:hover {
-  background: white;
-  color: #003399;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-  background: #002266;
-  color: white;
-  padding: 3rem 8%;
-}
-
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.footer-col a { color: white; text-decoration: none; }
-
-.footer-bottom {
-  margin-top: 2rem;
-  text-align: center;
-  border-top: 1px solid white;
-  padding-top: 1rem;
-}
+</body>
+</html>
