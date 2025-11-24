@@ -543,3 +543,48 @@ html, body {
 .service-card-v2:hover .card-arrow {
   opacity: 1;
 }
+/* === CARDURI MODERNE – MODEL AJRONI === */
+
+.modern-card {
+  background: white;
+  border: 2px solid #003399;
+  border-radius: 18px;
+  padding: 2rem;
+  text-decoration: none;
+  color: #003399;
+  text-align: center;
+  display: block;
+  box-shadow: 0 0 14px rgba(0,0,0,0.09);
+  transition: 0.25s ease-in-out;
+}
+
+.modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+  border-color: #00bcd4;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  background: #003399;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 0 auto 1rem auto;
+}
+
+.modern-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+  color: #003399;
+}
+
+.modern-card p {
+  color: #003399;
+  font-size: 1rem;
+  opacity: 0.85;
+}
