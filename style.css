@@ -437,3 +437,55 @@ html, body {
     border-bottom: 2px solid #00bcd4;
   }
 }
+/* ===== NAV DESKTOP ===== */
+@media (min-width: 992px) {
+
+  /* Ascundem hamburger pe desktop */
+  .hamburger {
+    display: none;
+  }
+
+  /* Meniul devine vizibil permanent pe desktop */
+  .menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    border-radius: 0;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .menu li {
+    margin: 0;
+  }
+
+  .menu li a {
+    background: none;
+    color: white;
+    padding: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .menu li a:hover {
+    color: #00bcd4;
+  }
+
+  .menu li a.active {
+    color: #00bcd4;
+  }
+}
+
+/* ===== NAVBAR ALIGN ===== */
+.navbar {
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
