@@ -16,7 +16,7 @@ html, body {
   position: fixed;
   top: 0; left: 0;
   width: 100%;
-  height: 90px;
+  height: 115px;
   background: #003399;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@ html, body {
   z-index: 1000;
 }
 
-.logo img { height: 70px; }
+.logo img { height: 95px; }
 
 .hamburger {
   position: absolute;
