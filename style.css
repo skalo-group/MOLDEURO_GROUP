@@ -1,42 +1,37 @@
-/* ===== GLOBAL ===== */
+/* ---------- RESET ---------- */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+body {
   font-family: 'Open Sans', sans-serif;
-  background: #ffffff;
+  background: #f7f9fc;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/* ===== NAVBAR ===== */
+/* ---------- NAVBAR ---------- */
 .navbar {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 115px;
+  height: 95px;
   background: #003399;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 24px;
+  padding: 0 26px;
   z-index: 1000;
 }
 
 .logo img {
-  height: 95px;
+  height: 75px;
 }
 
-.hamburger {
-  display: none;
-  font-size: 34px;
-  color: white;
-  cursor: pointer;
-}
-
-/* ===== DESKTOP MENU ===== */
 .menu {
   list-style: none;
   display: flex;
@@ -50,17 +45,21 @@ html, body {
   padding-bottom: 4px;
 }
 
-.menu li a:hover,
-.menu li a.active {
-  border-bottom: 2px solid #00bcd4;
+.menu li a.active,
+.menu li a:hover {
+  border-bottom: 2px solid #00c8ff;
 }
 
-/* ===== MOBILE ===== */
-@media (max-width: 900px) {
+.hamburger {
+  display: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
 
-  .hamburger {
-    display: block;
-  }
+/* ---------- MOBILE NAV ---------- */
+@media(max-width: 900px) {
+  .hamburger { display: block; }
 
   .menu {
     display: none;
@@ -68,11 +67,10 @@ html, body {
     background: #003399;
     position: absolute;
     right: 20px;
-    top: 115px;
+    top: 95px;
     width: 70%;
-    max-width: 300px;
     padding: 1rem;
-    border-radius: 14px;
+    border-radius: 12px;
   }
 
   .menu.menu-open {
@@ -80,101 +78,155 @@ html, body {
   }
 
   .menu li a {
-    background: #002266;
     padding: 1rem;
+    background: #002266;
     border-radius: 8px;
-    border-bottom: none !important;
-  }
-
-  .navbar {
-    justify-content: space-between;
   }
 }
 
-/* ===== HERO ===== */
-.hero-aj {
-  background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("images/hero.jpeg") center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ---------- GENERIC SECTIONS ---------- */
+section {
+  padding: 5rem 8%;
+}
+
+section h2 {
   text-align: center;
-  padding: 1rem;
+  font-size: 2rem;
+  color: #003399;
+  margin-bottom: 3rem;
 }
 
-.hero-content {
-  max-width: 800px;
+/* ---------- HERO SECTIONS ---------- */
+.hero-contact,
+.hero-despre,
+.hero-servicii,
+.hero-proiecte,
+.hero-parteneri {
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
+              url("images/hero.jpeg") center/cover no-repeat;
+  padding: 6rem 2rem;
+  text-align: center;
   color: white;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+  margin-top: 95px;
 }
 
-.hero-content h1 {
+.hero-contact h1,
+.hero-despre h1,
+.hero-servicii h1,
+.hero-proiecte h1,
+.hero-parteneri h1 {
   font-size: 2.8rem;
   font-weight: 700;
 }
 
-.hero-content p {
-  font-size: 1.3rem;
-  margin-top: 1rem;
-}
-
-/* ===== CTA ===== */
-.cta-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: #003399;
-  color: white;
-}
-
-.cta-aj .btn-primary {
-  background: #00bcd4;
-  padding: 1rem 2.3rem;
-  border-radius: 10px;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  border: 3px solid white;
-}
-
-.cta-aj .btn-primary:hover {
-  background: white;
-  color: #003399;
-}
-
-/* ===== BLUE CARDS SIMPLE ===== */
+/* ---------- BLUE CARDS CLEAN ---------- */
 .modern-card {
   background: #003399;
-  padding: 2rem;
-  border-radius: 20px;
   color: white;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.18);
   text-decoration: none;
-  display: block;
-  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.28);
 }
 
 .modern-card h3 {
-  margin: 0 0 .5rem;
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
 }
 
 .modern-card p {
-  margin: 0;
   font-size: 1rem;
   opacity: .9;
 }
 
-/* ===== GRID CONTAINERS ===== */
-.about-three-cards,
-.services-modern-grid,
-.partners-grid,
-.projects-list-grid,
-.contact-info-grid,
-.why-grid {
-  margin-top: 3rem;
+/* ---------- GRID LAYOUT UNIFORM ---------- */
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+/* ---------- CONTACT FORM ---------- */
+.contact-form {
+  display: grid;
+  gap: 1.3rem;
+  max-width: 550px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #00339950;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.form-btn {
+  background: #003399;
+  padding: 1rem;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background: #0055dd;
+}
+
+/* ---------- CTA ---------- */
+.cta-aj {
+  background: #003399;
+  color: white;
+  text-align: center;
+  padding: 4rem 8%;
+}
+
+.cta-aj a {
+  text-decoration: none;
+  background: #00c8ff;
+  color: #003399;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 2px solid white;
+}
+
+.cta-aj a:hover {
+  background: white;
+  color: #003399;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  background: #002266;
+  color: white;
+  padding: 3rem 8%;
+}
+
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+}
+
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid white;
+  padding-top: 1rem;
 }
