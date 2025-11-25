@@ -237,3 +237,97 @@ html, body {
   border-top: 1px solid #ffffff55;
   padding-top: 1rem;
 }
+/* ==== CONTACT PAGE – PROFESSIONAL LAYOUT ==== */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  padding: 4rem 8%;
+}
+
+@media(max-width: 900px){
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Card lateral ---- */
+.contact-side-card {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border-left: 5px solid #003399;
+}
+
+.contact-side-card h3 {
+  color: #003399;
+  margin-bottom: 1rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.contact-info-icon {
+  width: 40px;
+  height: 40px;
+  background: #003399;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+/* ---- Butoane acțiune ---- */
+.contact-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #003399;
+  color: white;
+  padding: 0.9rem;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.contact-btn:hover {
+  background: #0055dd;
+}
+
+/* ---- TABEL PROFESIONAL ---- */
+.contact-table-wrapper {
+  overflow-x: auto;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.contact-table thead tr {
+  background: #003399;
+  color: white;
+}
+
+.contact-table th {
