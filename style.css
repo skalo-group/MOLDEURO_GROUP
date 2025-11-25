@@ -1,6 +1,9 @@
-/* Modernized MOLDEURO GROUP CSS – Version 1 */
+/* =============== GLOBAL RESET =============== */
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -10,7 +13,8 @@ html, body {
   overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* =============== NAVBAR =============== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -37,7 +41,7 @@ html, body {
 }
 
 .menu li a {
-  color: #ffffff;
+  color: white;
   font-weight: 600;
   text-decoration: none;
   padding: 6px;
@@ -49,7 +53,8 @@ html, body {
   color: #00bcd4;
 }
 
-/* MOBILE NAV */
+/* HAMBURGER */
+
 .hamburger {
   display: none;
   font-size: 32px;
@@ -59,6 +64,7 @@ html, body {
 
 @media (max-width: 900px) {
   .hamburger { display: block; }
+
   .menu {
     display: none;
     position: absolute;
@@ -71,18 +77,26 @@ html, body {
     flex-direction: column;
     border-radius: 12px;
   }
-  .menu.menu-open { display: flex; }
-  .menu li a { padding: 1rem; border-radius: 6px; }
+
+  .menu.menu-open {
+    display: flex;
+  }
+
+  .menu li a {
+    padding: 1rem;
+    border-radius: 6px;
+  }
 }
 
-/* HERO */
+/* =============== HERO SECTIONS =============== */
+
 .hero-aj,
 .hero-servicii,
 .hero-contact,
 .hero-proiecte,
 .hero-parteneri,
 .hero-despre {
-  height: 68vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,10 +116,8 @@ html, body {
   text-shadow: 0 0 12px rgba(0,0,0,0.7);
 }
 
-.hero-content h1 { font-size: 2.6rem; font-weight: 700; }
-.hero-content p { margin-top: 1rem; font-size: 1.2rem; }
+/* =============== BUTTONS =============== */
 
-/* BUTTONS */
 .btn-primary {
   background: #00bcd4;
   color: #fff;
@@ -123,7 +135,8 @@ html, body {
   color: #003399;
 }
 
-/* SERVICE CARDS */
+/* =============== SERVICE CARDS =============== */
+
 .services-grid-aj,
 .servicii-grid,
 .modern-services-grid {
@@ -133,9 +146,9 @@ html, body {
   gap: 2rem;
 }
 
-.modern-card,
+.service-card,
 .servicii-card,
-.service-card {
+.modern-card {
   background: #ffffff;
   padding: 2rem;
   border-radius: 18px;
@@ -143,191 +156,4 @@ html, body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: 0.2s;
   text-decoration: none;
-  color: #003399;
-}
-
-.modern-card:hover,
-.servicii-card:hover,
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
-}
-
-/* ICONS */
-.icon-circle,
-.card-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #003399;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-}
-
-/* PROJECT GRID */
-.projects-grid-container,
-.projects-list-grid,
-.partners-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.project-placeholder,
-.project-card-empty,
-.partner-box {
-  height: 200px;
-  border-radius: 14px;
-  background: #f2f4ff;
-  border: 2px solid #00339933;
-}
-
-/* ABOUT */
-.about-modern-despre {
-  padding: 4rem 8%;
-  background: #f7f9ff;
-}
-
-.about-three-cards {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 2rem;
-}
-
-.about-box {
-  padding: 1.8rem;
-  background: #ffffff;
-  border-radius: 14px;
-  border: 1px solid #bbccff;
-}
-
-/* CTA */
-.cta-aj {
-  padding: 4rem 8%;
-  text-align: center;
-  background: #003399;
-  color: white;
-}
-
-/* FOOTER */
-.footer {
-  margin-top: 4rem;
-  padding: 3rem 8%;
-  background: #002266;
-  color: #ffffff;
-}
-
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
-.footer a { color: white; text-decoration: none; }
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 2rem;
-  border-top: 1px solid #ffffff55;
-  padding-top: 1rem;
-}
-/* ==== CONTACT PAGE – PROFESSIONAL LAYOUT ==== */
-
-.contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2.5rem;
-  padding: 4rem 8%;
-}
-
-@media(max-width: 900px){
-  .contact-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ---- Card lateral ---- */
-.contact-side-card {
-  background: white;
-  border-radius: 14px;
-  padding: 2rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  border-left: 5px solid #003399;
-}
-
-.contact-side-card h3 {
-  color: #003399;
-  margin-bottom: 1rem;
-}
-
-.contact-info-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-.contact-info-icon {
-  width: 40px;
-  height: 40px;
-  background: #003399;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  border-radius: 8px;
-}
-
-/* ---- Butoane acțiune ---- */
-.contact-actions {
-  margin-top: 1.6rem;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.contact-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background: #003399;
-  color: white;
-  padding: 0.9rem;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: 600;
-}
-
-.contact-btn:hover {
-  background: #0055dd;
-}
-
-/* ---- TABEL PROFESIONAL ---- */
-.contact-table-wrapper {
-  overflow-x: auto;
-}
-
-.contact-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
-  background: white;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-}
-
-.contact-table thead tr {
-  background: #003399;
-  color: white;
-}
-
-.contact-table th {
+  colo
