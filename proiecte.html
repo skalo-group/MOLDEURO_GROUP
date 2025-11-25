@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Proiecte – MOLDEURO GROUP</title>
 
-  <link rel="stylesheet" href="style.css">
+  <!-- Open Sans -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header class="navbar">
-  <a href="index.html" class="logo"><img src="images/logo.png" alt="MOLDEURO GROUP"></a>
+ <a href="index.html" class="logo">
+  <img src="images/logo.png" alt="MOLDEURO GROUP">
+</a>
 
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -26,54 +31,60 @@
   </ul>
 </header>
 
+<!-- ================= HERO PROIECTE ================= -->
 <section class="hero-proiecte">
   <div class="hero-proiecte-content">
-    <h1>Proiecte Publice & Implementări</h1>
-    <p>O selecție de lucrări realizate pentru administrațiile locale.</p>
+    <h1>Proiecte & Implementări</h1>
+    <p>Prezentăm proiectele la care am contribuit sau care sunt în curs de dezvoltare pentru instituții publice.</p>
   </div>
 </section>
 
-<section class="projects-list">
+<!-- ================= CARUSEL PROIECTE ================= -->
+<section class="carousel-section">
   <h2>Proiecte recente</h2>
 
-  <div class="projects-list-grid">
-    <div class="modern-card">
-      <h3>Proiect 1</h3>
-      <p>Implementare pentru administrații locale.</p>
-    </div>
-
-    <div class="modern-card">
-      <h3>Proiect 2</h3>
-      <p>Documentații tehnice și studii.</p>
-    </div>
-
-    <div class="modern-card">
-      <h3>Proiect 3</h3>
-      <p>Consultanță strategică.</p>
-    </div>
-
-    <div class="modern-card">
-      <h3>Proiect 4</h3>
-      <p>Servicii integrate.</p>
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
+      <div class="carousel-item"></div>
     </div>
   </div>
 </section>
 
+<!-- ================= GRID PROIECTE ================= -->
+<section class="projects-list">
+  <h2>Toate proiectele</h2>
+
+  <div class="projects-list-grid">
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+    <div class="project-card-empty"></div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
 <section class="cta-aj">
-  <h2>Dorești suport într-un proiect public?</h2>
+  <h2>Dorești să colaborăm într-un proiect?</h2>
   <a href="contact.html" class="btn-primary">Contactează-ne</a>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="footer-row">
     <div class="footer-col">
       <h3>MOLDEURO GROUP</h3>
-      <p>Soluții pentru domeniul public și privat.</p>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
     </div>
 
     <div class="footer-col">
       <h3>Link-uri rapide</h3>
       <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
       <p><a href="contact.html">Contact</a></p>
     </div>
 
@@ -88,7 +99,7 @@
 </footer>
 
 <script>
-function toggleMenu(){
+function toggleMenu() {
   document.querySelector('.menu').classList.toggle('menu-open');
 }
 </script>
