@@ -1,210 +1,213 @@
-/* ===== GLOBAL ===== */
-* {
-  box-sizing: border-box;
-}
+/* Modernized MOLDEURO GROUP CSS – Version 1 */
 
+* { box-sizing: border-box; }
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #ffffff;
+  color: #222;
+  overflow-x: hidden;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 115px;
+  height: 90px;
   background: #003399;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0 24px;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
 }
 
 .logo img {
-  height: 95px;
+  height: 70px;
 }
 
-.hamburger {
-  display: none;
-  font-size: 34px;
-  color: white;
-  cursor: pointer;
-}
-
-/* ===== DESKTOP MENU ===== */
 .menu {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .menu li a {
-  text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-weight: 600;
-  padding-bottom: 4px;
-}
-
-.menu li a:hover,
-.menu li a.active {
-  border-bottom: 2px solid #00bcd4;
-}
-
-/* ===== MOBILE ===== */
-@media (max-width: 900px) {
-
-  .hamburger {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    background: #003399;
-    position: absolute;
-    right: 20px;
-    top: 115px;
-    width: 70%;
-    max-width: 300px;
-    padding: 1rem;
-    border-radius: 14px;
-  }
-
-  .menu.menu-open {
-    display: flex;
-  }
-
-  .menu li a {
-    background: #002266;
-    padding: 1rem;
-    border-radius: 8px;
-    border-bottom: none !important;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-}
-
-/* ===== HERO ===== */
-.hero-aj {
-  background:
-    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("images/hero.jpeg") center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1rem;
-}
-
-.hero-content {
-  max-width: 800px;
-  color: white;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9);
-}
-
-.hero-content h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
-.hero-content p {
-  font-size: 1.3rem;
-  margin-top: 1rem;
-}
-
-/* ===== BUTTON HERO ===== */
-.hero-btn {
-  margin-top: 2rem;
-  background: #00bcd4;
-  padding: 1rem 2.4rem;
-  border-radius: 14px;
-  color: white;
-  font-weight: 700;
   text-decoration: none;
-  border: 3px solid white;
-  display: inline-block;
+  padding: 6px;
+  transition: 0.2s;
 }
 
-.hero-btn:hover {
-  background: white;
-  color: #003399;
+.menu li a.active,
+.menu li a:hover {
+  color: #00bcd4;
 }
 
-/* ===== SERVICES CARDS ===== */
-.services-aj {
-  padding: 4rem 8%;
-  text-align: center;
-}
-
-.services-grid-aj {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
-  gap: 2rem;
-}
-
-.service-card {
-  background: #ffffff;
-  padding: 2.2rem;
-  border-radius: 16px;
-  border: 3px solid #003399;
-  box-shadow: 0 0 12px rgba(0,0,0,0.10);
-  transition: 0.25s ease;
+/* MOBILE NAV */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  color: white;
   cursor: pointer;
 }
 
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+@media (max-width: 900px) {
+  .hamburger { display: block; }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background: #003399;
+    padding: 1rem;
+    width: 70%;
+    max-width: 300px;
+    flex-direction: column;
+    border-radius: 12px;
+  }
+  .menu.menu-open { display: flex; }
+  .menu li a { padding: 1rem; border-radius: 6px; }
 }
 
-.service-card h3 {
-  margin-bottom: 0.5rem;
+/* HERO */
+.hero-aj,
+.hero-servicii,
+.hero-contact,
+.hero-proiecte,
+.hero-parteneri,
+.hero-despre {
+  height: 68vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/hero.jpg") center/cover no-repeat;
+}
+
+.hero-content,
+.hero-servicii-content,
+.hero-contact-content,
+.hero-proiecte-content,
+.hero-parteneri-content,
+.hero-despre-content {
+  max-width: 800px;
+  color: white;
+  text-shadow: 0 0 12px rgba(0,0,0,0.7);
+}
+
+.hero-content h1 { font-size: 2.6rem; font-weight: 700; }
+.hero-content p { margin-top: 1rem; font-size: 1.2rem; }
+
+/* BUTTONS */
+.btn-primary {
+  background: #00bcd4;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #ffffff;
   color: #003399;
+}
+
+/* SERVICE CARDS */
+.services-grid-aj,
+.servicii-grid,
+.modern-services-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.modern-card,
+.servicii-card,
+.service-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  border: 2px solid #003399;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.2s;
+  text-decoration: none;
+  color: #003399;
+}
+
+.modern-card:hover,
+.servicii-card:hover,
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+
+/* ICONS */
+.icon-circle,
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #003399;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
   font-size: 1.4rem;
 }
 
-/* ===== ABOUT ===== */
-.about-aj {
-  display: flex;
-  gap: 3rem;
+/* PROJECT GRID */
+.projects-grid-container,
+.projects-list-grid,
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-placeholder,
+.project-card-empty,
+.partner-box {
+  height: 200px;
+  border-radius: 14px;
+  background: #f2f4ff;
+  border: 2px solid #00339933;
+}
+
+/* ABOUT */
+.about-modern-despre {
   padding: 4rem 8%;
-  align-items: center;
-  flex-wrap: wrap;
+  background: #f7f9ff;
 }
 
-.about-right img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-/* ===== PROJECT GRID ===== */
-.projects-grid-aj {
-  padding: 4rem 8%;
-}
-
-.projects-grid-container {
+.about-three-cards {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap: 2rem;
 }
 
-.project-placeholder {
-  height: 200px;
-  border: 3px solid #003399;
-  border-radius: 12px;
+.about-box {
+  padding: 1.8rem;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #bbccff;
 }
 
-/* ===== CTA ===== */
+/* CTA */
 .cta-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -212,26 +215,12 @@ html, body {
   color: white;
 }
 
-.cta-aj .btn-primary {
-  background: #00bcd4;
-  padding: 1rem 2.3rem;
-  border-radius: 10px;
-  color: white;
-  font-weight: 700;
-  text-decoration: none;
-  border: 3px solid white;
-}
-
-.cta-aj .btn-primary:hover {
-  background: white;
-  color: #003399;
-}
-
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer {
-  background: #002266;
-  color: white;
+  margin-top: 4rem;
   padding: 3rem 8%;
+  background: #002266;
+  color: #ffffff;
 }
 
 .footer-row {
@@ -240,58 +229,11 @@ html, body {
   gap: 3rem;
 }
 
-.footer-col a {
-  color: white;
-  text-decoration: none;
-}
+.footer a { color: white; text-decoration: none; }
 
 .footer-bottom {
-  margin-top: 2rem;
   text-align: center;
-  border-top: 1px solid white;
+  margin-top: 2rem;
+  border-top: 1px solid #ffffff55;
   padding-top: 1rem;
-}
-/* ===== MODERN BLUE CARDS (MODELUL CERUT) ===== */
-.modern-services-grid {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 2rem;
-}
-
-.modern-card {
-  background: linear-gradient(145deg, #003399, #0055dd);
-  padding: 2.2rem;
-  border-radius: 22px;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
-}
-
-.modern-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
-}
-
-.modern-card-icon {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  font-size: 1.6rem;
-  opacity: 0.75;
-}
-
-.modern-card h3 {
-  margin-top: 0.5rem;
-  font-size: 1.4rem;
-  font-weight: 700;
-}
-
-.modern-card p {
-  margin-top: 0.7rem;
-  font-size: 1rem;
-  opacity: 0.9;
 }
