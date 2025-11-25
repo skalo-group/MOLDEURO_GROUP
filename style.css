@@ -1,6 +1,4 @@
-/* =======================================================
-   GLOBAL
-======================================================= */
+/* ===== GLOBAL ===== */
 * {
   box-sizing: border-box;
 }
@@ -13,9 +11,7 @@ html, body {
   background: #ffffff;
 }
 
-/* =======================================================
-   NAVBAR
-======================================================= */
+/* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
   top: 0; left: 0;
@@ -23,57 +19,60 @@ html, body {
   height: 115px;
   background: #003399;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
+  justify-content: space-between;
+  padding: 0 24px;
   z-index: 1000;
 }
 
 .logo img {
-  height: 90px;
+  height: 95px;
 }
 
-/* Desktop menu */
-.menu {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
-
-.menu li a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.menu li a:hover,
-.menu li a.active {
-  color: #00bcd4;
-}
-
-/* Hamburger (mobile only) */
 .hamburger {
   display: none;
-  font-size: 32px;
+  font-size: 34px;
   color: white;
   cursor: pointer;
 }
 
-/* Mobile menu */
-@media (max-width: 992px) {
+/* ===== DESKTOP MENU ===== */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  border-bottom: 2px solid #00bcd4;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+
+  .hamburger {
+    display: block;
+  }
 
   .menu {
     display: none;
     flex-direction: column;
-    position: absolute;
-    right: 1rem;
-    top: 115px;
     background: #003399;
+    position: absolute;
+    right: 20px;
+    top: 115px;
     width: 70%;
     max-width: 300px;
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 1rem;
+    border-radius: 14px;
   }
 
   .menu.menu-open {
@@ -81,26 +80,18 @@ html, body {
   }
 
   .menu li a {
-    display: block;
-    padding: 1rem;
     background: #002266;
+    padding: 1rem;
     border-radius: 8px;
-    color: white;
+    border-bottom: none !important;
   }
 
-  .menu li a:hover {
-    background: #00bcd4;
-    color: white;
-  }
-
-  .hamburger {
-    display: block;
+  .navbar {
+    justify-content: space-between;
   }
 }
 
-/* =======================================================
-   HERO (INDEX)
-======================================================= */
+/* ===== HERO ===== */
 .hero-aj {
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
@@ -126,9 +117,10 @@ html, body {
 
 .hero-content p {
   font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
-/* HERO button */
+/* ===== BUTTON HERO ===== */
 .hero-btn {
   margin-top: 2rem;
   background: #00bcd4;
@@ -146,75 +138,47 @@ html, body {
   color: #003399;
 }
 
-/* =======================================================
-   CARDURI MODERNE (INDEX)
-======================================================= */
-.services-modern {
+/* ===== SERVICES CARDS ===== */
+.services-aj {
   padding: 4rem 8%;
   text-align: center;
 }
 
-.services-modern h2 {
-  font-size: 2.4rem;
-  margin-bottom: 3rem;
-  color: #003399;
-}
-
-.services-modern-grid {
+.services-grid-aj {
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   gap: 2rem;
 }
 
-.service-modern-card {
-  background: white;
+.service-card {
+  background: #ffffff;
+  padding: 2.2rem;
+  border-radius: 16px;
   border: 3px solid #003399;
-  border-radius: 32px;
-  padding: 2rem;
-  text-align: left;
-  position: relative;
+  box-shadow: 0 0 12px rgba(0,0,0,0.10);
   transition: 0.25s ease;
   cursor: pointer;
 }
 
-.service-modern-card:hover {
+.service-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.20);
 }
 
-/* Arrow icon in corner */
-.service-modern-card::after {
-  content: "↗";
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  font-size: 1.8rem;
+.service-card h3 {
+  margin-bottom: 0.5rem;
   color: #003399;
-  font-weight: 700;
+  font-size: 1.4rem;
 }
 
-.service-modern-card h3 {
-  font-size: 1.6rem;
-  color: #003399;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.service-modern-card p {
-  font-size: 1rem;
-  color: #444;
-}
-
-/* =======================================================
-   ABOUT (INDEX, DESPRE)
-======================================================= */
+/* ===== ABOUT ===== */
 .about-aj {
   display: flex;
   gap: 3rem;
   padding: 4rem 8%;
   align-items: center;
   flex-wrap: wrap;
-  background: white;
 }
 
 .about-right img {
@@ -222,17 +186,25 @@ html, body {
   border-radius: 12px;
 }
 
-.btn-secondary {
-  background: #003399;
-  color: white;
-  padding: 0.8rem 1.6rem;
-  border-radius: 6px;
-  text-decoration: none;
+/* ===== PROJECT GRID ===== */
+.projects-grid-aj {
+  padding: 4rem 8%;
 }
 
-/* =======================================================
-   CTA
-======================================================= */
+.projects-grid-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 2rem;
+}
+
+.project-placeholder {
+  height: 200px;
+  border: 3px solid #003399;
+  border-radius: 12px;
+}
+
+/* ===== CTA ===== */
 .cta-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -241,13 +213,13 @@ html, body {
 }
 
 .cta-aj .btn-primary {
-  padding: 1rem 2.3rem;
   background: #00bcd4;
+  padding: 1rem 2.3rem;
   border-radius: 10px;
-  border: 3px solid white;
-  text-decoration: none;
   color: white;
   font-weight: 700;
+  text-decoration: none;
+  border: 3px solid white;
 }
 
 .cta-aj .btn-primary:hover {
@@ -255,9 +227,7 @@ html, body {
   color: #003399;
 }
 
-/* =======================================================
-   FOOTER
-======================================================= */
+/* ===== FOOTER ===== */
 .footer {
   background: #002266;
   color: white;
@@ -280,87 +250,4 @@ html, body {
   text-align: center;
   border-top: 1px solid white;
   padding-top: 1rem;
-}
-
-/* =======================================================
-   PAGINI: HERO GENERIC (DESPRE, SERVICII, PROIECTE, PARTENERI, CONTACT)
-======================================================= */
-
-.page-hero {
-  background: 
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("images/about-banner.jpg")
-    center/cover no-repeat;
-  height: 45vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.page-hero h1 {
-  font-size: 2.8rem;
-  color: white;
-  text-shadow: 0 0 10px rgba(0,0,0,0.9);
-}
-
-/* =======================================================
-   CONTACT PAGE
-======================================================= */
-.contact-info-section {
-  padding: 4rem 8%;
-  text-align: center;
-}
-
-.contact-info-grid {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-  gap: 2rem;
-}
-
-.contact-info-box h3 {
-  color: #003399;
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-}
-
-.contact-info-box p {
-  font-size: 1rem;
-}
-
-/* Contact Form */
-.contact-form-section {
-  padding: 4rem 8%;
-  background: #f3f6ff;
-  text-align: center;
-}
-
-.contact-form {
-  max-width: 700px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 12px;
-  border: 2px solid #003399;
-  font-size: 1rem;
-}
-
-.form-btn {
-  padding: 1rem 2.4rem;
-  background: #003399;
-  border-radius: 12px;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.form-btn:hover {
-  background: #00bcd4;
 }
