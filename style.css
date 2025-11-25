@@ -1,5 +1,7 @@
 /* ===== GLOBAL ===== */
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0;
@@ -19,65 +21,77 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 24px;
   z-index: 1000;
 }
 
 .logo img {
-  height: 90px;
+  height: 95px;
 }
 
 .hamburger {
-  font-size: 32px;
+  display: none;
+  font-size: 34px;
   color: white;
   cursor: pointer;
-  display: none;
 }
 
 /* ===== DESKTOP MENU ===== */
 .menu {
   list-style: none;
   display: flex;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 
 .menu li a {
-  color: white;
   text-decoration: none;
+  color: white;
   font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 6px;
-  transition: 0.2s;
+  padding-bottom: 4px;
 }
 
 .menu li a:hover,
 .menu li a.active {
-  background: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
 }
 
-/* ===== MOBILE: SHOW HAMBURGER, HIDE MENU ===== */
+/* ===== MOBILE ===== */
 @media (max-width: 900px) {
-  .hamburger { display: block; }
+
+  .hamburger {
+    display: block;
+  }
 
   .menu {
     display: none;
-    position: absolute;
-    top: 115px;
-    right: 20px;
-    background: #003399;
     flex-direction: column;
+    background: #003399;
+    position: absolute;
+    right: 20px;
+    top: 115px;
     width: 70%;
     max-width: 300px;
     padding: 1rem;
-    border-radius: 12px;
+    border-radius: 14px;
   }
 
-  .menu.menu-open { display: flex; }
+  .menu.menu-open {
+    display: flex;
+  }
 
-  .menu li a { background: #002266; }
+  .menu li a {
+    background: #002266;
+    padding: 1rem;
+    border-radius: 8px;
+    border-bottom: none !important;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
 }
 
-/* ===== HERO INDEX ===== */
+/* ===== HERO ===== */
 .hero-aj {
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
@@ -103,9 +117,10 @@ html, body {
 
 .hero-content p {
   font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
-/* ===== HERO BUTTON ===== */
+/* ===== BUTTON HERO ===== */
 .hero-btn {
   margin-top: 2rem;
   background: #00bcd4;
@@ -123,61 +138,47 @@ html, body {
   color: #003399;
 }
 
-/* ===== CARDURI MODERNE ===== */
+/* ===== SERVICES CARDS ===== */
+.services-aj {
+  padding: 4rem 8%;
+  text-align: center;
+}
+
 .services-grid-aj {
-  margin-top: 3rem;
+  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
   gap: 2rem;
-  padding: 0 8%;
 }
 
 .service-card {
-  background: white;
+  background: #ffffff;
   padding: 2.2rem;
-  border-radius: 14px;
+  border-radius: 16px;
   border: 3px solid #003399;
-  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.10);
   transition: 0.25s ease;
   cursor: pointer;
 }
 
 .service-card:hover {
-  background: #003399;
-  color: white;
   transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.20);
 }
 
 .service-card h3 {
+  margin-bottom: 0.5rem;
   color: #003399;
-  font-size: 1.3rem;
-  margin-bottom: 0.6rem;
-  transition: 0.25s;
+  font-size: 1.4rem;
 }
 
-.service-card:hover h3 { color: white; }
-
-.service-card p {
-  color: #333;
-  transition: 0.25s;
-}
-
-.service-card:hover p { color: white; }
-
-/* ===== SERVICES SECTION TITLE ===== */
-.services-aj h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* ===== ABOUT SECTION ===== */
+/* ===== ABOUT ===== */
 .about-aj {
-  padding: 4rem 8%;
   display: flex;
+  gap: 3rem;
+  padding: 4rem 8%;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3rem;
 }
 
 .about-right img {
@@ -185,19 +186,13 @@ html, body {
   border-radius: 12px;
 }
 
-.btn-secondary {
-  background: #003399;
-  color: white;
-  padding: 0.8rem 1.6rem;
-  border-radius: 6px;
-  display: inline-block;
-  text-decoration: none;
+/* ===== PROJECT GRID ===== */
+.projects-grid-aj {
+  padding: 4rem 8%;
 }
 
-/* ===== PROJECT PLACEHOLDERS ===== */
 .projects-grid-container {
   margin-top: 2rem;
-  padding: 0 8%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap: 2rem;
@@ -205,16 +200,16 @@ html, body {
 
 .project-placeholder {
   height: 200px;
-  border-radius: 12px;
   border: 3px solid #003399;
+  border-radius: 12px;
 }
 
 /* ===== CTA ===== */
 .cta-aj {
-  background: #003399;
-  color: white;
   padding: 4rem 8%;
   text-align: center;
+  background: #003399;
+  color: white;
 }
 
 .cta-aj .btn-primary {
@@ -223,8 +218,8 @@ html, body {
   border-radius: 10px;
   color: white;
   font-weight: 700;
-  border: 3px solid white;
   text-decoration: none;
+  border: 3px solid white;
 }
 
 .cta-aj .btn-primary:hover {
@@ -251,8 +246,52 @@ html, body {
 }
 
 .footer-bottom {
+  margin-top: 2rem;
   text-align: center;
   border-top: 1px solid white;
   padding-top: 1rem;
-  margin-top: 2rem;
+}
+/* ===== MODERN BLUE CARDS (MODELUL CERUT) ===== */
+.modern-services-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 2rem;
+}
+
+.modern-card {
+  background: linear-gradient(145deg, #003399, #0055dd);
+  padding: 2.2rem;
+  border-radius: 22px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+.modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+}
+
+.modern-card-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 1.6rem;
+  opacity: 0.75;
+}
+
+.modern-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.modern-card p {
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  opacity: 0.9;
 }
