@@ -1,1 +1,87 @@
-proiectare.html
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Proiectare – MOLDEURO GROUP</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="MOLDEURO GROUP">
+  </a>
+
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <ul class="menu">
+    <li><a href="index.html">Acasă</a></li>
+    <li><a href="despre.html">Despre</a></li>
+    <li><a href="servicii.html" class="active">Servicii</a></li>
+    <li><a href="proiecte.html">Proiecte</a></li>
+    <li><a href="parteneri.html">Parteneri</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>
+
+<section class="hero-servicii">
+  <div class="hero-servicii-content">
+    <h1>Proiectare</h1>
+    <p>Documentații tehnice pentru investiții publice și private.</p>
+  </div>
+</section>
+
+<section class="content" style="padding:4rem 8%; margin-top:20px;">
+  <h2>Servicii de proiectare</h2>
+
+  <ul class="serv-list" style="margin-top:1.8rem; line-height:1.9;">
+    <li>Teme de proiectare</li>
+    <li>Studii de Fezabilitate (SF)</li>
+    <li>Documentații DALI</li>
+    <li>Analize Cost-Beneficiu (ACB)</li>
+    <li>Proiect Tehnic de Execuție</li>
+    <li>Asistență tehnică în execuție</li>
+  </ul>
+</section>
+
+<section class="cta-aj">
+  <h2>Ai un proiect în dezvoltare?</h2>
+  <a href="contact.html" class="btn-primary">Contactează-ne</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-row">
+    <div class="footer-col">
+      <h3>MOLDEURO GROUP</h3>
+      <p>Soluții profesionale pentru domeniul public și privat.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Link-uri rapide</h3>
+      <p><a href="servicii.html">Servicii</a></p>
+      <p><a href="proiecte.html">Proiecte</a></p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact</h3>
+      <p>Email: contact@moldeurogroup.ro</p>
+      <p>Telefon: 07xx xxx xxx</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('menu-open');
+}
+</script>
+
+</body>
+</html>
