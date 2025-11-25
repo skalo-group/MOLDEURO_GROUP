@@ -1,5 +1,7 @@
 /* ===== GLOBAL ===== */
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0;
@@ -18,7 +20,8 @@ html, body {
   background: #003399;
   display: flex;
   align-items: center;
-  padding: 0 16px;
+  justify-content: space-between;
+  padding: 0 24px;
   z-index: 1000;
 }
 
@@ -27,51 +30,69 @@ html, body {
 }
 
 .hamburger {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 32px;
+  display: none;
+  font-size: 34px;
   color: white;
   cursor: pointer;
 }
 
-/* ===== MENU MOBILE ===== */
+/* ===== DESKTOP MENU ===== */
 .menu {
-  position: absolute;
-  right: 16px;
-  top: 115px;
-  width: 70%;
-  max-width: 300px;
-  background: #003399;
-  padding: 1rem;
-  border-radius: 12px;
   list-style: none;
-  display: none;
-  flex-direction: column;
+  display: flex;
+  gap: 2rem;
 }
 
-.menu.menu-open { display: flex; }
-
-.menu li { margin-bottom: 0.7rem; }
-
 .menu li a {
-  display: block;
-  background: #002266;
-  padding: 1rem;
-  border-radius: 8px;
   text-decoration: none;
   color: white;
+  font-weight: 600;
+  padding-bottom: 4px;
 }
 
 .menu li a:hover,
 .menu li a.active {
-  background: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 900px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #003399;
+    position: absolute;
+    right: 20px;
+    top: 115px;
+    width: 70%;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 14px;
+  }
+
+  .menu.menu-open {
+    display: flex;
+  }
+
+  .menu li a {
+    background: #002266;
+    padding: 1rem;
+    border-radius: 8px;
+    border-bottom: none !important;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
 }
 
 /* ===== HERO ===== */
 .hero-aj {
-  margin-top: 115px; /* FIX: prevenim suprapunerea pe mobil + desktop */
   background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url("images/hero.jpeg") center/cover no-repeat;
@@ -96,6 +117,7 @@ html, body {
 
 .hero-content p {
   font-size: 1.3rem;
+  margin-top: 1rem;
 }
 
 /* ===== BUTTON HERO ===== */
@@ -116,49 +138,10 @@ html, body {
   color: #003399;
 }
 
-/* ===== LOGO WALL ===== */
-.logo-wall {
-  background: white;
-  padding: 2rem 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.logo-wall img {
-  height: 50px;
-  opacity: 0.75;
-}
-
-/* ===== ABOUT ===== */
-.about-aj {
-  display: flex;
-  gap: 3rem;
-  padding: 4rem 8%;
-  align-items: center;
-  flex-wrap: wrap;
-  background: white;
-}
-
-.about-right img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.btn-secondary {
-  background: #003399;
-  color: white;
-  padding: 0.8rem 1.6rem;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-/* ===== SERVICES ===== */
+/* ===== SERVICES CARDS ===== */
 .services-aj {
   padding: 4rem 8%;
   text-align: center;
-  background: white;
 }
 
 .services-grid-aj {
@@ -169,16 +152,43 @@ html, body {
 }
 
 .service-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #ffffff;
+  padding: 2.2rem;
+  border-radius: 16px;
+  border: 3px solid #003399;
+  box-shadow: 0 0 12px rgba(0,0,0,0.10);
+  transition: 0.25s ease;
+  cursor: pointer;
 }
 
-/* ===== PROJECTS SHORT GRID ===== */
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.20);
+}
+
+.service-card h3 {
+  margin-bottom: 0.5rem;
+  color: #003399;
+  font-size: 1.4rem;
+}
+
+/* ===== ABOUT ===== */
+.about-aj {
+  display: flex;
+  gap: 3rem;
+  padding: 4rem 8%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-right img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== PROJECT GRID ===== */
 .projects-grid-aj {
   padding: 4rem 8%;
-  background: white;
 }
 
 .projects-grid-container {
@@ -190,7 +200,6 @@ html, body {
 
 .project-placeholder {
   height: 200px;
-  background: white;
   border: 3px solid #003399;
   border-radius: 12px;
 }
@@ -231,11 +240,58 @@ html, body {
   gap: 3rem;
 }
 
-.footer-col a { color: white; text-decoration: none; }
+.footer-col a {
+  color: white;
+  text-decoration: none;
+}
 
 .footer-bottom {
   margin-top: 2rem;
   text-align: center;
   border-top: 1px solid white;
   padding-top: 1rem;
+}
+/* ===== MODERN BLUE CARDS (MODELUL CERUT) ===== */
+.modern-services-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 2rem;
+}
+
+.modern-card {
+  background: linear-gradient(145deg, #003399, #0055dd);
+  padding: 2.2rem;
+  border-radius: 22px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+}
+
+.modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.3);
+}
+
+.modern-card-icon {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 1.6rem;
+  opacity: 0.75;
+}
+
+.modern-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.modern-card p {
+  margin-top: 0.7rem;
+  font-size: 1rem;
+  opacity: 0.9;
 }

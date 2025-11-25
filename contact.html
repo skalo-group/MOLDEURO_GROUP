@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
@@ -15,9 +15,9 @@
 <body>
 
 <header class="navbar">
- <a href="index.html" class="logo">
-  <img src="images/logo.png" alt="MOLDEURO GROUP">
-</a>
+  <a href="index.html" class="logo">
+    <img src="images/logo.png" alt="MOLDEURO GROUP">
+  </a>
 
   <div class="hamburger" onclick="toggleMenu()">☰</div>
 
@@ -39,23 +39,26 @@
   </div>
 </section>
 
-<!-- ================= INFO CONTACT ================= -->
-<section class="contact-info-section">
+<!-- ================= INFO CARDS ================= -->
+<section class="contact-info-modern">
   <h2>Informații de contact</h2>
 
-  <div class="contact-info-grid">
+  <div class="contact-info-cards">
 
-    <div class="contact-info-box">
+    <div class="contact-card">
+      <div class="icon">📧</div>
       <h3>Email</h3>
       <p>contact@moldeurogroup.ro</p>
     </div>
 
-    <div class="contact-info-box">
+    <div class="contact-card">
+      <div class="icon">📞</div>
       <h3>Telefon</h3>
       <p>07xx xxx xxx</p>
     </div>
 
-    <div class="contact-info-box">
+    <div class="contact-card">
+      <div class="icon">📍</div>
       <h3>Adresă</h3>
       <p>București, România</p>
     </div>
@@ -63,15 +66,15 @@
   </div>
 </section>
 
-<!-- ================= FORMULAR ================= -->
-<section class="contact-form-section">
+<!-- ================= FORMULĂR MODERN ================= -->
+<section class="contact-form-modern">
   <h2>Trimite un mesaj</h2>
 
   <form class="contact-form">
-    <input type="text" placeholder="Nume complet">
-    <input type="email" placeholder="Email">
-    <input type="text" placeholder="Subiect">
-    <textarea placeholder="Mesajul tău"></textarea>
+    <input type="text" placeholder="Nume complet" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Subiect" required>
+    <textarea placeholder="Mesajul tău" required></textarea>
     <button type="submit" class="btn-primary form-btn">Trimite mesaj</button>
   </form>
 </section>
