@@ -1,93 +1,92 @@
 <!DOCTYPE html>
 <html lang="ro">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proiect de infrastructură</title>
+  <title>Proiect de Mediu</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-    </div>
+  <div class="navbar">
+      <div class="logo">
+         <a href="index.html"><img src="images/logo.png" alt="MOLDEURO"></a>
+      </div>
+      <ul class="menu">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="proiecte.html" class="active">Proiecte</a></li>
+          <li><a href="parteneri.html">Parteneri</a></li>
+          <li><a href="despre.html">Despre noi</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">&#9776;</div>
+  </div>
 
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <!-- HERO -->
+  <header class="hero-proiecte">
+      <div class="hero-proiecte-content">
+          <h1>Proiect de mediu</h1>
+          <p>Prezentare detaliată a proiectului.</p>
+      </div>
+  </header>
 
-    <ul class="menu" id="menu">
-      <li><a href="index.html">Acasă</a></li>
-      <li><a href="servicii.html">Servicii</a></li>
-      <li><a class="active" href="proiecte.html">Proiecte</a></li>
-      <li><a href="parteneri.html">Parteneri</a></li>
-      <li><a href="despre.html">Despre noi</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- CONȚINUT PRINCIPAL -->
+  <section class="page-container" style="padding-top:3rem; padding-bottom:3rem;">
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("menu-open");
-    }
-  </script>
+      <div class="project-details-box" style="
+        background:white;
+        padding:2rem;
+        border-radius:20px;
+        box-shadow:0 6px 18px rgba(0,0,0,0.12);
+        margin-bottom:3rem;">
+          
+          <h2 style="color:#003399; margin-bottom:1rem;">Titlul proiectului</h2>
 
-  <!-- HERO MIC -->
-  <section class="hero-proiecte">
-    <div class="hero-proiecte-content">
-      <h1>Proiect de infrastructură</h1>
-      <p>Prezentarea detaliată a proiectului.</p>
-    </div>
-  </section>
+          <p style="line-height:1.6;">
+            Aici se introduce descrierea proiectului. Poți detalia obiectivele, soluțiile tehnice,
+            beneficiile, etapele, finanțarea și rezultatele.  
+            <br><br>
+            Dacă dorești, pot crea o structură extinsă cu:
+            – indicatori tehnici  
+            – timeline-ul proiectului  
+            – galerie foto suplimentară  
+            – documente PDF descărcabile  
+          </p>
 
-  <!-- CONȚINUT PAGINĂ PROIECT -->
-  <section class="page-container" style="padding-top:3rem; padding-bottom:4rem;">
+      </div>
 
-    <div style="background:white; border-radius:20px; padding:2rem; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+      <h2 style="text-align:center; margin-bottom:2rem;">Galerie foto</h2>
 
-      <img src="images/proiect-placeholder.jpg" 
-           alt="Imagine proiect" 
-           style="width:100%; border-radius:16px; margin-bottom:2rem;">
+      <div class="gallery-grid" style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+        gap:1.5rem;">
+        
+        <img src="images/mediu1.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu2.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu3.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu4.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu5.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu6.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu7.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu8.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu9.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu10.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu11.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu12.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu13.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
+        <img src="images/mediu14.jpeg" class="gallery-img" style="width:100%; border-radius:16px;">
 
-      <h2 style="color:#003399; margin-bottom:1rem;">Titlul proiectului</h2>
-
-      <p style="line-height:1.6;">
-        Descrierea proiectului se introduce aici. Poți detalia obiectivele,
-        soluțiile tehnice, beneficiile, etapele, finanțarea și rezultatele.
-      </p>
-
-      <p style="line-height:1.6;">
-        Dacă vrei, pot structura și o pagină extinsă cu:
-        – galerii foto  
-        – timeline al proiectului  
-        – indicatori tehnici  
-        – documente PDF atașabile  
-      </p>
-
-    </div>
+      </div>
 
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-row">
-      <div>
-        <h3>MOLDEURO GROUP</h3>
-        <p>Servicii complete pentru proiecte publice și private.</p>
-      </div>
-      <div>
-        <h3>Link-uri utile</h3>
-        <p><a href="servicii.html">Servicii</a></p>
-        <p><a href="proiecte.html">Proiecte</a></p>
-        <p><a href="parteneri.html">Parteneri</a></p>
-        <p><a href="contact.html">Contact</a></p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
-    </div>
+      <div class="footer-bottom">MOLDEURO GROUP © 2025</div>
   </footer>
 
 </body>
