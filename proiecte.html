@@ -3,97 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Proiecte – MOLDEURO GROUP</title>
-
+  <title>Proiecte</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </a>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-  <ul class="menu">
-    <li><a href="index.html">Acasă</a></li>
-    <li><a href="despre.html">Despre</a></li>
-    <li><a href="servicii.html">Servicii</a></li>
-    <li><a href="proiecte.html" class="active">Proiecte</a></li>
-    <li><a href="parteneri.html">Parteneri</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</header>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a class="active" href="proiecte.html">Proiecte</a></li>
+      <li><a href="parteneri.html">Parteneri</a></li>
+      <li><a href="despre.html">Despre noi</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<section class="hero-proiecte">
-  <div class="hero-proiecte-content">
-    <h1>Proiecte & Implementări</h1>
-    <p>Proiecte realizate pentru instituțiile publice.</p>
-  </div>
-</section>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("menu-open");
+    }
+  </script>
 
-<section class="carousel-section">
-  <h2>Proiecte recente</h2>
-
-  <div class="carousel-container">
-    <div class="carousel-track">
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
-      <div class="carousel-item"></div>
+  <!-- HERO -->
+  <section class="hero-proiecte">
+    <div class="hero-proiecte-content">
+      <h1>Proiectele noastre</h1>
+      <p>Selecție de lucrări și colaborări realizate de echipa noastră.</p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="projects-list">
-  <h2>Toate proiectele</h2>
+  <!-- GRID PROIECTE + SPATII LATERALE -->
+  <section class="page-container" style="padding-top: 3rem; padding-bottom: 3rem;">
 
-  <div class="projects-list-grid">
-    <div class="project-card-empty"></div>
-    <div class="project-card-empty"></div>
-    <div class="project-card-empty"></div>
-    <div class="project-card-empty"></div>
-    <div class="project-card-empty"></div>
-    <div class="project-card-empty"></div>
-  </div>
-</section>
+    <div class="projects-list-grid">
 
-<section class="cta-aj">
-  <h2>Dorești să colaborăm într-un proiect?</h2>
-  <a href="contact.html" class="btn-primary">Contactează-ne</a>
-</section>
+      <div class="project-placeholder"></div>
+      <div class="project-placeholder"></div>
+      <div class="project-placeholder"></div>
 
-<footer class="footer">
-  <div class="footer-row">
-    <div class="footer-col">
-      <h3>MOLDEURO GROUP</h3>
-      <p>Soluții profesionale pentru domeniul public și privat.</p>
+      <div class="project-placeholder"></div>
+      <div class="project-placeholder"></div>
+      <div class="project-placeholder"></div>
+
     </div>
 
-    <div class="footer-col">
-      <h3>Link-uri rapide</h3>
-      <p><a href="servicii.html">Servicii</a></p>
-      <p><a href="proiecte.html">Proiecte</a></p>
-      <p><a href="contact.html">Contact</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <div>
+        <h3>MOLDEURO GROUP</h3>
+        <p>Companie specializată în proiectare, achiziții, consultanță și implementare.</p>
+      </div>
+
+      <div>
+        <h3>Legături utile</h3>
+        <p><a href="servicii.html">Servicii</a></p>
+        <p><a href="proiecte.html">Proiecte</a></p>
+        <p><a href="parteneri.html">Parteneri</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h3>Contact</h3>
-      <p>Email: contact@moldeurogroup.ro</p>
-      <p>Telefon: 07xx xxx xxx</p>
+    <div class="footer-bottom">
+      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
     </div>
-  </div>
-
-  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
-</footer>
-
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
+  </footer>
 
 </body>
 </html>
