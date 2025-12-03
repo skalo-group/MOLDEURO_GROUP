@@ -1,5 +1,4 @@
 /* =============== GLOBAL RESET =============== */
-
 * {
   box-sizing: border-box;
 }
@@ -14,7 +13,6 @@ html, body {
 }
 
 /* =============== NAVBAR =============== */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -53,8 +51,7 @@ html, body {
   color: #00bcd4;
 }
 
-/* HAMBURGER */
-
+/* === HAMBURGER === */
 .hamburger {
   display: none;
   font-size: 32px;
@@ -81,18 +78,15 @@ html, body {
   .menu.menu-open {
     display: flex;
   }
-
-  .menu li a {
-    padding: 1rem;
-    border-radius: 6px;
-  }
 }
 
-/* =============== HERO SECTIONS =============== */
-
-background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-  url("images/hero.jpeg") center/cover no-repeat;
-
+/* =============== HERO SECTIONS (REPARAT) =============== */
+.hero-aj,
+.hero-servicii,
+.hero-contact,
+.hero-proiecte,
+.hero-parteneri,
+.hero-despre {
   height: 60vh;
   display: flex;
   align-items: center;
@@ -100,42 +94,32 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
   padding: 1rem;
   text-align: center;
   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-    url("images/hero.jpg") center/cover no-repeat;
-}
-
-.hero-content,
-.hero-servicii-content,
-.hero-contact-content,
-.hero-proiecte-content,
-.hero-parteneri-content,
-.hero-despre-content {
-  max-width: 800px;
+    url("images/hero.jpeg") center/cover no-repeat;
   color: white;
-  text-shadow: 0 0 12px rgba(0,0,0,0.7);
 }
 
-.hero-content h1,
-.hero-servicii-content h1,
-.hero-contact-content h1,
-.hero-proiecte-content h1,
-.hero-parteneri-content h1,
-.hero-despre-content h1 {
+.hero-aj h1,
+.hero-servicii h1,
+.hero-contact h1,
+.hero-proiecte h1,
+.hero-parteneri h1,
+.hero-despre h1 {
   font-size: 2.6rem;
   font-weight: 700;
+  text-shadow: 0 0 12px rgba(0,0,0,0.6);
 }
 
-.hero-content p,
-.hero-servicii-content p,
-.hero-contact-content p,
-.hero-proiecte-content p,
-.hero-parteneri-content p,
-.hero-despre-content p {
-  margin-top: 1rem;
+.hero-aj p,
+.hero-servicii p,
+.hero-contact p,
+.hero-proiecte p,
+.hero-parteneri p,
+.hero-despre p {
   font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 /* =============== BUTTONS =============== */
-
 .btn-primary {
   background: #00bcd4;
   color: #fff;
@@ -154,7 +138,6 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 }
 
 /* =============== SERVICE CARDS =============== */
-
 .services-grid-aj,
 .servicii-grid,
 .modern-services-grid {
@@ -199,7 +182,6 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 }
 
 /* =============== ABOUT PAGE =============== */
-
 .about-modern-despre {
   padding: 4rem 8%;
   background: #f7f9ff;
@@ -220,7 +202,6 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 }
 
 /* =============== PROJECT GRID =============== */
-
 .projects-grid-container,
 .projects-list-grid,
 .partners-grid {
@@ -240,7 +221,6 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 }
 
 /* =============== CTA =============== */
-
 .cta-aj {
   padding: 4rem 8%;
   text-align: center;
@@ -249,7 +229,6 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 }
 
 /* =============== FOOTER =============== */
-
 .footer {
   margin-top: 4rem;
   padding: 3rem 8%;
@@ -279,6 +258,7 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 /* =============== CONTACT PAGE — PROFESSIONAL FINAL ================= */
 /* =================================================================== */
 
+/* --- Layout în 2 coloane --- */
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -293,7 +273,6 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 }
 
 /* --- Card lateral --- */
-
 .contact-side-card {
   background: white;
   border-radius: 14px;
@@ -328,7 +307,6 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 }
 
 /* --- Butoane acțiune --- */
-
 .contact-actions {
   margin-top: 1.6rem;
   display: flex;
@@ -353,8 +331,7 @@ background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
   background: #0055dd;
 }
 
-/* --- TABELUL PROFESSIONAL --- */
-
+/* --- TABEL --- */
 .contact-table-wrapper {
   overflow-x: auto;
 }
