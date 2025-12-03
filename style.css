@@ -59,7 +59,7 @@ html, body {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media(max-width: 900px){
   .hamburger { display: block; }
 
   .menu {
@@ -152,71 +152,18 @@ html, body {
   color: #003399;
 }
 
-/* =============== SERVICE CARDS =============== */
-.services-grid-aj,
-.servicii-grid,
-.modern-services-grid {
-  margin-top: 2rem;
+/* ================================================================== */
+/* =============== UNIVERSAL MODERN BLUE CARDS ======================= */
+/* ================================================================== */
+
+.universal-card-grid {
+  margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
 }
 
-.service-card,
-.servicii-card,
-.modern-card {
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 18px;
-  border: 2px solid #003399;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: 0.2s;
-  text-decoration: none;
-  color: #003399;
-}
-
-.service-card:hover,
-.servicii-card:hover,
-.modern-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
-}
-
-.icon-circle,
-.card-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: #003399;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-}
-/* =============== MODERN BLUE CARDS (NO ICONS, NO ARROW) =============== */
-
-.modern-blue-grid {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-
-@media(max-width: 1200px){
-  .modern-blue-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media(max-width: 700px){
-  .modern-blue-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.modern-blue-card {
+.universal-card {
   background: linear-gradient(135deg, #1e63d6, #4d8fe8);
   border-radius: 34px;
   padding: 2.5rem;
@@ -224,20 +171,22 @@ html, body {
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  border: none;
+  box-shadow: none;
   transition: 0.25s;
 }
 
-.modern-blue-card:hover {
+.universal-card:hover {
   transform: translateY(-4px);
 }
 
-.modern-blue-card h3 {
+.universal-card h3 {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.modern-blue-card p {
+.universal-card p {
   font-size: 1.05rem;
   opacity: 0.92;
   line-height: 1.45;
@@ -316,7 +265,7 @@ html, body {
   padding-top: 1rem;
 }
 
-/* ========== GLOBAL PAGE CONTAINER (EXCEPT DESPRE) ========== */
+/* =============== PAGE CONTAINER =============== */
 .page-container {
   width: 100%;
   max-width: 1200px;
@@ -324,7 +273,7 @@ html, body {
   padding: 0 40px;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 600px){
   .page-container {
     padding: 0 20px;
   }
@@ -347,18 +296,12 @@ html, body {
   }
 }
 
-/* Card lateral */
 .contact-side-card {
   background: white;
   border-radius: 14px;
   padding: 2rem;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   border-left: 5px solid #003399;
-}
-
-.contact-side-card h3 {
-  color: #003399;
-  margin-bottom: 1rem;
 }
 
 .contact-info-item {
@@ -376,11 +319,9 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
   border-radius: 8px;
 }
 
-/* Butoane */
 .contact-actions {
   margin-top: 1.6rem;
   display: flex;
@@ -405,7 +346,6 @@ html, body {
   background: #0055dd;
 }
 
-/* Tabel */
 .contact-table-wrapper {
   overflow-x: auto;
 }
