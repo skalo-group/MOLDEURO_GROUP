@@ -195,6 +195,53 @@ html, body {
   margin-bottom: 1rem;
   font-size: 1.4rem;
 }
+/* =============== MODERN BLUE CARDS (NO ICONS, NO ARROW) =============== */
+
+.modern-blue-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media(max-width: 1200px){
+  .modern-blue-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 700px){
+  .modern-blue-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modern-blue-card {
+  background: linear-gradient(135deg, #1e63d6, #4d8fe8);
+  border-radius: 34px;
+  padding: 2.5rem;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: 0.25s;
+}
+
+.modern-blue-card:hover {
+  transform: translateY(-4px);
+}
+
+.modern-blue-card h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.modern-blue-card p {
+  font-size: 1.05rem;
+  opacity: 0.92;
+  line-height: 1.45;
+}
 
 /* =============== ABOUT PAGE =============== */
 .about-modern-despre {
