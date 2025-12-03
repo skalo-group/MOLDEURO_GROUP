@@ -76,3 +76,17 @@ html, body {
   }
 
   .menu.menu-
+/* ========== GLOBAL PAGE CONTAINER (EXCEPT DESPRE) ========== */
+
+.page-container {
+  width: 100%;
+  max-width: 1200px;      /* limitează lățimea totală */
+  margin: 0 auto;         /* centrează containerul */
+  padding: 0 40px;        /* spații laterale frumoase */
+}
+
+@media(max-width: 600px) {
+  .page-container {
+    padding: 0 20px;
+  }
+}
