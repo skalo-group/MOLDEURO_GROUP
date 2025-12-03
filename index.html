@@ -3,119 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>MOLDEURO GROUP – Consultanță & Proiectare</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>MOLDEURO GROUP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="menu" id="menu">
+      <li><a class="active" href="index.html">Acasă</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="proiecte.html">Proiecte</a></li>
+      <li><a href="parteneri.html">Parteneri</a></li>
+      <li><a href="despre.html">Despre noi</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <ul class="menu">
-    <li><a href="index.html" class="active">Acasă</a></li>
-    <li><a href="despre.html">Despre</a></li>
-    <li><a href="servicii.html">Servicii</a></li>
-    <li><a href="proiecte.html">Proiecte</a></li>
-    <li><a href="parteneri.html">Parteneri</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</header>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("menu-open");
+    }
+  </script>
 
-<section class="hero-aj">
-  <div class="hero-content">
-    <h1>Consultanță, Proiectare și Soluții pentru Domeniul Public</h1>
-    <p>MOLDEURO GROUP oferă servicii integrate pentru instituții publice și mediul privat.</p>
-    <a href="contact.html" class="btn-primary">Contactează-ne</a>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hero-aj">
+    <div class="hero-content">
+      <h1>Experiență, performanță și rezultate</h1>
+      <p>Servicii integrate pentru autorități, instituții și mediul privat.</p>
+      <a href="servicii.html" class="btn-primary" style="margin-top: 1.5rem;">Află mai multe</a>
+    </div>
+  </section>
 
-<section class="services-aj">
-  <h2>Serviciile noastre</h2>
+  <!-- PREZENTARE + SPATII LATERALE -->
+  <section class="page-container" style="padding-top: 3rem; padding-bottom: 3rem;">
 
-  <div class="services-grid-aj">
+    <h2 style="text-align:center; margin-bottom: 2.5rem;">Ce oferim</h2>
 
-    <a href="finantari.html" class="servicii-card">
-      <div class="icon-circle">💼</div>
-      <h3>Finanțări nerambursabile</h3>
-      <p>Scriere și management de proiecte.</p>
-    </a>
+    <div class="services-grid-aj">
 
-    <a href="proiectare.html" class="servicii-card">
-      <div class="icon-circle">📐</div>
-      <h3>Proiectare</h3>
-      <p>Documentații tehnice și studii.</p>
-    </a>
+      <a class="service-card" href="achizitii.html">
+        <div class="icon-circle">📑</div>
+        <h3>Achiziții publice</h3>
+        <p>Documentații, proceduri și suport complet.</p>
+      </a>
 
-    <a href="mediu.html" class="servicii-card">
-      <div class="icon-circle">🌿</div>
-      <h3>Consultanță de mediu</h3>
-      <p>Studii de impact și conformitate.</p>
-    </a>
+      <a class="service-card" href="proiectare.html">
+        <div class="icon-circle">📐</div>
+        <h3>Proiectare & Inginerie</h3>
+        <p>Servicii tehnice pentru proiecte de investiții.</p>
+      </a>
 
-    <a href="achizitii.html" class="servicii-card">
-      <div class="icon-circle">📝</div>
-      <h3>Achiziții publice</h3>
-      <p>Proceduri și caiete de sarcini.</p>
-    </a>
+      <a class="service-card" href="consultanta-finantari.html">
+        <div class="icon-circle">💶</div>
+        <h3>Consultanță & Finanțări</h3>
+        <p>Proiecte finanțabile, analize și asistență.</p>
+      </a>
 
-  </div>
-</section>
+      <a class="service-card" href="mediu.html">
+        <div class="icon-circle">🌿</div>
+        <h3>Mediu & Autorizări</h3>
+        <p>Studii, documentații și obținerea avizelor.</p>
+      </a>
 
-<section class="projects-grid-aj">
-  <h2>Proiecte</h2>
-
-  <div class="projects-grid-container">
-    <div class="project-placeholder"></div>
-    <div class="project-placeholder"></div>
-    <div class="project-placeholder"></div>
-    <div class="project-placeholder"></div>
-    <div class="project-placeholder"></div>
-    <div class="project-placeholder"></div>
-  </div>
-</section>
-
-<section class="cta-aj">
-  <h2>Ai nevoie de suport pentru un proiect?</h2>
-  <a href="contact.html" class="btn-primary">Contactează-ne</a>
-</section>
-
-<footer class="footer">
-  <div class="footer-row">
-    <div class="footer-col">
-      <h3>MOLDEURO GROUP</h3>
-      <p>Soluții profesionale pentru domeniul public și privat.</p>
     </div>
 
-    <div class="footer-col">
-      <h3>Link-uri rapide</h3>
-      <p><a href="servicii.html">Servicii</a></p>
-      <p><a href="proiecte.html">Proiecte</a></p>
-      <p><a href="contact.html">Contact</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <div>
+        <h3>MOLDEURO GROUP</h3>
+        <p>Companie specializată în proiectare, achiziții, consultanță și implementare.</p>
+      </div>
+
+      <div>
+        <h3>Legături utile</h3>
+        <p><a href="servicii.html">Servicii</a></p>
+        <p><a href="proiecte.html">Proiecte</a></p>
+        <p><a href="parteneri.html">Parteneri</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h3>Contact</h3>
-      <p>Email: contact@moldeurogroup.ro</p>
-      <p>Telefon: 07xx xxx xxx</p>
+    <div class="footer-bottom">
+      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
     </div>
-  </div>
-
-  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
-</footer>
-
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
+  </footer>
 
 </body>
 </html>
