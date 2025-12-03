@@ -3,83 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parteneri – MOLDEURO GROUP</title>
-
+  <title>Parteneri</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="navbar">
-  <a href="index.html" class="logo">
-    <img src="images/logo.png" alt="MOLDEURO GROUP">
-  </a>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-  <ul class="menu">
-    <li><a href="index.html">Acasă</a></li>
-    <li><a href="despre.html">Despre</a></li>
-    <li><a href="servicii.html">Servicii</a></li>
-    <li><a href="proiecte.html">Proiecte</a></li>
-    <li><a href="parteneri.html" class="active">Parteneri</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</header>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="proiecte.html">Proiecte</a></li>
+      <li><a class="active" href="parteneri.html">Parteneri</a></li>
+      <li><a href="despre.html">Despre noi</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<section class="hero-parteneri">
-  <div class="hero-parteneri-content">
-    <h1>Partenerii noștri</h1>
-    <p>Colaborăm cu instituții și organizații publice din regiune.</p>
-  </div>
-</section>
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("menu-open");
+    }
+  </script>
 
-<section class="partners-grid-section">
-  <h2>Instituții și organizații partenere</h2>
+  <!-- HERO -->
+  <section class="hero-parteneri">
+    <div class="hero-parteneri-content">
+      <h1>Partenerii noștri</h1>
+      <p>Colaborăm cu instituții, firme și organizații din diverse domenii.</p>
+    </div>
+  </section>
 
-  <div class="partners-grid">
-    <div class="partner-box"></div>
-    <div class="partner-box"></div>
-    <div class="partner-box"></div>
-    <div class="partner-box"></div>
-    <div class="partner-box"></div>
-    <div class="partner-box"></div>
-  </div>
-</section>
+  <!-- GRID PARTENERI + SPATII LATERALE -->
+  <section class="page-container" style="padding-top: 3rem; padding-bottom: 3rem;">
 
-<section class="cta-aj">
-  <h2>Dorești o colaborare instituțională?</h2>
-  <a href="contact.html" class="btn-primary">Contactează-ne</a>
-</section>
+    <div class="partners-grid">
 
-<footer class="footer">
-  <div class="footer-row">
-    <div class="footer-col">
-      <h3>MOLDEURO GROUP</h3>
-      <p>Soluții profesionale pentru domeniul public și privat.</p>
+      <div class="partner-box"></div>
+      <div class="partner-box"></div>
+      <div class="partner-box"></div>
+      <div class="partner-box"></div>
+      <div class="partner-box"></div>
+      <div class="partner-box"></div>
+
     </div>
 
-    <div class="footer-col">
-      <h3>Link-uri rapide</h3>
-      <p><a href="servicii.html">Servicii</a></p>
-      <p><a href="proiecte.html">Proiecte</a></p>
-      <p><a href="contact.html">Contact</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <div>
+        <h3>MOLDEURO GROUP</h3>
+        <p>Companie specializată în proiectare, achiziții, consultanță și implementare.</p>
+      </div>
+
+      <div>
+        <h3>Legături utile</h3>
+        <p><a href="servicii.html">Servicii</a></p>
+        <p><a href="proiecte.html">Proiecte</a></p>
+        <p><a href="parteneri.html">Parteneri</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h3>Contact</h3>
-      <p>Email: contact@moldeurogroup.ro</p>
-      <p>Telefon: 07xx xxx xxx</p>
+    <div class="footer-bottom">
+      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
     </div>
-  </div>
-
-  <div class="footer-bottom">© 2025 MOLDEURO GROUP</div>
-</footer>
-
-<script>
-function toggleMenu() {
-  document.querySelector('.menu').classList.toggle('menu-open');
-}
-</script>
+  </footer>
 
 </body>
 </html>
