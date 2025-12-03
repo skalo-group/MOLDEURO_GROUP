@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
+  <title>Contact – MOLDEURO GROUP</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,7 @@
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <a href="index.html"><img src="images/logo.png"></a>
     </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -38,89 +38,43 @@
   <section class="hero-contact">
     <div class="hero-contact-content">
       <h1>Contact</h1>
-      <p>Suntem aici pentru a răspunde rapid nevoilor tale.</p>
+      <p>Suntem aici pentru tine.</p>
     </div>
   </section>
 
-  <!-- LAYOUT CONTACT -->
-  <section class="contact-layout">
+  <!-- CONTACT LAYOUT -->
+  <div class="page-container">
+    <section class="contact-layout">
 
-    <!-- CARD LATERAL -->
-    <div class="contact-side-card">
-
-      <h3>Date de contact</h3>
-
-      <div class="contact-info-item">
-        <div class="contact-info-icon">☎</div>
-        <span>+40 723 456 789</span>
+      <!-- CARD STÂNGA -->
+      <div class="contact-side-card">
+        <h3>Date de contact</h3>
+        <div class="contact-info-item"><strong>Email:</strong> office@moldeuro.ro</div>
+        <div class="contact-info-item"><strong>Telefon:</strong> 07xx xxx xxx</div>
+        <div class="contact-info-item"><strong>Adresă:</strong> …</div>
       </div>
 
-      <div class="contact-info-item">
-        <div class="contact-info-icon">✉</div>
-        <span>office@moldeurogroup.ro</span>
+      <!-- FORMULAR DREAPTA -->
+      <div class="contact-form-card">
+        <h3>Contactează-ne</h3>
+
+        <form action="mailto:office@moldeuro.ro" method="post" enctype="text/plain">
+          <div class="form-row">
+            <input type="text" name="Nume" placeholder="Nume complet" required>
+            <input type="email" name="Email" placeholder="Email" required>
+          </div>
+
+          <textarea name="Mesaj" rows="6" placeholder="Mesajul tău…" required></textarea>
+
+          <button type="submit">Trimite mesajul</button>
+        </form>
       </div>
 
-      <div class="contact-info-item">
-        <div class="contact-info-icon">📍</div>
-        <span>Str. Exemplu nr. 10, București</span>
-      </div>
+    </section>
+  </div>
 
-      <div class="contact-actions">
-        <a class="contact-btn" href="tel:+40723456789">Sună acum</a>
-        <a class="contact-btn" href="mailto:office@moldeurogroup.ro">Trimite email</a>
-      </div>
-
-    </div>
-
-    <!-- FORMULAR DE CONTACT -->
-    <div class="contact-table-wrapper">
-
-      <form class="contact-form" action="mailto:office@moldeurogroup.ro" method="POST" enctype="text/plain">
-
-        <h3 style="color:#003399; margin-bottom:1rem;">Contactează-ne</h3>
-
-        <label>Nume complet</label>
-        <input type="text" name="Nume" placeholder="Numele tău" required>
-
-        <label>Email</label>
-        <input type="email" name="Email" placeholder="adresa@exemplu.ro" required>
-
-        <label>Telefon</label>
-        <input type="text" name="Telefon" placeholder="07xx xxx xxx">
-
-        <label>Mesaj</label>
-        <textarea name="Mesaj" rows="5" placeholder="Scrie mesajul tău aici..." required></textarea>
-
-        <button type="submit" class="contact-submit-btn">Trimite mesajul</button>
-
-      </form>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
   <footer class="footer">
-
-    <div class="footer-row">
-      <div>
-        <h3>MOLDEURO GROUP</h3>
-        <p>Servicii complete pentru proiecte publice și private.</p>
-      </div>
-
-      <div>
-        <h3>Link-uri utile</h3>
-        <p><a href="servicii.html">Servicii</a></p>
-        <p><a href="proiecte.html">Proiecte</a></p>
-        <p><a href="parteneri.html">Parteneri</a></p>
-        <p><a href="contact.html">Contact</a></p>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
-    </div>
-
+    …
   </footer>
 
 </body>
