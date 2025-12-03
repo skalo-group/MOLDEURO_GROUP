@@ -1,77 +1,137 @@
-<section class="hero-contact">
-  <div class="hero-contact-content">
-    <h1>Contactează-ne</h1>
-    <p>Suntem disponibili pentru colaborări și proiecte publice.</p>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<section class="contact-layout">
+<body>
 
-  <!-- ==== CARD LATERAL ==== -->
-  <div class="contact-side-card">
-    <h3>Informații rapide</h3>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
-    <div class="contact-info-item">
-      <div class="contact-info-icon">📧</div>
-      contact@moldeurogroup.ro
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a href="proiecte.html">Proiecte</a></li>
+      <li><a href="parteneri.html">Parteneri</a></li>
+      <li><a href="despre.html">Despre noi</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("menu-open");
+    }
+  </script>
+
+  <!-- HERO -->
+  <section class="hero-contact">
+    <div class="hero-contact-content">
+      <h1>Contactează-ne</h1>
+      <p>Suntem disponibili pentru proiecte și colaborări.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT + TABEL CU SPATII LATERALE -->
+  <section class="contact-layout page-container">
+
+    <!-- CARD LATERAL -->
+    <div class="contact-side-card">
+
+      <h3>Informații rapide</h3>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📧</div>
+        contact@moldeurogroup.ro
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📞</div>
+        07xx xxx xxx
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📍</div>
+        București, România
+      </div>
+
+      <div class="contact-actions">
+        <a href="tel:07xxxxxxx" class="contact-btn">📞 Sună acum</a>
+        <a href="mailto:contact@moldeurogroup.ro" class="contact-btn">✉️ Trimite email</a>
+      </div>
+
     </div>
 
-    <div class="contact-info-item">
-      <div class="contact-info-icon">📞</div>
-      07xx xxx xxx
+    <!-- TABEL -->
+    <div>
+      <h2 style="margin-bottom:20px;">Date complete de contact</h2>
+
+      <div class="contact-table-wrapper">
+        <table class="contact-table">
+
+          <thead>
+            <tr>
+              <th>Informație</th>
+              <th>Detalii</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td><span class="contact-table-icon">📧</span>Email</td>
+              <td>contact@moldeurogroup.ro</td>
+            </tr>
+
+            <tr>
+              <td><span class="contact-table-icon">📞</span>Telefon</td>
+              <td>07xx xxx xxx</td>
+            </tr>
+
+            <tr>
+              <td><span class="contact-table-icon">📍</span>Adresă</td>
+              <td>București, România</td>
+            </tr>
+
+            <tr>
+              <td><span class="contact-table-icon">⏰</span>Program</td>
+              <td>Luni–Vineri, 09:00–17:00</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
     </div>
 
-    <div class="contact-info-item">
-      <div class="contact-info-icon">📍</div>
-      București, România
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <div>
+        <h3>MOLDEURO GROUP</h3>
+        <p>Companie specializată în proiectare, achiziții, consultanță și implementare.</p>
+      </div>
+      <div>
+        <h3>Legături utile</h3>
+        <p><a href="servicii.html">Servicii</a></p>
+        <p><a href="proiecte.html">Proiecte</a></p>
+        <p><a href="parteneri.html">Parteneri</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
     </div>
 
-    <div class="contact-actions">
-      <a href="tel:07xxxxxxxx" class="contact-btn">📞 Sună acum</a>
-      <a href="mailto:contact@moldeurogroup.ro" class="contact-btn">✉️ Trimite email</a>
+    <div class="footer-bottom">
+      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
     </div>
-  </div>
+  </footer>
 
-  <!-- ==== TABEL ==== -->
-  <div>
-    <h2 style="margin-bottom:20px;">Date complete de contact</h2>
-
-    <div class="contact-table-wrapper">
-      <table class="contact-table">
-
-        <thead>
-          <tr>
-            <th>Informație</th>
-            <th>Detalii</th>
-          </tr>
-        </thead>
-
-        <tbody>
-
-          <tr>
-            <td><span class="contact-table-icon">📧</span>Email</td>
-            <td>contact@moldeurogroup.ro</td>
-          </tr>
-
-          <tr>
-            <td><span class="contact-table-icon">📞</span>Telefon</td>
-            <td>07xx xxx xxx</td>
-          </tr>
-
-          <tr>
-            <td><span class="contact-table-icon">📍</span>Adresă</td>
-            <td>București, România</td>
-          </tr>
-
-          <tr>
-            <td><span class="contact-table-icon">⏰</span>Program</td>
-            <td>Luni–Vineri, 09:00–17:00</td>
-          </tr>
-
-        </tbody>
-
-      </table>
-    </div>
-  </div>
-
-</section>
+</body>
+</html>
