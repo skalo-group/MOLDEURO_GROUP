@@ -18,7 +18,7 @@ html, body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px; /* marit pentru logo mai mare */
+  height: 100px;
   background: #003399;
   display: flex;
   justify-content: space-between;
@@ -29,7 +29,7 @@ html, body {
 }
 
 .logo img {
-  height: 85px; /* logo mărit */
+  height: 85px;
 }
 
 .menu {
@@ -134,7 +134,7 @@ html, body {
   font-size: 1.2rem;
 }
 
-/* =============== BLUE MODERN CARDS (FINAL) =============== */
+/* =============== MODERN BLUE CARDS =============== */
 
 .modern-blue-grid {
   margin: 3rem auto;
@@ -223,7 +223,6 @@ html, body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* Contact form */
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -301,7 +300,8 @@ html, body {
   border-top: 1px solid #ffffff55;
   padding-top: 1rem;
 }
-/* =============== LEGACY CARD FIX (REACTIVATED) =============== */
+
+/* =============== LEGACY CARD FIX =============== */
 
 .services-grid-aj,
 .servicii-grid,
@@ -322,7 +322,7 @@ html, body {
   text-decoration: none;
   color: #003399;
   transition: 0.25s;
-  border: none; /* eliminăm contururile vechi */
+  border: none;
 }
 
 .service-card:hover,
