@@ -90,12 +90,9 @@ html, body {
 
 /* =============== HERO SECTIONS =============== */
 
-.hero-aj,
-.hero-servicii,
-.hero-contact,
-.hero-proiecte,
-.hero-parteneri,
-.hero-despre {
+background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url("images/hero.jpeg") center/cover no-repeat;
+
   height: 60vh;
   display: flex;
   align-items: center;
