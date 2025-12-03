@@ -381,3 +381,50 @@ html, body {
   border-radius: 6px;
   margin-right: 10px;
 }
+/* FORMULAR CONTACT */
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #003399;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #bbccff;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #003399;
+  box-shadow: 0 0 4px rgba(0,51,153,0.3);
+}
+
+.contact-submit-btn {
+  background: #003399;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+.contact-submit-btn:hover {
+  background: #0055dd;
+}
