@@ -1,130 +1,73 @@
 <!DOCTYPE html>
 <html lang="ro">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protecția Mediului</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicii în domeniul mediului</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+<!-- NAVBAR -->
+<div class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        <a href="index.html"><img src="images/logo.png" alt="MOLDEURO"></a>
     </div>
-
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-    <ul class="menu" id="menu">
-      <li><a href="index.html">Acasă</a></li>
-      <li><a href="servicii.html">Servicii</a></li>
-      <li><a class="active" href="mediu.html">Mediu</a></li>
-      <li><a href="proiecte.html">Proiecte</a></li>
-      <li><a href="parteneri.html">Parteneri</a></li>
-      <li><a href="despre.html">Despre noi</a></li>
-      <li><a href="contact.html">Contact</a></li>
+    <ul class="menu">
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="servicii.html" class="active">Servicii</a></li>
+        <li><a href="proiecte.html">Proiecte</a></li>
+        <li><a href="parteneri.html">Parteneri</a></li>
+        <li><a href="despre.html">Despre noi</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
+    <div class="hamburger">&#9776;</div>
+</div>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("menu-open");
-    }
-  </script>
-
-  <!-- HERO -->
-  <section class="hero-proiecte">
-    <div class="hero-proiecte-content">
-      <h1>Protecția Mediului</h1>
-      <p>Documentații, avize și implementare pentru proiecte de mediu.</p>
+<!-- HERO -->
+<header class="hero-servicii">
+    <div class="hero-servicii-content">
+        <h1>Mediu & Avize</h1>
+        <p>Servicii profesionale pentru proiecte și documentații de mediu.</p>
     </div>
-  </section>
+</header>
 
-  <!-- SERVICII MEDIU -->
-  <section class="page-container" style="padding-top:3rem; padding-bottom:3rem;">
+<!-- CONȚINUT -->
+<section class="page-container" style="padding-top:3rem; padding-bottom:3rem;">
 
-    <h2 style="text-align:center; margin-bottom:2.5rem;">Servicii în domeniul mediului</h2>
+    <h2 style="text-align:center; margin-bottom:3rem;">Servicii în domeniul mediului</h2>
 
-    <div class="universal-card-grid">
+    <div class="modern-blue-grid">
 
-      <div class="universal-card">
-        <h3>Studii de impact</h3>
-        <p>Întocmirea documentațiilor necesare pentru proiecte noi și existente.</p>
-      </div>
+        <a class="modern-blue-card">
+            <h3>Studii de impact</h3>
+            <p>Întocmirea documentațiilor necesare pentru proiecte noi și existente.</p>
+        </a>
 
-      <div class="universal-card">
-        <h3>Acorduri și avize</h3>
-        <p>Obținerea documentelor obligatorii conform legislației în vigoare.</p>
-      </div>
+        <a class="modern-blue-card">
+            <h3>Acorduri și avize</h3>
+            <p>Obținerea documentelor obligatorii conform legislației în vigoare.</p>
+        </a>
 
-      <div class="universal-card">
-        <h3>Monitorizare mediu</h3>
-        <p>Servicii de monitorizare și raportare periodică.</p>
-      </div>
+        <a class="modern-blue-card">
+            <h3>Monitorizare mediu</h3>
+            <p>Servicii de monitorizare și raportare periodică.</p>
+        </a>
 
-      <div class="universal-card">
-        <h3>Consultanță tehnică</h3>
-        <p>Sprijin în planificarea și implementarea proiectelor ecologice.</p>
-      </div>
+        <a class="modern-blue-card">
+            <h3>Consultanță tehnică</h3>
+            <p>Sprijin în planificarea și implementarea proiectelor ecologice.</p>
+        </a>
 
     </div>
-
-  </section>
-
-  <!-- GALERIE FOTO -->
-<section class="page-container" style="padding-bottom:3rem;">
-
-  <h2 style="text-align:center; margin-bottom:2rem;">Galerie foto</h2>
-
-  <div class="gallery-grid">
-
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu1.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu2.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu3.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu4.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu5.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu6.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu7.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu8.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu9.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu10.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu11.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu12.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu13.jpeg" class="gallery-img">
-    <img src="https://skalo-group.github.io/MOLDEURO_GROUP/images/mediu14.jpeg" class="gallery-img">
-
-  </div>
 
 </section>
 
-
-  <!-- FOOTER -->
-  <footer class="footer">
-
-    <div class="footer-row">
-      <div>
-        <h3>MOLDEURO GROUP</h3>
-        <p>Servicii complete pentru proiecte publice și private.</p>
-      </div>
-
-      <div>
-        <h3>Link-uri utile</h3>
-        <p><a href="servicii.html">Servicii</a></p>
-        <p><a href="proiecte.html">Proiecte</a></p>
-        <p><a href="parteneri.html">Parteneri</a></p>
-        <p><a href="contact.html">Contact</a></p>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
-    </div>
-
-  </footer>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-bottom">MOLDEURO GROUP © 2025</div>
+</footer>
 
 </body>
 </html>
