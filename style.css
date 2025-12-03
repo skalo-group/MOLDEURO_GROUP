@@ -51,7 +51,7 @@ html, body {
   color: #00bcd4;
 }
 
-/* === HAMBURGER === */
+/* =============== HAMBURGER =============== */
 .hamburger {
   display: none;
   font-size: 32px;
@@ -75,18 +75,321 @@ html, body {
     border-radius: 12px;
   }
 
-  .menu.menu-
-/* ========== GLOBAL PAGE CONTAINER (EXCEPT DESPRE) ========== */
+  .menu.menu-open {
+    display: flex;
+  }
 
+  .menu li a {
+    padding: 1rem;
+    border-radius: 6px;
+  }
+}
+
+/* =============== HERO GENERIC SECTIONS =============== */
+.hero-aj,
+.hero-servicii,
+.hero-contact,
+.hero-proiecte,
+.hero-parteneri,
+.hero-despre {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/hero.jpeg") center/cover no-repeat;
+  color: white;
+}
+
+.hero-content,
+.hero-servicii-content,
+.hero-contact-content,
+.hero-proiecte-content,
+.hero-parteneri-content,
+.hero-despre-content {
+  max-width: 800px;
+  color: white;
+  text-shadow: 0 0 12px rgba(0,0,0,0.7);
+}
+
+.hero-content h1,
+.hero-servicii-content h1,
+.hero-contact-content h1,
+.hero-proiecte-content h1,
+.hero-parteneri-content h1,
+.hero-despre-content h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.hero-content p,
+.hero-servicii-content p,
+.hero-contact-content p,
+.hero-proiecte-content p,
+.hero-parteneri-content p,
+.hero-despre-content p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* =============== BUTTONS =============== */
+.btn-primary {
+  background: #00bcd4;
+  color: #fff;
+  padding: 0.9rem 2rem;
+  font-weight: 700;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #ffffff;
+  color: #003399;
+}
+
+/* =============== SERVICE CARDS =============== */
+.services-grid-aj,
+.servicii-grid,
+.modern-services-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.service-card,
+.servicii-card,
+.modern-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  border: 2px solid #003399;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.2s;
+  text-decoration: none;
+  color: #003399;
+}
+
+.service-card:hover,
+.servicii-card:hover,
+.modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.2);
+}
+
+.icon-circle,
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #003399;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* =============== ABOUT PAGE =============== */
+.about-modern-despre {
+  padding: 4rem 8%;
+  background: #f7f9ff;
+}
+
+.about-three-cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 2rem;
+}
+
+.about-box {
+  padding: 1.8rem;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #bbccff;
+}
+
+/* =============== PROJECT GRID =============== */
+.projects-grid-container,
+.projects-list-grid,
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-placeholder,
+.project-card-empty,
+.partner-box {
+  height: 200px;
+  border-radius: 14px;
+  background: #f2f4ff;
+  border: 2px solid #00339933;
+}
+
+/* =============== CTA =============== */
+.cta-aj {
+  padding: 4rem 8%;
+  text-align: center;
+  background: #003399;
+  color: white;
+}
+
+/* =============== FOOTER =============== */
+.footer {
+  margin-top: 4rem;
+  padding: 3rem 8%;
+  background: #002266;
+  color: #ffffff;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ffffff55;
+  padding-top: 1rem;
+}
+
+/* ========== GLOBAL PAGE CONTAINER (EXCEPT DESPRE) ========== */
 .page-container {
   width: 100%;
-  max-width: 1200px;      /* limitează lățimea totală */
-  margin: 0 auto;         /* centrează containerul */
-  padding: 0 40px;        /* spații laterale frumoase */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 @media(max-width: 600px) {
   .page-container {
     padding: 0 20px;
   }
+}
+
+/* =================================================================== */
+/* =============== CONTACT PAGE — PROFESSIONAL FINAL ================= */
+/* =================================================================== */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  padding: 4rem 8%;
+}
+
+@media(max-width: 900px){
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card lateral */
+.contact-side-card {
+  background: white;
+  border-radius: 14px;
+  padding: 2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  border-left: 5px solid #003399;
+}
+
+.contact-side-card h3 {
+  color: #003399;
+  margin-bottom: 1rem;
+}
+
+.contact-info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+}
+
+.contact-info-icon {
+  width: 40px;
+  height: 40px;
+  background: #003399;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+}
+
+/* Butoane */
+.contact-actions {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #003399;
+  color: white;
+  padding: 0.9rem;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.contact-btn:hover {
+  background: #0055dd;
+}
+
+/* Tabel */
+.contact-table-wrapper {
+  overflow-x: auto;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.contact-table thead tr {
+  background: #003399;
+  color: white;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 16px;
+}
+
+.contact-table-icon {
+  width: 34px;
+  height: 34px;
+  background: #003399;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-right: 10px;
 }
