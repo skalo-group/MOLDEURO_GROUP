@@ -428,3 +428,24 @@ html, body {
 .contact-submit-btn:hover {
   background: #0055dd;
 }
+/* =============== GALERIE FOTO MEDIU =============== */
+
+.gallery-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 14px;
+  height: 220px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: 0.2s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
+}
