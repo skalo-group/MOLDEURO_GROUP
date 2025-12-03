@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiect de infrastructură</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+    </div>
+
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="servicii.html">Servicii</a></li>
+      <li><a class="active" href="proiecte.html">Proiecte</a></li>
+      <li><a href="parteneri.html">Parteneri</a></li>
+      <li><a href="despre.html">Despre noi</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("menu-open");
+    }
+  </script>
+
+  <!-- HERO MIC -->
+  <section class="hero-proiecte">
+    <div class="hero-proiecte-content">
+      <h1>Proiect de infrastructură</h1>
+      <p>Prezentarea detaliată a proiectului.</p>
+    </div>
+  </section>
+
+  <!-- CONȚINUT PAGINĂ PROIECT -->
+  <section class="page-container" style="padding-top:3rem; padding-bottom:4rem;">
+
+    <div style="background:white; border-radius:20px; padding:2rem; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+
+      <img src="images/proiect-placeholder.jpg" 
+           alt="Imagine proiect" 
+           style="width:100%; border-radius:16px; margin-bottom:2rem;">
+
+      <h2 style="color:#003399; margin-bottom:1rem;">Titlul proiectului</h2>
+
+      <p style="line-height:1.6;">
+        Descrierea proiectului se introduce aici. Poți detalia obiectivele,
+        soluțiile tehnice, beneficiile, etapele, finanțarea și rezultatele.
+      </p>
+
+      <p style="line-height:1.6;">
+        Dacă vrei, pot structura și o pagină extinsă cu:
+        – galerii foto  
+        – timeline al proiectului  
+        – indicatori tehnici  
+        – documente PDF atașabile  
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-row">
+      <div>
+        <h3>MOLDEURO GROUP</h3>
+        <p>Servicii complete pentru proiecte publice și private.</p>
+      </div>
+      <div>
+        <h3>Link-uri utile</h3>
+        <p><a href="servicii.html">Servicii</a></p>
+        <p><a href="proiecte.html">Proiecte</a></p>
+        <p><a href="parteneri.html">Parteneri</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
+    </div>
+  </footer>
+
+</body>
+</html>
