@@ -477,3 +477,7 @@ html, body {
   object-fit: cover;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
+/* Fix spacing for cards with 3 lines */
+.universal-card h3 br {
+  line-height: 1.35;
+}
