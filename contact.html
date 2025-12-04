@@ -13,7 +13,7 @@
   <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
-      <a href="index.html"><img src="images/logo.png"></a>
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
     </div>
 
     <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -38,43 +38,85 @@
   <section class="hero-contact">
     <div class="hero-contact-content">
       <h1>Contact</h1>
-      <p>Suntem aici pentru tine.</p>
+      <p>Suntem aici pentru a răspunde solicitărilor tale.</p>
     </div>
   </section>
 
-  <!-- CONTACT LAYOUT -->
-  <div class="page-container">
-    <section class="contact-layout">
+  <!-- CONTACT PAGE CONTENT -->
+  <section class="contact-layout">
 
-      <!-- CARD STÂNGA -->
-      <div class="contact-side-card">
-        <h3>Date de contact</h3>
-        <div class="contact-info-item"><strong>Email:</strong> office@moldeuro.ro</div>
-        <div class="contact-info-item"><strong>Telefon:</strong> 07xx xxx xxx</div>
-        <div class="contact-info-item"><strong>Adresă:</strong> …</div>
+    <!-- LEFT SIDE CARD -->
+    <div class="contact-side-card">
+      <h3>Date de contact</h3>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📍</div>
+        <span>Str. Exemplu nr. 10, Iași, România</span>
       </div>
 
-      <!-- FORMULAR DREAPTA -->
-      <div class="contact-form-card">
-        <h3>Contactează-ne</h3>
-
-        <form action="mailto:office@moldeuro.ro" method="post" enctype="text/plain">
-          <div class="form-row">
-            <input type="text" name="Nume" placeholder="Nume complet" required>
-            <input type="email" name="Email" placeholder="Email" required>
-          </div>
-
-          <textarea name="Mesaj" rows="6" placeholder="Mesajul tău…" required></textarea>
-
-          <button type="submit">Trimite mesajul</button>
-        </form>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📞</div>
+        <span>+40 721 000 000</span>
       </div>
 
-    </section>
-  </div>
+      <div class="contact-info-item">
+        <div class="contact-info-icon">✉️</div>
+        <span>contact@moldeurogroup.ro</span>
+      </div>
 
+      <div class="contact-info-item">
+        <div class="contact-info-icon">⏰</div>
+        <span>Luni – Vineri: 08:00 – 17:00</span>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="contact-form-card">
+      <h3 style="margin-bottom:1rem;">Contactează-ne</h3>
+
+      <form action="mailto:contact@moldeurogroup.ro" method="POST" enctype="text/plain">
+
+        <div class="form-row">
+          <input type="text" name="Nume" placeholder="Numele tău" required>
+          <input type="email" name="Email" placeholder="Email" required>
+        </div>
+
+        <div class="form-row">
+          <input type="text" name="Telefon" placeholder="Telefon">
+          <input type="text" name="Subiect" placeholder="Subiect" required>
+        </div>
+
+        <textarea name="Mesaj" rows="6" placeholder="Mesajul tău" required></textarea>
+
+        <button type="submit">Trimite mesaj</button>
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    …
+
+    <div class="footer-row">
+      <div>
+        <h3>MOLDEURO GROUP</h3>
+        <p>Servicii complete pentru proiecte publice și private.</p>
+      </div>
+
+      <div>
+        <h3>Link-uri utile</h3>
+        <p><a href="servicii.html">Servicii</a></p>
+        <p><a href="proiecte.html">Proiecte</a></p>
+        <p><a href="parteneri.html">Parteneri</a></p>
+        <p><a href="contact.html">Contact</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 MOLDEURO GROUP. Toate drepturile rezervate.
+    </div>
+
   </footer>
 
 </body>
