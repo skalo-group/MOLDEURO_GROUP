@@ -407,3 +407,9 @@ html, body {
   box-shadow: 0 8px 18px rgba(0,0,0,0.35);
   transform: translateY(-3px);
 }
+/* ==== FIX HERO TEXT ON MOBILE ==== */
+@media(max-width: 600px) {
+  .hero-content {
+    margin-top: 60px; /* coboară textul */
+  }
+}
