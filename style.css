@@ -463,3 +463,17 @@ html, body {
     margin-top: 1.3rem;
   }
 }
+.gallery-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-vertical img {
+  width: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
