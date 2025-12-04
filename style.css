@@ -386,3 +386,24 @@ html, body {
   opacity: 0.9;
   line-height: 1.4;
 }
+/* ===== HERO BUTTON MODERN ===== */
+.hero-btn {
+  display: inline-block;
+  margin-top: 1.8rem;
+  background: #00bcd4;
+  color: white;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.28);
+  transition: 0.25s;
+}
+
+.hero-btn:hover {
+  background: #ffffff;
+  color: #003399;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+  transform: translateY(-3px);
+}
